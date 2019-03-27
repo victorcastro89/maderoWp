@@ -1,1 +1,0 @@
-certutil -d sql:$HOME/.pki/nssdb -A -t "P,," -n "TRAEFIK DEFAULT CERT" -i "TRAEFIK DEFAULT CERT"
