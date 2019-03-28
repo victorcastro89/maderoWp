@@ -1,4 +1,6 @@
 version: "3.3"
+
+
 services:
 
   wordpress:
@@ -16,7 +18,23 @@ services:
     labels:
       - traefik.enable=false
 
- 
+  varnish:
+    image: emgag/varnish:6.0.1
+    container_name: varnish
+    restart: always
+    # environment:
+    #   - DAEMON_OPTS="$DAEMON_OPTS -F '%{Host}i %h %l %u %t \"%r\" %s %b \"%{Referer}i\" \"%{User-agent}i\"'"
+    volumes:
+      - ./varnish:/etc/varnish/
+    depends_on:
+      - wordpress
+
+    labels:
+      - "traefik.backend=varnish"
+      - "traefik.port=80"
+      - "traefik.frontend.rule=Host:${PROJECT_BASE_URL}"
+      - "traefik.enable=true"
+
   nginx:
     image: nginx:${NGINX_VERSION:-latest}
     container_name: nginx
@@ -30,29 +48,30 @@ services:
       #- ${SSL_CERTS_DATA_DIR:-./certs-data}:/data/letsencrypt
     depends_on:
       - wordpress
+      - varnish
     labels:
       - "traefik.backend=nginx"
-      - "traefik.port=80"
-      - "traefik.frontend.rule=Host:${PROJECT_BASE_URL}"
+      - "traefik.port=81"
+      - traefik.enable=false
 
-
-  php_my:
-    image: phpmyadmin/phpmyadmin:latest
-    container_name: phpmyadmin
-    restart: always
-    environment:
-      - "PMA_HOST=maderowp-database.mariadb.database.azure.com"
-    labels:
-      - "traefik.backend=php_my"
-      - "traefik.port=80"
-      - "traefik.frontend.rule=Host:pma.${PROJECT_BASE_URL}"
+  # php_my:
+  #   image: phpmyadmin/phpmyadmin:latest
+  #   container_name: phpmyadmin
+  #   restart: always
+  #   environment:
+  #     - "PMA_HOST=maderowp-database.mariadb.database.azure.com"
+  #   labels:
+  #     - "traefik.backend=php_my"
+  #     - "traefik.port=80"
+  #     - "traefik.frontend.rule=Host:pma.${PROJECT_BASE_URL}"
+  #     - "traefik.enable=true"
       
   traefik:
     image: traefik
     container_name: traefik
     command: 
       - --docker 
-      - --logLevel=DEBUG
+      - --logLevel=INFO
       - "--api"
       - "--entrypoints=Name:http Address::80 Redirect.EntryPoint:https"
       - "--entrypoints=Name:https Address::443 TLS"
@@ -64,14 +83,24 @@ services:
       - "--acme.onHostRule=true"
       - "--acme.onDemand=false"
       - "--acme.email=victorcastro89@hotmail.com"
-   
+      - "--acme.caServer=https://acme-staging-v02.api.letsencrypt.org/directory"
       - "--docker.watch"    
+      - "--docker.exposedByDefault=false"
     ports:
       - "80:80"
-      - "8080:8080" # Dashboard
+      # - "8080:8080" # Dashboard
       - "443:443"
+ 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./acme.json:/acme.json
     labels:
-      - traefik.enable=false
+      - "traefik.backend=traefik"
+      - "traefik.port=8080"
+      - "traefik.frontend.rule=Host:traefik.${PROJECT_BASE_URL}"
+      - "traefik.enable=true"
+      - "traefik.frontend.auth.basic= victor:$$apr1$$nGdEqwrj$$zMXoC4r6ARkIDDBfNtydw."
+    
+
+
+  
