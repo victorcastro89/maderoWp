@@ -21,6 +21,7 @@
 define( 'WP_HOME', 'https://maderos.com.br');
 define( 'WP_SITEURL', 'https://maderos.com.br');
 
+define('FS_METHOD','direct');
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'bitnami_wordpress');

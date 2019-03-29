@@ -9,6 +9,8 @@ services:
     restart: always
     volumes:
       - ./wordpress:/var/www/html
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini  
+      
     environment:
       - WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME:-wordpress}
       - WORDPRESS_TABLE_PREFIX=${WORDPRESS_TABLE_PREFIX:-wp_}
@@ -83,7 +85,7 @@ services:
       - "--acme.onHostRule=true"
       - "--acme.onDemand=false"
       - "--acme.email=victorcastro89@hotmail.com"
-      - "--acme.caServer=https://acme-staging-v02.api.letsencrypt.org/directory"
+#      - "--acme.caServer=https://acme-staging-v02.api.letsencrypt.org/directory"
       - "--docker.watch"    
       - "--docker.exposedByDefault=false"
     ports:
