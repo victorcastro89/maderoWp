@@ -1,0 +1,144 @@
+.la-separator{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  .la-line{
+    display: block;
+    max-width: 100%;
+    width: 100px;
+    .text-center & {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .text-right & {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+}
+.la-headings{
+  margin-bottom: 15px;
+  background:{
+    position: top center;
+    repeat: no-repeat;
+  }
+  .heading-tag{
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  p.heading-tag,
+  div.heading-tag{
+    padding-bottom: 0;
+  }
+  .la-separator{
+    margin-top: 20px;
+  }
+  .la-line{
+    border-style: solid;
+    border-width: 1px;
+    width: 30px;
+  }
+  &.text-inline{
+    .heading-tag,
+    .subheading-tag{
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+    }
+  }
+  .heading-with-line + .subheading-tag {
+    margin-top: 20px;
+  }
+}
+.spacer-position-separator{
+  .heading-with-line,
+  .heading-with-line .subheading-tag,
+  .la-separator,
+  .heading-tag{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .heading-with-line .subheading-tag,
+  .heading-tag{
+    margin: 0 20px;
+  }
+  &.sp_at-left{
+    .heading-with-line{
+      .heading-tag{
+        margin-right: 0;
+        + .la-separator{
+          display: none;
+        }
+      }
+    }
+  }
+  &.sp_at-right{
+    .heading-with-line{
+      .heading-tag {
+        margin-left: 0;
+      }
+      .la-separator:first-child{
+        display: none;
+      }
+    }
+  }
+}
+.subheading-tag sup,
+.subheading-tag sub {
+  font-size: 100%;
+}
+
+
+.la-headings.spacer-position-middle .la-separator{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.vc_custom_heading{
+  a:hover{
+    opacity: 1 !important;
+  }
+}
+
+.vc_custom_heading.heading__button a {
+  border-bottom: 2px solid #D0D0D0;
+  font-weight: bold;
+  padding-bottom: 5px;
+  display: inline-block;
+  @extend %text-color-secondary;
+  &:hover{
+    @extend %border-color-secondary;
+  }
+}
+.vc_custom_heading.heading__button2 a {
+  border-bottom: 1px solid;
+  display: inline-block;
+  line-height: normal;
+  @extend %text-color-secondary;
+  &:hover{
+    @extend %text-color-primary;
+  }
+}
+
+.vc_custom_heading.heading__button_intab{
+  float: right;
+  margin: 0;
+  position: relative;
+  top: 25px;
+  margin-left: -60px;
+  a {
+    border-bottom: 2px solid #D0D0D0;
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: inline-block;
+    @extend %text-color-secondary;
+    &:hover{
+      @extend %border-color-secondary;
+    }
+  }
+}
+
+h2.heading-tag {
+  font-weight: normal;
+}

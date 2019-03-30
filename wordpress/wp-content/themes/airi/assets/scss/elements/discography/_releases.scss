@@ -1,0 +1,78 @@
+.release__item{
+  .release__item__applink{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    text-align: center;
+    z-index: 2;
+  }
+  .release__item__applink-item{
+    width: 140px;
+    display: inline-block;
+    margin: 1.5%;
+    max-width: 47%;
+    span{
+      background-size: cover;
+      display: block;
+      font-size: 0;
+      padding-bottom: 31.69%;
+    }
+  }
+  .release__item__applink--itunes span{
+    background-image: url(assets/images/itunes.png);
+  }
+  .release__item__applink--gplay span{
+    background-image: url(assets/images/google_play.png);
+  }
+  .loop__item__info{
+    text-align: center;
+    padding: 20px 0;
+  }
+  .loop__item__title .entry-title{
+    margin-bottom: 0;
+  }
+  .loop__item__meta{
+    strong,
+    br{
+      display: none;
+    }
+  }
+  .loop__item__thumbnail--linkoverlay{
+    background-color: rgba(#151515, 0);
+    opacity: 0;
+    &:before{
+      content: '\63';
+      font-family: "lpmicons" !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-variant: normal !important;
+      text-transform: none !important;
+      speak: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      border-radius: 50%;
+      background-image: -moz-linear-gradient( 0deg, rgb(46,102,255) 0%, rgb(144,123,252) 100%);
+      background-image: -webkit-linear-gradient( 0deg, rgb(46,102,255) 0%, rgb(144,123,252) 100%);
+      background-image: -ms-linear-gradient( 0deg, rgb(46,102,255) 0%, rgb(144,123,252) 100%);
+      color: #fff;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      margin-left: -25px;
+      margin-top: -35px;
+    }
+  }
+  .loop__item__inner{
+    &:hover{
+      .loop__item__thumbnail--linkoverlay{
+        background-color: rgba(#151515, 0.9);
+        opacity: 1;
+      }
+    }
+  }
+}

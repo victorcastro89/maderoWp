@@ -1,0 +1,40 @@
+.single-post-content.event{
+  .event-location,
+  .event-date{
+    color: $secondary-color;
+    margin-bottom: 15px;
+  }
+  .event-thumbnail{
+    margin-bottom: 30px;
+  }
+  .event-buttons{
+    .btn{
+      display: block;
+      margin-bottom: 10px;
+      font-weight: normal;
+      text-transform: capitalize;
+      border-radius: 5px;
+      padding: 10px 10px;
+      .fa{
+        margin-right: 10px;
+        font-size: 14px;
+      }
+    }
+    .fb-button:not(:hover){
+      background-color: #3b5999;
+    }
+  }
+  .event-container{
+    .event-map{
+      margin-bottom: 30px;
+    }
+    .event-details{
+      > div{
+        margin-bottom: 5px;
+      }
+    }
+    .event-content{
+      padding-top: 10px;
+    }
+  }
+}

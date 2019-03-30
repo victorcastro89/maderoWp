@@ -1,0 +1,124 @@
+.la-contact-info{
+  .la-contact-item{
+    padding-#{$global-left}: 35px;
+    position: relative;
+    margin-bottom: 20px;
+    &:before{
+      font-family: FontAwesome;
+      position: absolute;
+      #{$global-left}: 0;
+      font-size: 1.15em;
+      top: -0.1em;
+    }
+  }
+  .la-contact-phone{
+    &:before{
+      content: "\f095";
+    }
+  }
+  .la-contact-email{
+    &:before{
+      content: "\f0e0";
+    }
+  }
+  .la-contact-address{
+    &:before{
+      content: "\f041";
+    }
+  }
+  .la-contact-working-hours{
+    &:before{
+      content: "\f017";
+    }
+  }
+}
+.inline-item{
+  .la-contact-item{
+    padding-left: 1.8em;
+    display: inline-block;
+    margin: 0 10px 0;
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+.wpcf7 .wpcf7-response-output {
+  font-size: 12px;
+  margin: 0;
+}
+.wpcf7-form-control-wrap{
+  margin-bottom: 30px;
+  &,
+  .wpcf7-form-control{
+    display: block;
+    width: 100%;
+  }
+  .wpcf7-not-valid-tip{
+    font-size: 12px;
+  }
+  .wpcf7-select,
+  .wpcf7-text,
+  .wpcf7-textarea{
+    padding: 12px 30px;
+  }
+  .wpcf7-select{
+    height: 54px;
+  }
+}
+
+.wpcf7-form .contact-form label {
+  padding-bottom: 10px;
+  display: block;
+}
+
+
+.cf7-style-default{
+  color: #5D5D5D;
+  .wpcf7-form-control-wrap{
+    margin-bottom: 20px;
+    .wpcf7-select,
+    .wpcf7-text,
+    .wpcf7-textarea{
+      padding: 17px 25px;
+      color: inherit;
+      border-color: #E1E1E1;
+      &:focus{
+        border-color: #858585;
+      }
+    }
+    .wpcf7-textarea{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  .wpcf7-submit{
+    border: none;
+    padding: 10px 45px;
+  }
+  &.with-icon{
+    .wpcf7-form-control-wrap{
+      &.your-email,
+      &.your-name{
+        &:before{
+          content: "\f2c0";
+          font-family: FontAwesome;
+          position: absolute;
+          right: 1.2em;
+          top: 1.2em;
+        }
+      }
+      &.your-email{
+        &:before{
+          content: "\f003";
+        }
+      }
+    }
+    .wpcf7-submit{
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+}

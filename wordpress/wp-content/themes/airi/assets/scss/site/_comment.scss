@@ -1,0 +1,237 @@
+
+.commentlist{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  .star-rating{
+    float: right;
+  }
+  .comment-meta{
+    padding-top: 10px;
+    font-size: 12px;
+    .comment-author{
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: 600;
+      @extend %text-color-secondary;
+    }
+    .edit-link{
+      display: none;
+    }
+    time{
+      display: inline-block;
+      color: #8d8d8d;
+      vertical-align: middle;
+      &:before{
+        content: "-";
+        padding: 0 5px;
+      }
+    }
+    .comment-reply-link{
+      float: right;
+      &:before{
+        content: "\f112";
+        font-family: FontAwesome;
+        padding: 0 5px;
+      }
+    }
+  }
+  .comment_container{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #DEDEDE;
+    @include clearfix;
+  }
+  ul.children{
+    margin-left: 80px;
+    padding-left: 0;
+    list-style: none;
+  }
+  .comment-respond{
+    margin: 30px 0 0;
+    padding: 0;
+  }
+  img.avatar{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+  .comment-text{
+    float: right;
+    width: 80%;
+    width: calc(100% - 80px);
+  }
+}
+
+.comment-respond{
+  @extend %clearfix;
+}
+
+
+p.comment-notes {
+  font-style: italic;
+  font-size: 0.875em;
+}
+.comment-form{
+  label{
+    display: block;
+    padding-bottom: 5px;
+  }
+  .comment-form-rating{
+    label{
+      display: none;
+    }
+  }
+  input{
+    &:not([type="checkbox"]){
+      &:not([type="radio"]){
+        &:not([type="submit"]){
+          width: 100%;
+          max-width: 100%;
+          -webkit-appearance: none;
+        }
+      }
+    }
+  }
+  .comment-form-cookies-consent{
+    label{
+      display: inline-block;
+      padding: 0 5px;
+    }
+  }
+  textarea{
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+    vertical-align: top;
+    -webkit-appearance: none;
+  }
+  .form-submit{
+    padding-top: 10px;
+    input{
+      padding: 10px 35px;
+      line-height: 30px;
+      color: #fff;
+      border-width: 0;
+      font-weight: 600;
+      display: inline-block;
+      width: auto;
+      font-size: 12px;
+      text-transform: uppercase;
+      @extend %background-color-secondary;
+      &:hover{
+        @extend %background-color-primary;
+      }
+    }
+  }
+}
+
+.comments-container{
+  .comments-title{
+    margin-bottom: 50px;
+    display: block;
+    padding-top: 30px;
+  }
+}
+
+.comment_container + .comment-respond{
+  .comment-reply-title{
+    a{
+      text-transform: none;
+      font-weight: normal;
+      letter-spacing: 0;
+      font-size: 12px;
+    }
+  }
+}
+
+.comments-area .woocommerce-noreviews {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.woocommerce-Reviews {
+  width: 820px;
+  max-width: 100%;
+  margin: 0 auto;
+  .meta{
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .woocommerce-review__author{
+    font-size: 14px;
+    @extend %text-color-secondary;
+  }
+  .comment-respond .comment-reply-title{
+    font-size: inherit;
+  }
+}
+
+.entry-content .woocommerce-Reviews .woocommerce-noreviews{
+  margin-bottom: 20px;
+}
+
+.woocommerce-Reviews .woocommerce-Reviews-title,
+.comments-container .comments-title h3,
+.comment-respond .comment-reply-title{
+  font-size: inherit;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1em;
+  @extend %text-color-secondary;
+}
+
+.woocommerce-Reviews .woocommerce-Reviews-title,
+.woocommerce-Reviews .comment-reply-title{
+  text-transform: none;
+}
+.woocommerce-Reviews .woocommerce-Reviews-title {
+  margin-bottom: 30px;
+}
+
+.comment-form{
+  .comment-form-url,
+  .comment-form-email,
+  .comment-form-author{
+    width: 32%;
+    float: left;
+    margin-left: 2%;
+  }
+  .comment-form-author{
+    margin-left: 0;
+  }
+
+  .form-submit{
+    float: left;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px){
+  .comment-form .comment-form-url,
+  .comment-form .comment-form-email,
+  .comment-form .comment-form-author{
+    width: 100%;
+    margin-left: 0;
+  }
+  .commentlist img.avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  .commentlist .comment-text{
+    width: calc(100% - 55px);
+    width: -webkit-calc(100% - 55px);
+  }
+  .commentlist .comment_container {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .commentlist ul.children{
+    margin-left: 20px;
+  }
+  .commentlist .depth-3 .comment-meta time{
+    display: none;
+  }
+}

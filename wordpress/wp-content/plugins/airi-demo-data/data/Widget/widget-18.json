@@ -1,0 +1,218 @@
+{
+  "sidebar-primary": {
+    "categories-2": {
+      "title": "Categories",
+      "count": 0,
+      "hierarchical": 0,
+      "dropdown": 0,
+      "classes": ""
+    },
+    "la-recent-posts-2": {
+      "title": "Recent Post",
+      "number": 4,
+      "show_date": true,
+      "classes": ""
+    },
+    "archives-2": {
+      "title": "",
+      "count": 0,
+      "dropdown": 0
+    },
+    "meta-2": {
+      "title": ""
+    },
+    "tag_cloud-2": {
+      "title": "Tags",
+      "count": 0,
+      "taxonomy": "post_tag",
+      "classes": ""
+    }
+  },
+  "sidebar-shop-filter": {
+    "la-price-filter-list-2": {
+      "title": "Price",
+      "text": "0|20\r\n20|40\r\n40|50\r\n50|60\r\n60|80\r\n80|100\r\n100",
+      "classes": "col-xs-12 col-sm-3"
+    },
+    "woocommerce_layered_nav-7": {
+      "title": "Brands",
+      "attribute": "brand",
+      "display_type": "list",
+      "query_type": "or",
+      "classes": "col-xs-12 col-sm-3"
+    },
+    "woocommerce_layered_nav-5": {
+      "title": "Color",
+      "attribute": "color",
+      "display_type": "swatches",
+      "query_type": "and",
+      "classes": "col-xs-12 col-sm-3"
+    },
+    "woocommerce_layered_nav-6": {
+      "title": "Size",
+      "attribute": "size",
+      "display_type": "list",
+      "query_type": "or",
+      "classes": "col-xs-12 col-sm-3"
+    }
+  },
+  "aside-widget": {
+    "nav_menu-5": {
+      "nav_menu": "Header Aside Menu",
+      "classes": "accordion-menu"
+    },
+    "text-4": {
+      "title": "",
+      "text": "<img src=\"\/\/airi.la-studioweb.com\/wp-content\/themes\/airi\/assets\/images\/payments2.png\" alt=\"payment\" \/>\r\n\r\nPellentesque mollis nec orci id tincidunt. Sed mollis risus eu nisi aliquet, sit amet fermentum justo dapibus.",
+      "filter": true,
+      "visual": true,
+      "classes": "font-size-13 element-max-width-280 padding-top-30"
+    },
+    "text-5": {
+      "title": "",
+      "text": "<a href=\"tel:+61225315600\">(+612) 2531 5600<\/a>\r\n<a href=\"mailto:info@la-studioweb.com\">info@la-studioweb.com<\/a>\r\nPO Box 1622 Colins Street West",
+      "filter": true,
+      "visual": true,
+      "classes": "font-size-13 margin-bottom-20"
+    },
+    "text-6": {
+      "title": "",
+      "text": "<a class=\"text-color-heading\" href=\"https:\/\/www.google.com\/maps\" target=\"_blank\" rel=\"noopener\"><u>Google maps<\/u><\/a>",
+      "filter": true,
+      "visual": true,
+      "classes": "font-size-13 margin-bottom-10"
+    },
+    "text-7": {
+      "title": "",
+      "text": "[la_social_link]",
+      "filter": true,
+      "visual": true,
+      "classes": ""
+    },
+    "text-8": {
+      "title": "",
+      "text": "\u00a9 2018 Airi All rights reserved",
+      "filter": true,
+      "visual": true,
+      "classes": "font-size-11"
+    }
+  },
+  "footer_top_area": {
+    "custom_html-2": {
+      "title": "",
+      "content": "<p><a href=\"https:\/\/airi.la-studioweb.com\"><img src=\"\/\/airi.la-studioweb.com\/wp-content\/themes\/airi\/assets\/images\/logo.svg\" alt=\"Airi - Clean, Minial WooCommerce Theme\"><\/a><\/p>",
+      "classes": "col-xs-12 text-center  margin-bottom-0  xs-text-left"
+    }
+  },
+  "f-col-1": {
+    "text-9": {
+      "title": "",
+      "text": "<p class=\"margin-bottom-10\"><img class=\"alignnone size-full wp-image-1032\" src=\"https:\/\/airi.la-studioweb.com\/wp-content\/uploads\/2018\/09\/logo-white.png\" alt=\"\" width=\"109\" height=\"48\" \/><\/p>\r\n<p class=\"three-font-family font-size-16\">Integer ut ligula quis lectus fringilla elementum porttitor sed est. Duis fringilla efficitur ligula sed lobortis.<\/p>",
+      "filter": true,
+      "visual": true,
+      "classes": "margin-bottom-10"
+    },
+    "text-10": {
+      "title": "",
+      "text": "[la_social_link]",
+      "filter": true,
+      "visual": true,
+      "classes": "font-size-18 text-color-white"
+    }
+  },
+  "f-col-2": {
+    "nav_menu-3": {
+      "title": "Company",
+      "nav_menu": "Footer Company",
+      "classes": ""
+    }
+  },
+  "f-col-3": {
+    "nav_menu-2": {
+      "title": "Useful Links",
+      "nav_menu": "Footer Useful Links",
+      "classes": ""
+    }
+  },
+  "f-col-4": {
+    "nav_menu-4": {
+      "title": "Shopping",
+      "nav_menu": "Footer Shopping",
+      "classes": ""
+    }
+  },
+  "f-col-5": {
+    "contact_info-2": {
+      "title": "Contact Info",
+      "phone": "(+612) 2531 5600",
+      "email": "info@la-studioweb.com",
+      "address": "PO Box 1622 Colins Street West Victoria 8077 Australia",
+      "classes": "margin-bottom-0"
+    },
+    "text-11": {
+      "title": "",
+      "text": "<img src=\"\/\/veera.la-studioweb.com\/wp-content\/themes\/veera\/assets\/images\/payments.png\" alt=\"payment\" \/>",
+      "filter": true,
+      "visual": true,
+      "classes": ""
+    }
+  },
+  "s-p-after-add-cart": {
+    "text-3": {
+      "title": "",
+      "text": "<a href=\"#\"><i class=\"fa fa-map-marker\"><\/i>Find store near you<\/a><a href=\"#\"><i class=\"fa fa-exchange\"><\/i>Delivery and return<\/a>",
+      "filter": true,
+      "visual": true,
+      "classes": ""
+    }
+  },
+  "sidebar-shop-area": {
+    "woocommerce_product_categories-2": {
+      "title": "Categories",
+      "orderby": "name",
+      "dropdown": 0,
+      "count": 1,
+      "hierarchical": 1,
+      "show_children_only": 0,
+      "hide_empty": 0,
+      "max_depth": "",
+      "classes": ""
+    },
+    "woocommerce_price_filter-2": {
+      "title": "Price",
+      "classes": ""
+    },
+    "woocommerce_layered_nav-2": {
+      "title": "Size",
+      "attribute": "size",
+      "display_type": "list",
+      "query_type": "or",
+      "classes": "widget_layered_nav--nostyle"
+    },
+    "woocommerce_layered_nav-3": {
+      "title": "Color",
+      "attribute": "color",
+      "display_type": "list",
+      "query_type": "or",
+      "classes": "widget_layered_nav--nostyle"
+    },
+    "woocommerce_layered_nav-4": {
+      "title": "Brands",
+      "attribute": "brand",
+      "display_type": "list",
+      "query_type": "or",
+      "classes": ""
+    },
+    "woocommerce_product_tag_cloud-2": {
+      "title": "",
+      "classes": ""
+    },
+    "text-2": {
+      "title": "",
+      "text": "[la_banner style=\"6\" banner_id=\"948\" banner_link=\"url:%2Fshop%2F|||\" title_1=\"NEW\" title_2=\"SEASON\"]",
+      "filter": true,
+      "visual": true,
+      "classes": "element-max-width-280"
+    }
+  }
+}

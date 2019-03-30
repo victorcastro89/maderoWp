@@ -1,0 +1,123 @@
+.vc_progress_bar{
+  .vc_label{
+    color: inherit;
+    font-size: inherit;
+    display: block;
+  }
+  .vc_general.vc_single_bar{
+    height: 8px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    font-size: inherit;
+    color: inherit;
+    background-color: #EFEFEF;
+    @include box-shadow(none);
+    &,
+    .vc_bar{
+      @include border-radius(0);
+    }
+    .vc_bar{
+      &:after{
+        content: attr(data-text);
+        position: absolute;
+        bottom: 100%;
+        right: -1em;
+        opacity: 0;
+        margin-bottom: 5px;
+        @include single-transition(all, 500ms);
+      }
+      &[style]{
+        &:after{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.vc_progress_bar.vc_progress-bar-color-black{
+  color: #262626;
+  .vc_general.vc_single_bar{
+    background-color: #E3E3E3;
+    .vc_bar{
+      background-color: #262626;
+    }
+  }
+}
+
+.progress_bar--big{
+  .vc_general.vc_single_bar{
+    height: 15px;
+    background-color: #fcf8ff;
+  }
+}
+
+.progress_bar--medium{
+  font-size: 16px;
+  .vc_general.vc_single_bar {
+    height: 8px;
+    margin-bottom: 30px;
+  }
+}
+
+.vc_progress-bar-color-gradient .vc_single_bar .vc_bar{
+  @include linear-gradient(to right, #e175a3 0%, #3a51e6 100%);
+}
+
+.la-circle-progress{
+  text-align: center;
+  min-width: 100px;
+  width: 200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  .sc-cp-canvas {
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
+  }
+  canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .la-circle-wrap{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .la-circle-wrapper{
+    width: 100%;
+    @extend %absolute-center;
+  }
+  .sc-cp-t,
+  .sc-cp-v{
+    display: block;
+    line-height: 1;
+  }
+  &.la-progress-1{
+    width: 170px;
+    .sc-cp-v{
+      font-weight: bold;
+      color: #ffffff;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+  }
+  &.la-progress-2{
+    font-weight: 300;
+    .sc-cp-v{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .sc-cp-t{
+      font-size: 16px;
+      margin-top: 12px;
+    }
+  }
+}

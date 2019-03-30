@@ -1,0 +1,95 @@
+[class*="vc_tta-la-"]{
+  .tour-la-1{
+    &.vc_tta-controls-size-md{
+      display: block !important;
+      @media (min-width: 768px) {
+        .vc_tta-tabs-container{
+          float: left;
+          width: 27%;
+        }
+        .vc_tta-panels-container{
+          float: left;
+          width: 73%;
+        }
+        .vc_tta-tabs-list{
+          border: 1px solid #e1e1e1;
+          margin-top: 30px;
+        }
+        &.vc_tta-tabs-position-left{
+          .vc_tta-tabs-list{
+            margin-right: 30px;
+          }
+        }
+        &.vc_tta-tabs-position-right{
+          .vc_tta-tabs-list{
+            margin-left: 30px;
+          }
+        }
+      }
+      .vc_tta-tabs-list {
+        li{
+          a{
+            padding: 0 35px;
+          }
+        }
+      }
+    }
+    .vc_tta-tabs-list {
+      -webkit-box-flex: inherit !important;
+      -webkit-flex-grow: inherit !important;
+      -ms-flex-positive: inherit !important;
+      flex-grow: inherit !important;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      li{
+        font-size: 0.85em;
+        letter-spacing: 1px;
+        padding: 0;
+        margin: 0 0 20px;
+        a{
+          padding: 0 10px;
+        }
+      }
+    }
+    &.vc_tta-tabs-position-left{
+      .vc_tta-tabs-list {
+        .vc_tta-tab.vc_active{
+          a{
+            &:before{
+              content: "";
+              border-left-width: 2px;
+              border-left-style: solid;
+              border-left-color: inherit;
+              position: absolute;
+              left: 0 !important;
+              height: 8px;
+              top: 50% !important;
+              bottom: auto !important;
+              margin-top: -5px;
+            }
+          }
+        }
+      }
+    }
+    &.vc_tta-tabs-position-right{
+      .vc_tta-tabs-list {
+        .vc_tta-tab.vc_active{
+          a{
+            &:before{
+              content: "";
+              border-right-width: 2px;
+              border-right-style: solid;
+              border-right-color: inherit;
+              position: absolute;
+              right: 0 !important;
+              height: 8px;
+              top: 50% !important;
+              bottom: auto !important;
+              margin-top: -5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

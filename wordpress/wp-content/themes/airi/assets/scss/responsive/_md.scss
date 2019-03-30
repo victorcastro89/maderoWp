@@ -1,0 +1,156 @@
+/* Medium devices (old desktop, less than 1199px) */
+@media (max-width: $screen-md-max ){
+  h1,
+  .h1 {
+    font-size: 30px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 24px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 20px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 18px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 16px;
+  }
+
+  h6,
+  .h6 {
+    font-size: 16px;
+  }
+
+  .font-size-30{
+    font-size: 28px;
+  }
+
+  .letter-spacing-7{
+    letter-spacing: 4px;
+  }
+
+  .backtotop-container{
+    .btn-backtotop{
+      bottom: 80px;
+    }
+    &.show{
+      .btn-backtotop{
+        right: 30px;
+      }
+    }
+  }
+
+  .page-title-v1 .use-custom-text .page-title {
+    &:after {
+      margin: 15px auto;
+    }
+  }
+
+  .la-headings{
+    .heading-with-line{
+      .heading-tag{
+        margin-bottom: 0;
+      }
+    }
+    .heading-tag{
+
+    }
+    .la-separator{
+      margin-top: 15px;
+    }
+  }
+
+
+  .la-circle-progress.la-progress-2 .sc-cp-v{
+    font-size: 20px;
+  }
+
+  .header-v3 .site-header .header-left{
+    width: auto;
+  }
+
+  .products-list-mini{
+    .product_item{
+      .product_item--inner{
+        margin-bottom: 40px;
+      }
+      .product_item--thumbnail{
+        width: 80px;
+        margin-right: 20px;
+      }
+      .product_item--title{
+        margin-bottom: 5px;
+      }
+      .product_item--info-action{
+        .button{
+          padding: 5px 15px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .la__tta .tab--2 .vc_tta-tabs-list li a {
+    padding: 8px 15px;
+  }
+
+  .banner-type-2 .b-title1 {
+    width: auto;
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+
+
+  .banner-type-5 .b-title1 {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .banner-type-6 .banner--info {
+    left: 20px;
+    bottom: 20px;
+  }
+  .banner-type-6 .b-title1:not([class*="letter-spacing"]){
+    letter-spacing: 3px;
+  }
+  .banner-type-6 .b-title2 {
+    font-size: 24px;
+  }
+  .banner-type-6 .banner--btn {
+    padding: 10px 20px;
+    margin-top: 5%;
+  }
+
+  .wc-toolbar .wc-ordering p,.wc-toolbar-container .btn-advanced-shop-filter {
+    padding: 10px 20px;
+  }
+  .wc-toolbar .wc-ordering p, .btn-advanced-shop-filter {
+    margin-top: -10px;
+  }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+  .admin-bar{
+    #header_aside{
+      top: 32px;
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px only) */
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+  .site-header .container{
+    width: 100%;
+  }
+}

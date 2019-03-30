@@ -1,0 +1,26 @@
+/**
+ * The editor stylesheet for Airi.
+ *
+ * @package Airi
+ * @author  LA-Studio
+ * @link
+ */
+/*------------------------------------------------------------------
+[Table of contents]
+  1. Css for editor
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ 1. Css for editor
+---------------------------------------------------------------*/
+
+body.mce-content-body{
+    font-size: 15px
+}
+.mce-content-body p{
+    margin: 0 0 15px;
+}
+.mce-content-body a{
+    text-decoration: none;
+}

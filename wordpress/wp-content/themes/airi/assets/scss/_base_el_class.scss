@@ -1,0 +1,359 @@
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+  display: none !important;
+}
+
+.visible-block{
+  display: block !important;
+}
+.visible-inline-block{
+  display: inline-block!important;
+}
+.visible-inline{
+  display: inline!important;
+}
+
+@media (max-width: $screen-xs-max) {
+  @include responsive-visibility('.visible-xs');
+}
+.visible-xs-block {
+  @media (max-width: $screen-xs-max) {
+    display: block !important;
+  }
+}
+.visible-xs-inline {
+  @media (max-width: $screen-xs-max) {
+    display: inline !important;
+  }
+}
+.visible-xs-inline-block {
+  @media (max-width: $screen-xs-max) {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  @include responsive-visibility('.visible-sm');
+}
+.visible-sm-block {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    display: block !important;
+  }
+}
+.visible-sm-inline {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    display: inline !important;
+  }
+}
+.visible-sm-inline-block {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  @include responsive-visibility('.visible-md');
+}
+.visible-md-block {
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    display: block !important;
+  }
+}
+.visible-md-inline {
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    display: inline !important;
+  }
+}
+.visible-md-inline-block {
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  @include responsive-visibility('.visible-lg');
+}
+.visible-lg-block {
+  @media (min-width: $screen-lg-min) {
+    display: block !important;
+  }
+}
+.visible-lg-inline {
+  @media (min-width: $screen-lg-min) {
+    display: inline !important;
+  }
+}
+.visible-lg-inline-block {
+  @media (min-width: $screen-lg-min) {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  @include responsive-invisibility('.hidden-xs');
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  @include responsive-invisibility('.hidden-sm');
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  @include responsive-invisibility('.hidden-md');
+}
+
+@media (min-width: $screen-lg-min) {
+  @include responsive-invisibility('.hidden-lg');
+}
+
+@media print {
+  @include responsive-visibility('.visible-print');
+}
+.visible-print-block {
+  display: none !important;
+
+  @media print {
+    display: block !important;
+  }
+}
+.visible-print-inline {
+  display: none !important;
+
+  @media print {
+    display: inline !important;
+  }
+}
+.visible-print-inline-block {
+  display: none !important;
+
+  @media print {
+    display: inline-block !important;
+  }
+}
+
+@media print {
+  @include responsive-invisibility('.hidden-print');
+}
+
+
+@each $i in 100,200,300,400,500,600,700,800,900 {
+  .font-weight-#{$i} {
+    font-weight:#{$i}!important;
+  }
+}
+@each $i in normal,italic,oblique{
+  .font-style-#{$i}{
+    font-style: #{$i}!important;
+  }
+}
+
+.la-media-wrapper {
+  object,
+  embed,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+  &.la-media-aspect-origin{
+    object,
+    embed,
+    video,
+    iframe {
+      height: auto;
+    }
+  }
+  &.la-media-aspect-235,
+  &.la-media-aspect-43,
+  &.la-media-aspect-169{
+    position: relative;
+    height: 0;
+    padding-top: 56.25%;
+    overflow: hidden;
+    object,
+    embed,
+    video,
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &.la-media-aspect-235{
+    padding-top: 42.55319149%;
+  }
+  &.la-media-aspect-43{
+    padding-top: 75%;
+  }
+}
+
+.flex-video {
+  position: relative;
+  height: 0;
+  padding-bottom: 75%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  object,
+  embed,
+  video,
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &.widescreen {
+    padding-bottom: 56.25%;
+  }
+}
+
+.single-post-content .flex-video {
+  margin-bottom: 30px;
+}
+
+
+.letter-spacing--1{
+  letter-spacing: -1px;
+}
+.letter-spacing--2{
+  letter-spacing: -2px;
+}
+.letter-spacing--3{
+  letter-spacing: -3px;
+}
+.letter-spacing--4{
+  letter-spacing: -4px;
+}
+.letter-spacing--5{
+  letter-spacing: -5px;
+}
+.letter-spacing-1{
+  letter-spacing: 1px;
+}
+.letter-spacing-2{
+  letter-spacing: 2px;
+}
+.letter-spacing-3{
+  letter-spacing: 3px;
+}
+.letter-spacing-4{
+  letter-spacing: 4px;
+}
+.letter-spacing-5{
+  letter-spacing: 5px;
+}
+
+
+.font-size-10{
+  font-size: 10px;
+}
+.font-size-11{
+  font-size: 11px;
+}
+.font-size-12{
+  font-size: 12px;
+}
+.font-size-13{
+  font-size: 13px;
+}
+.font-size-14{
+  font-size: 14px;
+}
+.font-size-16{
+  font-size: 16px;
+}
+.font-size-18{
+  font-size: 18px;
+}
+.font-size-20{
+  font-size: 20px;
+}
+.font-size-24{
+  font-size: 24px;
+}
+.font-size-30{
+  font-size: 30px;
+}
+.font-size-36{
+  font-size: 36px;
+}
+.font-size-40{
+  font-size: 40px;
+}
+.font-size-46 {
+  font-size: 46px;
+  line-height: 1.05;
+}
+.font-size-48 {
+  font-size: 48px;
+}
+.font-size-50{
+  font-size: 50px;
+}
+.font-size-60{
+  font-size: 60px;
+}
+.font-size-72{
+  font-size: 72px;
+  line-height: normal;
+}
+.font-size-100{
+  font-size: 100px;
+}
+.font-size-120{
+  font-size: 120px;
+  letter-spacing: -1px;
+}
+
+.line-height-1{
+  line-height: 1;
+}
+.line-height-2{
+  line-height: 2;
+}
+.line-height-24{
+  line-height: 24px;
+}
+.line-height-30{
+  line-height: 30px;
+}
+.line-height-36 {
+  line-height: 36px;
+}
+.line-height-40 {
+  line-height: 40px;
+}
+.line-height-50 {
+  line-height: 50px;
+}
+.line-height-60 {
+  line-height: 60px;
+}
+.line-height-72{
+  line-height: 72px;
+}
+.line-height-100 {
+  line-height: 100px;
+}
+.line-height-120 {
+  line-height: 120px;
+}
+
+.overflow-visible{
+  overflow: visible !important;
+}
+.overflow-hidden{
+  overflow: hidden !important;
+}

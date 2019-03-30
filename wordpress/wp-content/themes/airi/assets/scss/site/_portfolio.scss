@@ -1,0 +1,126 @@
+.portfolio-nav {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  line-height: 30px;
+  @extend %text-color-secondary;
+  .col-xs-4 {
+    &:last-child{
+      text-align: right;
+    }
+  }
+  .nav-parents{
+    text-align: center;
+    font-size: 24px;
+  }
+  a{
+    span{
+      vertical-align: middle;
+      display: inline-block;
+      padding: 0 10px;
+      line-height: inherit;
+    }
+    i{
+      line-height: inherit;
+      font-size: 30px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+  svg{
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+  }
+}
+
+.portfolio-single-page .la-carousel-wrapper {
+  background: #fff;
+}
+.portfolio-single-page .slick-slider{
+  .slick-dots{
+    margin-top: 30px;
+  }
+}
+.portfolio-single-page .slick-slider .slick-prev {
+  left: 40px;
+}
+.portfolio-single-page .slick-slider .slick-next {
+  right: 40px;
+}
+
+.pf-info-wrapper{
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+      margin-bottom: 20px;
+    }
+  }
+  .pf-info-label{
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+    @extend %text-color-secondary;
+  }
+  .pf-info-value{
+    display: block;
+  }
+  .la-sharing-single-portfolio{
+    .pf-info-label{
+      margin-bottom: 0;
+    }
+  }
+  .social--sharing{
+    a{
+      margin: 0;
+      background-color: transparent !important;
+      color: inherit;
+      font-size: 18px;
+      text-align: left;
+      &:hover{
+        @extend %text-color-secondary;
+      }
+    }
+  }
+  &.inline-items{
+    .la-sharing-single-portfolio,
+    ul {
+      display: inline-block;
+      vertical-align: top;
+    }
+    ul li{
+      display: inline-block;
+      margin-right: 80px;
+    }
+  }
+}
+
+
+.portfolio-single-page{
+  .link-display-portfolio-information {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 3;
+    margin: 0;
+  }
+  #portfolio_information{
+    position: fixed;
+    width: 640px;
+    max-width: 100%;
+    bottom: 30px;
+    right: 50px;
+    z-index: 2;
+    background-color: #fff;
+    padding: 40px 50px;
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+    &.force-dipslay{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

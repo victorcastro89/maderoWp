@@ -1,0 +1,109 @@
+@import "responsive/xlg";
+@import "responsive/lg";
+@import "responsive/md";
+@import "responsive/sm";
+@import "responsive/xs";
+@import "responsive/mb";
+
+
+
+/** FOR DEMO **/
+
+@media(max-width: 1500px){
+  .la-headings.m2-heading .heading-tag{
+    font-size: 50px;
+  }
+  .la-headings.m3-heading .heading-tag{
+    font-size: 40px;
+  }
+  .wpb_single_image.image-with-shadow .vc_single_image-wrapper:after,
+  .wpb_single_image.image-with-shadow2 .vc_single_image-wrapper:after {
+    left: 30px;
+    top: 30px;
+  }
+  .la-headings.m6-heading .heading-tag{
+    font-size: 40px;
+  }
+  .btn-wrapper .btn.m21-btn{
+    padding: 16px 50px;
+  }
+
+  .pricing__menus .pricing__menu--title {
+    font-size: 1.875em;
+  }
+}
+
+@media(max-width: 1200px){
+  .icon-pos-top.m4_iconbox_flip {
+    padding: 0 15px;
+  }
+  .icon-pos-top.m4_iconbox_flip .icon-heading {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .icon-pos-top.m4_iconbox_flip .icon-boxes-inner {
+    padding-top: 20px;
+    transform: translate(0, 60px);
+    -webkit-transform: translate(0, 60px);
+  }
+  .icon-pos-top.m4_iconbox_flip .box-description {
+    line-height: inherit;
+  }
+  .icon-pos-top.m4_iconbox_flip .box-description:after {
+    padding-top: 20px;
+  }
+  .icon-pos-top.m4_iconbox_flip .box-description:before {
+    margin: 10px auto;
+  }
+  .la-sc-icon-boxes.m4_iconbox_2 .box-icon-left {
+    padding-left: 0;
+  }
+  .pricing__menus {
+    font-size: 14px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center bottom 20px;
+  }
+}
+@media(max-width: 1024px){
+  .la-headings.m2-heading2 .heading-tag{
+    font-size: 40px;
+  }
+  .la-headings.m3-heading .heading-tag{
+    font-size: 36px;
+  }
+  .la-headings.m6-heading .heading-tag{
+    font-size: 36px;
+  }
+}
+@media(max-width: 800px){
+  .la-headings.m2-heading .heading-tag{
+    font-size: 40px;
+  }
+  .la-headings.m3-heading .heading-tag{
+    font-size: 26px;
+  }
+  .la-headings.m6-heading .heading-tag{
+    font-size: 30px;
+  }
+  .la-portfolio-masonry .filter-style-1 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .m6_column_gradient .vc_column-inner {
+    padding: 30px 15px;
+  }
+  .m6_column_gradient1 .la-headings,
+  .m6_column_gradient2 .la-headings,
+  .m6_column_gradient3 .la-headings {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media(max-width: 767px){
+  .la-headings.m2-heading2 .heading-tag,
+  .la-headings.m2-heading .heading-tag{
+    font-size: 30px;
+  }
+}

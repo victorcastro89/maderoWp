@@ -1,0 +1,114 @@
+.elm-countdown{
+  .countdown-row{
+    display: block;
+    margin: 0 auto
+  }
+  .countdown-section{
+    display: inline-block;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  .countdown-amount{
+    font-size: 36px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .countdown-period{
+    padding: 0 4px;
+  }
+
+  @for $i from 1 through 7 {
+    .countdown-show#{$i}{
+      .countdown-section{
+        width: percentage(1/$i);
+      }
+    }
+  }
+
+  &.elm-countdown-style-1{
+    .countdown-row .countdown-section{
+      width: auto !important;
+      margin-right: 50px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    .countdown-amount {
+      display: block;
+      line-height: 1;
+      font-size: 36px;
+      @extend %text-color-secondary;
+    }
+    .countdown-period {
+      display: block;
+      font-size: 14px;
+      font-style: italic;
+    }
+  }
+
+  &.elm-countdown-style-2{
+    text-align: center;
+    .countdown-section{
+      margin: 10px 0;
+    }
+    .countdown-amount {
+      display: block;
+      line-height: 1;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .countdown-period {
+      display: block;
+      padding: 0;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+  }
+  &.elm-countdown-style-3{
+    text-align: center;
+    .countdown-section{
+      margin: 10px;
+      width: 76px;
+      border: 1px solid rgba(#454545, 0.2);
+      border-radius: 50%;
+      padding: 21px 0;
+    }
+    .countdown-amount {
+      display: block;
+      line-height: 1;
+      font-size: 18px;
+      font-weight: bold;
+      @extend %text-color-secondary;
+    }
+    .countdown-period {
+      display: block;
+      padding: 0;
+      font-size: 14px;
+      line-height: 1;
+      font-style: italic;
+      @extend %highlight-font-family;
+    }
+  }
+  &.elm-countdown-style-4{
+    @extend %text-color-secondary;
+    .countdown-section-inner{
+      display: inline-block;
+      text-align: center;
+    }
+    .countdown-amount {
+      display: block;
+      line-height: 1;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .countdown-period {
+      display: block;
+      padding: 8px 0;
+      font-size: 18px;
+      line-height: normal;
+      font-style: italic;
+      @extend %highlight-font-family;
+    }
+  }
+}

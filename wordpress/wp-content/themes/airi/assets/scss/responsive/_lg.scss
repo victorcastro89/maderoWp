@@ -1,0 +1,137 @@
+@media (max-width: 1500px) {
+  .header-v6{
+    #masthead_aside{
+      width: 270px;
+      .site-header-inner{
+        padding: 50px 30px;
+      }
+    }
+    .site-header .site-header-top{
+      left: 270px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    &:not(.rtl){
+      #page.site{
+        padding-left: 270px;
+      }
+    }
+    &.rtl{
+      #page.site{
+        padding-right: 270px;
+      }
+    }
+  }
+
+  .header--aside{
+    .mega-menu{
+      margin-left: -20px;
+      margin-right: -20px;
+      > li > a{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+  .header--aside:not(#masthead_aside) {
+    width: 330px;
+    .header-aside-inner{
+      padding: 50px 30px;
+    }
+    .btn-aside-toggle{
+      right: 20px;
+    }
+  }
+
+  .la__tta .tab--4 .vc_tta-tabs-list {
+    font-size: 30px;
+  }
+  .la__tta .tab--4 .vc_tta-tabs-list li .vc_tta-title-text {
+    border-bottom-width: 2px;
+  }
+
+}
+
+@media (max-width: 1400px){
+
+  .slick-slider .slick-prev,
+  .la-slick-nav .slick-prev{
+    right: calc( 100% - 70px );
+  }
+  .slick-slider .slick-next,
+  .la-slick-nav .slick-next{
+    left: calc( 100% - 70px );
+  }
+
+  .mega-menu > li > a{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .header--aside .mega-menu > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .site-header .header_component.header-custom-btn > .component-target {
+    padding: 10px 35px;
+    height: 50px;
+    line-height: 30px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+
+  .header-v2{
+    .site-header{
+      .header-middle{
+        float: right;
+        width: auto;
+      }
+      .header-right{
+        max-width: none;
+      }
+    }
+  }
+
+  .la-sharing-posts .social--sharing {
+    right: 0;
+  }
+
+  .header-v6 #masthead_aside .mega-menu > li > a,
+  .header-v7 #header_aside .mega-menu > li > a, .site-main-nav .main-menu > li > a{
+    font-size: inherit !important;
+  }
+
+  .header-v6 #masthead_aside .mega-menu > li > a{
+    letter-spacing: 0;
+    padding: 5px 20px;
+  }
+
+  .banner-type-1 .b-title1 {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px;
+  }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+  .cart-flyout .cart_list{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .product_list_widget li{
+    margin-bottom: 30px;
+    + li{
+      margin-top: 0;
+    }
+  }
+}
+
+/* Large devices (large desktops, 1200px only) */
+@media (min-width: $screen-lg-min) and (max-width: 1439px) {
+
+}

@@ -56,17 +56,19 @@ services:
       - "traefik.port=81"
       - traefik.enable=false
 
-  # php_my:
-  #   image: phpmyadmin/phpmyadmin:latest
-  #   container_name: phpmyadmin
-  #   restart: always
-  #   environment:
-  #     - "PMA_HOST=maderowp-database.mariadb.database.azure.com"
-  #   labels:
-  #     - "traefik.backend=php_my"
-  #     - "traefik.port=80"
-  #     - "traefik.frontend.rule=Host:pma.${PROJECT_BASE_URL}"
-  #     - "traefik.enable=true"
+  php_my:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    restart: always
+    environment:
+#      - "PMA_HOST=maderowp-database.mariadb.database.azure.com"
+      - "PMA_HOST=mariadb"
+      
+    labels:
+      - "traefik.backend=php_my"
+      - "traefik.port=80"
+      - "traefik.frontend.rule=Host:pma.${PROJECT_BASE_URL}"
+      - "traefik.enable=true"
       
   traefik:
     image: traefik
@@ -103,6 +105,22 @@ services:
       - "traefik.enable=true"
       - "traefik.frontend.auth.basic= victor:$$apr1$$nGdEqwrj$$zMXoC4r6ARkIDDBfNtydw."
     
+  mariadb:
+    image: wodby/mariadb:$MARIADB_TAG
+    container_name: "mariadb"
+    stop_grace_period: 30s
+    environment:
+      MYSQL_ROOT_PASSWORD: $DB_ROOT_PASSWORD
+      MYSQL_DATABASE: $DB_NAME
+      MYSQL_USER: $DB_USER
+      MYSQL_PASSWORD: $DB_PASSWORD
+      MYSQL_INNODB_BUFFER_POOL_SIZE: 2M
+      MYSQL_OPTIMIZER_SEARCH_DEPTH: 8
+    volumes:
+      - ./backup_db:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
+#      - /path/to/mariadb/data/on/host:/var/lib/mysql # I want to manage volumes manually.
 
+    labels:
+      - "traefik.enable=false"
 
   

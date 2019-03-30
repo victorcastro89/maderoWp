@@ -1,0 +1,79 @@
+.lastudio-events-table {
+  margin-bottom: 30px
+}
+
+.lastudio-events-table .le-table {
+  display: table;
+  width: 100%
+}
+
+.lastudio-events-table .la_event_item-table-cell {
+  padding: 10px 5px;
+  display: table-cell;
+  min-height: 50px;
+  vertical-align: middle
+}
+
+.lastudio-events-table .le-list-event.le-cancelled {
+  opacity: .44
+}
+
+.lastudio-events-table .le-date {
+  width: 100px
+}
+
+.lastudio-events-table .le-date .le-day, .lastudio-events-table .le-date .le-month {
+  display: block
+}
+
+.lastudio-events-table .le-facebook {
+  width: 50px;
+  text-align: center
+}
+
+.lastudio-events-table .le-action {
+  width: 200px;
+  text-align: right
+}
+
+.la_event_item{
+  display: table;
+  width: 100%;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1.6;
+  padding: 20px;
+  opacity: .5;
+  &:hover{
+    opacity: 1;
+    background-color: rgba(#151515,.3);
+
+  }
+  .la_event_item--date{
+    width: 130px;
+    span{
+      display: block;
+    }
+  }
+  .la_event_item--info{
+    a{
+      color: inherit;
+    }
+    .la_event_item--name{
+      display: block;
+    }
+    .la_event_item--venue,
+    .la_event_item--time{
+      font-size: 12px;
+    }
+    .la_event_item--venue{
+      &:not(:last-child){
+        margin-right: 50px;
+      }
+    }
+  }
+  .la_event_item--action{
+    width: 90px;
+    text-align: center;
+  }
+}

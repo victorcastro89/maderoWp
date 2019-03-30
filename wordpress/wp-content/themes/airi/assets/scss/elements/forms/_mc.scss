@@ -1,0 +1,395 @@
+.yikes-mailchimp-container{
+  .edit-link{
+    display: none;
+  }
+}
+.yikes-easy-mc-success-message {
+  font-size: 1.2rem;
+}
+.easy_mc__style1{
+  .yikes-easy-mc-form{
+    position: relative;
+    label{
+      margin: 0 !important;
+    }
+    .yikes-easy-mc-email{
+      background: transparent;
+      border-width: 0 0 1px;
+      border-style: solid;
+      outline: none !important;
+      width: 100%;
+      line-height: 32px;
+      padding: 6px 100px 6px 0;
+      margin: 0;
+      @extend %border-color;
+      @extend %text-color-body;
+      &:focus{
+        @extend %text-color-secondary;
+      }
+    }
+    .yikes-easy-mc-submit-button{
+      border: none !important;
+      background: none !important;
+      margin: 0 !important;
+      width: auto;
+      padding: 0;
+      line-height: 32px;
+      position: absolute;
+      top: 1px;
+      right: 0;
+      font-size: inherit;
+      font-weight: 600;
+      @extend %text-color-secondary;
+      &:hover{
+        @extend %text-color-primary;
+      }
+    }
+  }
+}
+.easy_mc__style2{
+  .yikes-easy-mc-form{
+    position: relative;
+    label{
+      margin: 0 !important;
+    }
+    .yikes-easy-mc-email{
+      background: none;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #fff;
+      color: #fff;
+      outline: none !important;
+      width: 100%;
+      line-height: 32px;
+      padding: 25px 140px 25px 30px;
+      margin: 0;
+      font-size: 16px;
+    }
+    .yikes-easy-mc-submit-button{
+      border: none !important;
+      background: none !important;
+      margin: 0 !important;
+      width: auto;
+      padding: 25px 30px;
+      line-height: 32px;
+      position: absolute;
+      top: 1px;
+      right: 0;
+      font-size: 16px;
+    }
+  }
+}
+.easy_mc__style3{
+  font-size: 14px;
+  .yikes-easy-mc-form{
+    position: relative;
+    label{
+      margin: 0 !important;
+    }
+    .yikes-easy-mc-email{
+      background: #fff;
+      border: none;
+      outline: none !important;
+      width: 100%;
+      line-height: 30px;
+      padding: 20px 140px 20px 30px;
+      margin: 0;
+      font-size: inherit;
+    }
+    .yikes-easy-mc-submit-button{
+      border: none !important;
+      background: none !important;
+      margin: 0 !important;
+      width: auto;
+      padding: 20px 30px;
+      line-height: 30px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: inherit;
+      font-weight: 600;
+      @extend %text-color-secondary;
+      &:hover{
+        @extend %text-color-primary;
+      }
+    }
+  }
+}
+.easy_mc__style4{
+  .yikes-easy-mc-form{
+    position: relative;
+    font-size: 12px;
+    width: 570px;
+    margin: 0 auto;
+    max-width: 100%;
+    label{
+      margin: 0 !important;
+    }
+    .yikes-easy-mc-email{
+      background: none;
+      border-width: 0 0 1px;
+      border-style: solid;
+      border-color: rgba(#fff,0.4);
+      outline: none !important;
+      width: 100%;
+      line-height: 32px;
+      padding: 5px 100px 5px 0;
+      margin: 0;
+      color: #fff;
+      &:focus{
+        border-color: #fff;
+      }
+    }
+    .yikes-easy-mc-submit-button{
+      border: none !important;
+      background: none !important;
+      margin: 0 !important;
+      width: auto;
+      padding: 0;
+      line-height: 32px;
+      position: absolute;
+      top: 1px;
+      right: 0;
+      font-size: inherit;
+      color: #fff;
+    }
+  }
+}
+
+.easy_mc__style5{
+  .yikes-easy-mc-form{
+    position: relative;
+    max-width: 100%;
+    label{
+      margin: 0 !important;
+    }
+    .yikes-easy-mc-email{
+      background: none;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #D8D8D8;
+      outline: none !important;
+      width: 100%;
+      line-height: 30px;
+      padding: 18px 60px 18px 20px;
+      margin: 0;
+      color: #fff;
+      &:focus{
+        border-color: #fff;
+      }
+    }
+    .yikes-easy-mc-submit-button{
+      border: none !important;
+      background: none !important;
+      margin: 0 !important;
+      width: 60px;
+      padding: 20px;
+      line-height: 28px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: inherit;
+      color: #fff;
+      height: 68px;
+      span{
+        font-size: 0;
+        &:after{
+          content: "\2c";
+          font-family: 'dl-icon';
+          direction: ltr;
+          font-style: normal !important;
+          font-weight: normal !important;
+          font-variant: normal !important;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+.easy_mc__style6{
+  .yikes-easy-mc-form{
+    position: relative;
+    max-width: 100%;
+    font-size: 14px;
+    label{
+      margin: 0 !important;
+    }
+    .yikes-easy-mc-email{
+      background: none;
+      border-width: 0 0 1px;
+      border-style: solid;
+      border-color: inherit;
+      outline: none !important;
+      width: 100%;
+      line-height: 30px;
+      padding: 8px 40px 8px 0;
+      margin: 0;
+      color: inherit;
+    }
+    .yikes-easy-mc-submit-button{
+      border: none !important;
+      background: none !important;
+      margin: 0 !important;
+      width: 40px;
+      padding: 10px 0 0;
+      line-height: 30px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: inherit;
+      color: inherit;
+      height: 48px;
+      text-align: right;
+      &:hover{
+        color: inherit;
+      }
+      span{
+        font-size: 0;
+        &:after{
+          content: "\2c";
+          font-family: 'dl-icon';
+          direction: ltr;
+          font-style: normal !important;
+          font-weight: normal !important;
+          font-variant: normal !important;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+
+.la-newsletter-popup {
+  max-width: 80%;
+  width: 500px;
+  margin-left: 80px;
+  display: none;
+  h5{
+    font-size: 18px;
+    color: #8A8A8A;
+    margin: 10px 0;
+  }
+  h4{
+    font-size: 32px;
+    margin: 10px 0;
+  }
+  #lightcase-case & {
+    display: block;
+  }
+  .yikes-easy-mc-form{
+    .yikes-easy-mc-email{
+      background: #fff;
+      border: 1px solid #CECECE;
+      outline: none !important;
+      width: 100%;
+      line-height: 30px;
+      padding: 14px 20px;
+      margin: 10px 0 20px;
+    }
+    .yikes-easy-mc-submit-button{
+      border: none;
+      margin: 0 0 20px !important;
+      width: auto;
+      padding: 10px 30px;
+      line-height: 30px;
+      color: #fff;
+      @extend %background-color-secondary;
+      &:hover{
+        color: #fff;
+        @extend %background-color-primary;
+      }
+    }
+  }
+  .lbl-dont-show-popup {
+    display: block;
+    text-align: left;
+    margin-top: 30px;
+    input {
+      margin-right: 5px;
+    }
+  }
+}
+
+.open-newsletter-popup{
+  .lightcase-inlineWrap{
+    background: {
+      color: #fff;
+      position: 0 0;
+      repeat: no-repeat;
+    }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #lightcase-case #lightcase-content{
+    overflow: visible;
+  }
+  .btn-close-newsletter-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+.rtl{
+  .la-newsletter-popup{
+    padding-right: 30px;
+    padding-left: 0;
+    margin-right: 50%;
+    margin-left: 0;
+    .lbl-dont-show-popup{
+      text-align: right;
+    }
+  }
+}
+
+.footer-top .footer-mailchimp-form.widget .widget-title {
+  padding-left: 40px;
+  position: relative;
+  &:before {
+    content: '\f003';
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+    margin-top: -5px;
+    top: 0;
+  }
+}
+
+@media(max-width: 1200px){
+  .la-newsletter-popup{
+    width: 500px;
+    padding: 20px 40px;
+    margin: 0;
+    background: #fff;
+    h4{
+      font-size: 26px;
+    }
+    h5{
+      font-size: 16px;
+    }
+  }
+}
+@media(max-width: 800px){
+  .open-newsletter-popup .lightcase-inlineWrap{
+    height: 100% !important;
+  }
+}
+@media(max-width: 767px){
+  .la-newsletter-popup{
+    padding: 20px 20px;
+    max-width: 100%;
+    h4{
+      font-size: 24px;
+    }
+  }
+}
