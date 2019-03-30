@@ -86,56 +86,56 @@ sub vcl_recv {
 
   ### COOKIE MADNESS.
 
-    # Remove the "has_js" cookie
-    set req.http.Cookie = regsuball(req.http.Cookie, "has_js=[^;]+(; )?", "");
+  #   # Remove the "has_js" cookie
+  #   set req.http.Cookie = regsuball(req.http.Cookie, "has_js=[^;]+(; )?", "");
 
-    # Remove any Google Analytics based cookies
-    set req.http.Cookie = regsuball(req.http.Cookie, "__utm.=[^;]+(; )?", "");
-    set req.http.Cookie = regsuball(req.http.Cookie, "_ga=[^;]+(; )?", "");
-    set req.http.Cookie = regsuball(req.http.Cookie, "utmctr=[^;]+(; )?", "");
-    set req.http.Cookie = regsuball(req.http.Cookie, "utmcmd.=[^;]+(; )?", "");
-    set req.http.Cookie = regsuball(req.http.Cookie, "utmccn.=[^;]+(; )?", "");
+  #   # Remove any Google Analytics based cookies
+  #   set req.http.Cookie = regsuball(req.http.Cookie, "__utm.=[^;]+(; )?", "");
+  #   set req.http.Cookie = regsuball(req.http.Cookie, "_ga=[^;]+(; )?", "");
+  #   set req.http.Cookie = regsuball(req.http.Cookie, "utmctr=[^;]+(; )?", "");
+  #   set req.http.Cookie = regsuball(req.http.Cookie, "utmcmd.=[^;]+(; )?", "");
+  #   set req.http.Cookie = regsuball(req.http.Cookie, "utmccn.=[^;]+(; )?", "");
 
-    # Remove the Quant Capital cookies (added by some plugin, all __qca)
-    set req.http.Cookie = regsuball(req.http.Cookie, "__qc.=[^;]+(; )?", "");
+  #   # Remove the Quant Capital cookies (added by some plugin, all __qca)
+  #   set req.http.Cookie = regsuball(req.http.Cookie, "__qc.=[^;]+(; )?", "");
 
-    # Remove the wp-settings-1 cookie
-    set req.http.Cookie = regsuball(req.http.Cookie, "wp-settings-1=[^;]+(; )?", "");
+  #   # Remove the wp-settings-1 cookie
+  #   set req.http.Cookie = regsuball(req.http.Cookie, "wp-settings-1=[^;]+(; )?", "");
 
-    # Remove the wp-settings-time-1 cookie
-    set req.http.Cookie = regsuball(req.http.Cookie, "wp-settings-time-1=[^;]+(; )?", "");
+  #   # Remove the wp-settings-time-1 cookie
+  #   set req.http.Cookie = regsuball(req.http.Cookie, "wp-settings-time-1=[^;]+(; )?", "");
 
-    # Remove the wp test cookie
-    set req.http.Cookie = regsuball(req.http.Cookie, "wordpress_test_cookie=[^;]+(; )?", "");
+  #   # Remove the wp test cookie
+  #   set req.http.Cookie = regsuball(req.http.Cookie, "wordpress_test_cookie=[^;]+(; )?", "");
 
-    # Remove the phpBB cookie. This will help us cache bots and anonymous users.
-    set req.http.Cookie = regsuball(req.http.Cookie, "style_cookie=[^;]+(; )?", "");
-    set req.http.Cookie = regsuball(req.http.Cookie, "phpbb3_psyfx_track=[^;]+(; )?", "");
+  #   # Remove the phpBB cookie. This will help us cache bots and anonymous users.
+  #   set req.http.Cookie = regsuball(req.http.Cookie, "style_cookie=[^;]+(; )?", "");
+  #   set req.http.Cookie = regsuball(req.http.Cookie, "phpbb3_psyfx_track=[^;]+(; )?", "");
 
-    # Remove the cloudflare cookie
-    set req.http.Cookie = regsuball(req.http.Cookie, "__cfduid=[^;]+(; )?", "");
+  #   # Remove the cloudflare cookie
+  #   set req.http.Cookie = regsuball(req.http.Cookie, "__cfduid=[^;]+(; )?", "");
 
-    # Remove the PHPSESSID in members area cookie
-    set req.http.Cookie = regsuball(req.http.Cookie, "PHPSESSID=[^;]+(; )?", "");
+  #   # Remove the PHPSESSID in members area cookie
+  #   set req.http.Cookie = regsuball(req.http.Cookie, "PHPSESSID=[^;]+(; )?", "");
 
-    # Are there cookies left with only spaces or that are empty?
-    if (req.http.cookie ~ "^\s*$") {
-    unset req.http.cookie;
-    }
+  #   # Are there cookies left with only spaces or that are empty?
+  #   if (req.http.cookie ~ "^\s*$") {
+  #   unset req.http.cookie;
+  #   }
 
-  # MEGA DROP. Drop ALL cookies sent to WordPress, except those originating from the URLs defined.
-  # This increases HITs significantly, but be careful it can also break plugins that need cookies.
-  # Note: The /members/ directory had problems with PMP login and social login plugin.
-  # Adding it to the exclude list here (and including it below in the "Retain cookies" list) fixed login.
-  # This works better than than other cookie removal examples found on varnish's website.
-  # Note phpBB directory (forumPM) also passes cookies here.
-  if (!(req.url ~ "(wp-login|wp-admin|cart|my-account|checkout|addons|wordpress-social-login|wp-login\.php|forumPM|members)")) {
-  unset req.http.cookie;
-  }
+  # # MEGA DROP. Drop ALL cookies sent to WordPress, except those originating from the URLs defined.
+  # # This increases HITs significantly, but be careful it can also break plugins that need cookies.
+  # # Note: The /members/ directory had problems with PMP login and social login plugin.
+  # # Adding it to the exclude list here (and including it below in the "Retain cookies" list) fixed login.
+  # # This works better than than other cookie removal examples found on varnish's website.
+  # # Note phpBB directory (forumPM) also passes cookies here.
+  # if (!(req.url ~ "(wp-login|wp-admin|cart|my-account|checkout|addons|wordpress-social-login|wp-login\.php|forumPM|members)")) {
+  # unset req.http.cookie;
+  # }
 
   # Normalize the query arguments.
   # Note: Placing this above the "do not cache" section breaks some WP theme elements and admin functionality.
-  set req.url = std.querysort(req.url);
+  # set req.url = std.querysort(req.url);
 
   # Large static files are delivered directly to the end-user without
   # waiting for Varnish to fully read the file first.

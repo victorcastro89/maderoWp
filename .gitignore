@@ -6,5 +6,5 @@ logs/
 # nginx/
 # mysql/
 # wordpress/
-!.env_example
+#!.env_example
 # !nginx/default*
