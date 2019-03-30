@@ -27,13 +27,13 @@ define('FS_METHOD','direct');
 define( 'DB_NAME', 'bitnami_wordpress');
 
 /** MySQL database username */
-define( 'DB_USER', 'bn_wordpress@maderowp-database');
+define( 'DB_USER', 'victor');
 
 /** MySQL database password */
 define( 'DB_PASSWORD', '!Maderosvcf3457');
 
 /** MySQL hostname */
-define( 'DB_HOST', 'maderowp-database.mariadb.database.azure.com:3306');
+define( 'DB_HOST', 'mariadb');
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8');
