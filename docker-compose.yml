@@ -8,7 +8,7 @@ services:
     container_name: wordpress
     restart: always
     volumes:
-      - ./wordpress:/var/www/html
+      - ./wordpress:/var/www/html:rw
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini  
       
     environment:
@@ -47,7 +47,7 @@ services:
     volumes:
       - ${NGINX_CONF_DIR:-./nginx}:/etc/nginx/conf.d
       - ${NGINX_LOG_DIR:-./logs/nginx}:/var/log/nginx
-      - ${WORDPRESS_DATA_DIR:-./wordpress}:/var/www/html
+      - ${WORDPRESS_DATA_DIR:-./wordpress}:/var/www/html:rw
       # - ${SSL_CERTS_DIR:-./certs}:/etc/letsencrypt
       #- ${SSL_CERTS_DATA_DIR:-./certs-data}:/data/letsencrypt
     depends_on:
@@ -106,7 +106,7 @@ services:
       - "traefik.port=8080"
       - "traefik.frontend.rule=Host:traefik.${PROJECT_BASE_URL}"
       - "traefik.enable=true"
-      - "traefik.frontend.auth.basic= victor:$$apr1$$nGdEqwrj$$zMXoC4r6ARkIDDBfNtydw."
+      - "traefik.frontend.auth.basic.users= victor:$$apr1$$nGdEqwrj$$zMXoC4r6ARkIDDBfNtydw."
     
   mariadb:
     image: wodby/mariadb:$MARIADB_TAG
@@ -117,10 +117,10 @@ services:
       MYSQL_DATABASE: $DB_NAME
       MYSQL_USER: $DB_USER
       MYSQL_PASSWORD: $DB_PASSWORD
-      MYSQL_INNODB_BUFFER_POOL_SIZE: 2M
+      MYSQL_INNODB_BUFFER_POOL_SIZE: 20M
       MYSQL_OPTIMIZER_SEARCH_DEPTH: 8
     volumes:
-      - ./backup_db:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
+  #    - ./backup_db:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
       - ~/mariadb_data:/var/lib/mysql # I want to manage volumes manually.
 
     labels:
