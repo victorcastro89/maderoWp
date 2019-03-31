@@ -31,7 +31,7 @@ services:
     volumes:
       - ./varnish:/etc/varnish/
     depends_on:
-      - wordpress
+      - nginx
 
     labels:
       - "traefik.backend=varnish"
@@ -52,7 +52,7 @@ services:
       #- ${SSL_CERTS_DATA_DIR:-./certs-data}:/data/letsencrypt
     depends_on:
       - wordpress
-      - varnish
+
       - mariadb
     labels:
       - "traefik.backend=nginx"
@@ -120,8 +120,8 @@ services:
       MYSQL_INNODB_BUFFER_POOL_SIZE: 2M
       MYSQL_OPTIMIZER_SEARCH_DEPTH: 8
     volumes:
-      # - ./backup_db:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
-      - ./mariadb_data:/var/lib/mysql # I want to manage volumes manually.
+      - ./backup_db:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
+      - ~/mariadb_data:/var/lib/mysql # I want to manage volumes manually.
 
     labels:
       - "traefik.enable=false"
