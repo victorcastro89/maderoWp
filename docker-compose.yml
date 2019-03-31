@@ -10,7 +10,7 @@ services:
     volumes:
       - ./wordpress:/var/www/html:rw
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini  
-      
+      - ./www.conf:/usr/local/etc/php-fpm.d/www.conf
     environment:
       - WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME:-wordpress}
       - WORDPRESS_TABLE_PREFIX=${WORDPRESS_TABLE_PREFIX:-wp_}
@@ -43,7 +43,7 @@ services:
     image: nginx:${NGINX_VERSION:-latest}
     container_name: nginx
     restart: always
-    command: [nginx-debug, '-g', 'daemon off;']
+   # command: [nginx-debug, '-g', 'daemon off;']
     volumes:
       - ${NGINX_CONF_DIR:-./nginx}:/etc/nginx/conf.d
       - ${NGINX_LOG_DIR:-./logs/nginx}:/var/log/nginx

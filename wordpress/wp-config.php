@@ -20,6 +20,7 @@
 
 define( 'WP_HOME', 'https://maderos.com.br');
 define( 'WP_SITEURL', 'https://maderos.com.br');
+define('FORCE_SSL_ADMIN', true);
 
 define('FS_METHOD','direct');
 // ** MySQL settings - You can get this info from your web host ** //
