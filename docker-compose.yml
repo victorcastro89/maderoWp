@@ -8,7 +8,7 @@ services:
     container_name: wordpress
     restart: always
     volumes:
-      - ./wordpress:/var/www/html:rw
+      - ${WORDPRESS_DATA_DIR:-./wordpress}:/var/www/html:rw
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini  
       - ./www.conf:/usr/local/etc/php-fpm.d/www.conf
     environment:
@@ -22,22 +22,22 @@ services:
     depends_on:
       -  mariadb
 
-  varnish:
-    image: emgag/varnish:6.0.1
-    container_name: varnish
-    restart: always
-    # environment:
-    #   - DAEMON_OPTS="$DAEMON_OPTS -F '%{Host}i %h %l %u %t \"%r\" %s %b \"%{Referer}i\" \"%{User-agent}i\"'"
-    volumes:
-      - ./varnish:/etc/varnish/
-    depends_on:
-      - nginx
+  # varnish:
+  #   image: emgag/varnish:6.0.1
+  #   container_name: varnish
+  #   restart: always
+  #   # environment:
+  #   #   - DAEMON_OPTS="$DAEMON_OPTS -F '%{Host}i %h %l %u %t \"%r\" %s %b \"%{Referer}i\" \"%{User-agent}i\"'"
+  #   volumes:
+  #     - ./varnish:/etc/varnish/
+  #   depends_on:
+  #     - nginx
 
-    labels:
-      - "traefik.backend=varnish"
-      - "traefik.port=80"
-      - "traefik.frontend.rule=Host:${PROJECT_BASE_URL}"
-      - "traefik.enable=true"
+  #   labels:
+  #     - "traefik.backend=varnish"
+  #     - "traefik.port=80"
+  #     - "traefik.frontend.rule=Host:${PROJECT_BASE_URL}"
+  #     - "traefik.enable=true"
 
   nginx:
     image: nginx:${NGINX_VERSION:-latest}
@@ -57,15 +57,15 @@ services:
     labels:
       - "traefik.backend=nginx"
       - "traefik.port=81"
-      - traefik.enable=false
-
+      - traefik.enable=true
+      - "traefik.frontend.rule=Host:${PROJECT_BASE_URL}"
   php_my:
     image: phpmyadmin/phpmyadmin:latest
     container_name: phpmyadmin
     restart: always
     environment:
-#      - "PMA_HOST=maderowp-database.mariadb.database.azure.com"
-      - "PMA_HOST=mariadb"
+      - "PMA_HOST=maderowp-database.mariadb.database.azure.com"
+#      - "PMA_HOST=mariadb"
       
     labels:
       - "traefik.backend=php_my"
@@ -80,16 +80,16 @@ services:
       - --docker 
       - --logLevel=INFO
       - "--api"
-      - "--entrypoints=Name:http Address::80 Redirect.EntryPoint:https"
-      - "--entrypoints=Name:https Address::443 TLS"
-      - "--defaultentrypoints=http,https"
-      - "--acme"
-      - "--acme.storage=./acme.json"
-      - "--acme.entryPoint=https"
-      - "--acme.httpChallenge.entryPoint=http"
-      - "--acme.onHostRule=true"
-      - "--acme.onDemand=false"
-      - "--acme.email=victorcastro89@hotmail.com"
+      # - "--entrypoints=Name:http Address::80 Redirect.EntryPoint:https"
+      # - "--entrypoints=Name:https Address::443 TLS"
+      # - "--defaultentrypoints=http,https"
+      # - "--acme"
+      # - "--acme.storage=./acme.json"
+      # - "--acme.entryPoint=https"
+      # - "--acme.httpChallenge.entryPoint=http"
+      # - "--acme.onHostRule=true"
+      # - "--acme.onDemand=false"
+      # - "--acme.email=victorcastro89@hotmail.com"
 #      - "--acme.caServer=https://acme-staging-v02.api.letsencrypt.org/directory"
       - "--docker.watch"    
       - "--docker.exposedByDefault=false"
@@ -114,14 +114,14 @@ services:
     stop_grace_period: 30s
     environment:
       MYSQL_ROOT_PASSWORD: $DB_ROOT_PASSWORD
-      MYSQL_DATABASE: $DB_NAME
-      MYSQL_USER: $DB_USER
-      MYSQL_PASSWORD: $DB_PASSWORD
+      MYSQL_DATABASE: $WORDPRESS_DB_NAME
+      MYSQL_USER: $WORDPRESS_DB_USER
+      MYSQL_PASSWORD: $WORDPRESS_DB_PASSWORD
       MYSQL_INNODB_BUFFER_POOL_SIZE: 20M
       MYSQL_OPTIMIZER_SEARCH_DEPTH: 8
-    volumes:
+#    volumes:
   #    - ./backup_db:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
-      - ~/mariadb_data:/var/lib/mysql # I want to manage volumes manually.
+  #    - ~/mariadb_data:/var/lib/mysql # I want to manage volumes manually.
 
     labels:
       - "traefik.enable=false"

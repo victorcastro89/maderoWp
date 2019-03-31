@@ -1,0 +1,27 @@
+# wordpress - wordpress:php7.3-fpm
+WORDPRESS_VERSION=php7.3-fpm
+WORDPRESS_DB_NAME=bitnami_wordpress
+WORDPRESS_TABLE_PREFIX=wp_
+WORDPRESS_DB_HOST=maderowp-database.mariadb.database.azure.com:3306
+WORDPRESS_DB_USER=bn_wordpress@maderowp-database
+WORDPRESS_DB_PASSWORD=!Maderosvcf3457
+PROJECT_BASE_URL=localhost
+DB_ROOT_PASSWORD=!Adminvcf3457
+
+# nginx - nginx:latest
+NGINX_VERSION=latest
+
+# volumes on host
+NGINX_CONF_DIR=./nginx
+NGINX_LOG_DIR=./logs/nginx
+WORDPRESS_DATA_DIR=./wordpress1
+SSL_CERTS_DIR=./certs
+SSL_CERTS_DATA_DIR=./certs-data
+
+
+
+### --- MARIADB ----
+
+MARIADB_TAG=10.1-3.4.3
+#MARIADB_TAG=10.2-3.4.3
+#MARIADB_TAG=10.3-3.4.3

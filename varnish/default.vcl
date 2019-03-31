@@ -67,9 +67,9 @@ sub vcl_recv {
     }
 
   # WP-Affiliate
-    if ( req.url ~ "\?ref=" ) {
-        return (pass);
-    }
+    # if ( req.url ~ "\?ref=" ) {
+    #     return (pass);
+    # }
 
   # phpBB Logged in users and ACP
     if ( req.url ~ "(/forumPM/adm/|ucp.php?mode=|\?mode=edit)" ) {
