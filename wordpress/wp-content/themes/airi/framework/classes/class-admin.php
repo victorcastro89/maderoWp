@@ -518,6 +518,7 @@ class Airi_Admin {
         $wp_customize->remove_section('header_image');
         $wp_customize->remove_section('background_image');
         $wp_customize->remove_control('display_header_text');
+        $wp_customize->remove_control('site_icon');
     }
 
 }

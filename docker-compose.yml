@@ -1,16 +1,15 @@
 version: "3.3"
 
-
 services:
 
   wordpress:
-    image: wordpress:${WORDPRESS_VERSION:-php7.3-fpm}
+    build: ./php
     container_name: wordpress
     restart: always
     volumes:
-      - ./wordpress:/var/www/html:rw
-      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini  
-      - ./www.conf:/usr/local/etc/php-fpm.d/www.conf
+      - ${WORDPRESS_DATA_DIR}:/var/www/html:rw
+      - ./php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini  
+      - ./php/www.conf:/usr/local/etc/php-fpm.d/www.conf
     environment:
       - WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME:-wordpress}
       - WORDPRESS_TABLE_PREFIX=${WORDPRESS_TABLE_PREFIX:-wp_}
@@ -22,22 +21,81 @@ services:
     depends_on:
       -  mariadb
 
-  varnish:
-    image: emgag/varnish:6.0.1
-    container_name: varnish
+  wordpress1:
+    build: ./php
+    container_name: wordpress1
     restart: always
-    # environment:
-    #   - DAEMON_OPTS="$DAEMON_OPTS -F '%{Host}i %h %l %u %t \"%r\" %s %b \"%{Referer}i\" \"%{User-agent}i\"'"
     volumes:
-      - ./varnish:/etc/varnish/
-    depends_on:
-      - nginx
-
+      - ${WORDPRESS_DATA_DIR}:/var/www/html:rw
+      - ./php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini  
+      - ./php/www.conf:/usr/local/etc/php-fpm.d/www.conf
+    environment:
+      - WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME:-wordpress}
+      - WORDPRESS_TABLE_PREFIX=${WORDPRESS_TABLE_PREFIX:-wp_}
+      - WORDPRESS_DB_HOST=${WORDPRESS_DB_HOST:-mysql}
+      - WORDPRESS_DB_USER=${WORDPRESS_DB_USER:-root}
+      - WORDPRESS_DB_PASSWORD=${WORDPRESS_DB_PASSWORD:-password}
     labels:
-      - "traefik.backend=varnish"
-      - "traefik.port=80"
-      - "traefik.frontend.rule=Host:${PROJECT_BASE_URL}"
-      - "traefik.enable=true"
+      - traefik.enable=false
+    depends_on:
+      -  mariadb
+
+
+  wordpress2:
+    build: ./php
+    container_name: wordpress2
+    restart: always
+    volumes:
+      - ${WORDPRESS_DATA_DIR}:/var/www/html:rw
+      - ./php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini  
+      - ./php/www.conf:/usr/local/etc/php-fpm.d/www.conf
+    environment:
+      - WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME:-wordpress}
+      - WORDPRESS_TABLE_PREFIX=${WORDPRESS_TABLE_PREFIX:-wp_}
+      - WORDPRESS_DB_HOST=${WORDPRESS_DB_HOST:-mysql}
+      - WORDPRESS_DB_USER=${WORDPRESS_DB_USER:-root}
+      - WORDPRESS_DB_PASSWORD=${WORDPRESS_DB_PASSWORD:-password}
+    labels:
+      - traefik.enable=false
+    depends_on:
+      -  mariadb
+
+
+  wordpress3:
+    build: ./php
+    container_name: wordpress3
+    restart: always
+    volumes:
+      - ${WORDPRESS_DATA_DIR}:/var/www/html:rw
+      - ./php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini  
+      - ./php/www.conf:/usr/local/etc/php-fpm.d/www.conf
+    environment:
+      - WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME:-wordpress}
+      - WORDPRESS_TABLE_PREFIX=${WORDPRESS_TABLE_PREFIX:-wp_}
+      - WORDPRESS_DB_HOST=${WORDPRESS_DB_HOST:-mysql}
+      - WORDPRESS_DB_USER=${WORDPRESS_DB_USER:-root}
+      - WORDPRESS_DB_PASSWORD=${WORDPRESS_DB_PASSWORD:-password}
+    labels:
+      - traefik.enable=false
+    depends_on:
+      -  mariadb      
+ 
+  # varnish:
+  #   image: emgag/varnish:6.0.1
+  #   container_name: varnish
+  #   restart: always
+  #   # environment:
+  #   #   - DAEMON_OPTS="$DAEMON_OPTS -F '%{Host}i %h %l %u %t \"%r\" %s %b \"%{Referer}i\" \"%{User-agent}i\"'"
+  #   volumes:
+  #     - ./varnish:/etc/varnish/
+  #   depends_on:
+  #     - nginx
+
+  #   labels:
+  #     - "traefik.backend=varnish"
+  #     - "traefik.port=80"
+  #     - "traefik.frontend.rule=Host:${PROJECT_BASE_URL}"
+  #     - "traefik.enable=true"
 
   nginx:
     image: nginx:${NGINX_VERSION:-latest}
@@ -45,28 +103,26 @@ services:
     restart: always
    # command: [nginx-debug, '-g', 'daemon off;']
     volumes:
-      - ${NGINX_CONF_DIR:-./nginx}:/etc/nginx/conf.d
-      - ${NGINX_LOG_DIR:-./logs/nginx}:/var/log/nginx
-      - ${WORDPRESS_DATA_DIR:-./wordpress}:/var/www/html:rw
+      - ${NGINX_CONF_DIR}/conf.d:/etc/nginx/conf.d
+      - ${NGINX_CONF_DIR}/nginx.conf:/etc/nginx/nginx.conf
+      - ${NGINX_LOG_DIR}:/var/log/nginx
+      - ${WORDPRESS_DATA_DIR}:/var/www/html:rw
       # - ${SSL_CERTS_DIR:-./certs}:/etc/letsencrypt
       #- ${SSL_CERTS_DATA_DIR:-./certs-data}:/data/letsencrypt
     depends_on:
       - wordpress
 
-      - mariadb
     labels:
       - "traefik.backend=nginx"
       - "traefik.port=81"
-      - traefik.enable=false
-
+      - traefik.enable=true
+      - "traefik.frontend.rule=Host:${PROJECT_BASE_URL}"
   php_my:
     image: phpmyadmin/phpmyadmin:latest
     container_name: phpmyadmin
     restart: always
     environment:
-#      - "PMA_HOST=maderowp-database.mariadb.database.azure.com"
       - "PMA_HOST=mariadb"
-      
     labels:
       - "traefik.backend=php_my"
       - "traefik.port=80"
@@ -80,22 +136,22 @@ services:
       - --docker 
       - --logLevel=INFO
       - "--api"
-      - "--entrypoints=Name:http Address::80 Redirect.EntryPoint:https"
-      - "--entrypoints=Name:https Address::443 TLS"
-      - "--defaultentrypoints=http,https"
-      - "--acme"
-      - "--acme.storage=./acme.json"
-      - "--acme.entryPoint=https"
-      - "--acme.httpChallenge.entryPoint=http"
-      - "--acme.onHostRule=true"
-      - "--acme.onDemand=false"
-      - "--acme.email=victorcastro89@hotmail.com"
+      # - "--entrypoints=Name:http Address::80 Redirect.EntryPoint:https"
+      # - "--entrypoints=Name:https Address::443 TLS"
+      # - "--defaultentrypoints=http,https"
+      # - "--acme"
+      # - "--acme.storage=./acme.json"
+      # - "--acme.entryPoint=https"
+      # - "--acme.httpChallenge.entryPoint=http"
+      # - "--acme.onHostRule=true"
+      # - "--acme.onDemand=false"
+      # - "--acme.email=victorcastro89@hotmail.com"
 #      - "--acme.caServer=https://acme-staging-v02.api.letsencrypt.org/directory"
       - "--docker.watch"    
       - "--docker.exposedByDefault=false"
     ports:
       - "80:80"
-      # - "8080:8080" # Dashboard
+      - "8080:8080" # Dashboard
       - "443:443"
  
     volumes:
@@ -113,12 +169,13 @@ services:
     container_name: "mariadb"
     stop_grace_period: 30s
     environment:
-      MYSQL_ROOT_PASSWORD: $DB_ROOT_PASSWORD
-      MYSQL_DATABASE: $DB_NAME
-      MYSQL_USER: $DB_USER
-      MYSQL_PASSWORD: $DB_PASSWORD
+      MYSQL_ROOT_PASSWORD: $WORDPRESS_DB_ROOT_PASSWORD
+      MYSQL_DATABASE: $WORDPRESS_DB_NAME
+      MYSQL_USER: $WORDPRESS_DB_USER
+      MYSQL_PASSWORD: $WORDPRESS_DB_PASSWORD
       MYSQL_INNODB_BUFFER_POOL_SIZE: 20M
       MYSQL_OPTIMIZER_SEARCH_DEPTH: 8
+      MYSQL_MAX_CONNECTIONS: 500
     volumes:
   #    - ./backup_db:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
       - ~/mariadb_data:/var/lib/mysql # I want to manage volumes manually.

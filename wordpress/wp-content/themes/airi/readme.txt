@@ -1,8 +1,8 @@
  === Airi ===
 Contributors: LA Studio
 Requires at least: WordPress 4.9
-Tested up to: WordPress 5.1.1, WooCommerce 3.5.7
-Version: 1.0.6
+Tested up to: WordPress 5.0, WooCommerce 3.5.2
+Version: 1.0.4
 Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar,  custom-background, custom-header, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, translation-ready
 Online documentation: http://docs.la-studioweb.com/airi/
 
@@ -26,28 +26,8 @@ Airi - Clean, Minimal WooCommerce Theme
 
 == Copyright ==
 
-Copyright 2015-2019 La-StudioWeb.com
+Copyright 2015-2018 La-StudioWeb.com
 == Changelog ==
-
------------- Version 1.0.6 Release [March 23, 2019]  ------------
-# Fixed a bug with the comparison function displaying incorrect stock status
-File to changes
-    airi/vc_templates/la_compare.php
-
------------- Version 1.0.5 Release [March 23, 2019]  ------------
-* Compatibility with WordPress 5.1.1
-* Compatibility with WooCommerce 3.5.7
-# Fixed a bug with the comparison function displaying incorrect custom attribute names
-^ Updated latest version of LA-Studio Core, WPBakery Visual Composer plugins
-File to changes
-    airi/style.css
-    airi/vc_templates/la_compare.php
-    airi/vc_templates/la_wishlist.php
-    airi/framework/functions/functions.php
-    airi/plugins/plugins.php
-    airi/plugins/lastudio.zip
-    airi/plugins/revslider.zip
-    airi/plugins/js_composer.zip
 
 ------------ Version 1.0.4 Release [ December 08, 2018]  ------------
 * Compatibility with WordPress 5.0

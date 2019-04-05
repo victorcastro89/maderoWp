@@ -1,0 +1,14 @@
+FROM wordpress:5.1.1-php7.3-fpm
+
+RUN \
+ curl -L https://download.newrelic.com/php_agent/release/newrelic-php5-8.6.0.238-linux.tar.gz | tar -C /tmp -zx && \
+   export NR_INSTALL_USE_CP_NOT_LN=1 && \
+    export NR_INSTALL_SILENT=1 && \
+     /tmp/newrelic-php5-8.6.0.238-linux/newrelic-install install && \
+      rm -rf /newrelic-php5-8.6.0.238-linux/tmp/nrinstall* && \
+        sed -i -e 's/"REPLACE_WITH_REAL_KEY"/"d6469f9d8511805ae973fd71a2aa79cc7c1279a1"/' \
+     -e 's/newrelic.appname = "PHP Application"/newrelic.appname = "WordpressMaderos"/' \
+         /usr/local/etc/php/conf.d/newrelic.ini
+
+
+        

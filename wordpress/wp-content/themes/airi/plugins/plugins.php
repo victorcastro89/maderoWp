@@ -16,7 +16,7 @@ if(!function_exists('airi_register_required_plugins')){
 			'slug'					=> 'js_composer',
 			'source'				=> get_template_directory() . '/plugins/js_composer.zip',
 			'required'				=> true,
-			'version'				=> '5.7'
+			'version'				=> '5.6'
 		);
 
 		$plugins[] = array(
@@ -24,13 +24,13 @@ if(!function_exists('airi_register_required_plugins')){
 			'slug'					=> 'lastudio',
 			'source'				=> get_template_directory() . '/plugins/lastudio.zip',
 			'required'				=> true,
-			'version'				=> '1.0.6'
+			'version'				=> '1.0.5'
 		);
 
 		$plugins[] = array(
 			'name'     				=> esc_html_x('WooCommerce', 'admin-view', 'airi'),
 			'slug'     				=> 'woocommerce',
-			'version'				=> '3.5.7',
+			'version'				=> '3.5.2',
 			'required' 				=> false
 		);
 
@@ -39,7 +39,7 @@ if(!function_exists('airi_register_required_plugins')){
 			'slug'     				=> 'envato-market',
 			'source'   				=> 'https://envato.github.io/wp-envato-market/dist/envato-market.zip',
 			'required' 				=> false,
-			'version' 				=> '2.0.1'
+			'version' 				=> '2.0.0'
 		);
 
 		$plugins[] = array(
@@ -47,7 +47,7 @@ if(!function_exists('airi_register_required_plugins')){
 			'slug'					=> 'airi-demo-data',
 			'source'				=> 'https://github.com/la-studioweb/resource/raw/master/airi/airi-demo-data.zip',
 			'required'				=> true,
-			'version'				=> '1.0.1'
+			'version'				=> '1.0.0'
 		);
 
 		$plugins[] = array(
@@ -67,7 +67,7 @@ if(!function_exists('airi_register_required_plugins')){
 			'slug'					=> 'revslider',
 			'source'				=> get_template_directory() . '/plugins/revslider.zip',
 			'required'				=> false,
-			'version'				=> '5.4.8.3'
+			'version'				=> '5.4.8'
 		);
 
 		$config = array(

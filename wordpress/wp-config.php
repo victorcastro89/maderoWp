@@ -18,11 +18,6 @@
  * @package WordPress
  */
 
-define( 'WP_HOME', 'https://maderos.com.br');
-define( 'WP_SITEURL', 'https://maderos.com.br');
-define('FORCE_SSL_ADMIN', true);
-
-define('FS_METHOD','direct');
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'bitnami_wordpress');
@@ -51,14 +46,14 @@ define( 'DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-  define('AUTH_KEY',         '[-iVvc>ABRI)+e1KsX-1h!$V7~>{ntaS%2y9s~.cu)mLh]|)@2U>%lRUtXDy?eX-');
-	define('SECURE_AUTH_KEY',  'gZqxss)A-?v#Q,umZDH%[kD8p]]TdWA-0zO&avT*[JL-qAs71e`#w$Z5oZk@QW!&');
-	define('LOGGED_IN_KEY',    'oZiVp/Rz 4nK]/13>*`],W_AhJwVAn*cq:Y0BpGxPK]17,8W! ECPBpR?YJL<?ra');
-	define('NONCE_KEY',        'o%ah+FBV`X|V2<xILMi4%AAe%g.X)+5J6L[Q/_$g}F&{?^i4-!-$y-F41J1J}&`R');
-	define('AUTH_SALT',        ';t@ON@EZ+sgA-dr| $!IZD>F]$XVC9&t[e_i6<nDs5.UXP0|Npl8McoG #t1X[tQ');
-	define('SECURE_AUTH_SALT', '/oY+cjb5uF?S[hpQ$U/kNS/Jxj8cnLnTxk(;z0l3+N|CAIiq- I)69@VHCqNKNl`');
-	define('LOGGED_IN_SALT',   '|1jR4fXm|/&39sYe, $U>`Jmj@:P/avq!ipgCJM|7*D}R6DyO<VHnU l$5i|6s+$');
-	define('NONCE_SALT',       'j-fC+R)hK+ttI1*rBT@^Mf9{H7Gc{O}u2cm+^_{$HWX(,+{-5w>;||oSl/&/ZM%[');
+define( 'AUTH_KEY',         'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+define( 'NONCE_KEY',        'put your unique phrase here' );
+define( 'AUTH_SALT',        'put your unique phrase here' );
+define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+define( 'NONCE_SALT',       'put your unique phrase here' );
 
 /**#@-*/
 
@@ -82,7 +77,7 @@ $table_prefix = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define( 'WP_DEBUG', false);
+define( 'WP_DEBUG', false );
 
 // If we're behind a proxy server and using HTTPS, we need to alert Wordpress of that fact
 // see also http://codex.wordpress.org/Administration_Over_SSL#Using_a_Reverse_Proxy

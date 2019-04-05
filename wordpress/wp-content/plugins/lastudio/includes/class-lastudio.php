@@ -155,9 +155,7 @@ class LaStudio {
 
 		require_once $plugin_dir_path . 'admin/class-lastudio-metabox.php';
 
-        if(!empty($this->extensions['content_type'])) {
-            require_once $plugin_dir_path . 'admin/class-lastudio-content-type.php';
-        }
+		require_once $plugin_dir_path . 'admin/class-lastudio-content-type.php';
 
 		require_once $plugin_dir_path . 'admin/class-lastudio-shortcode-manager.php';
 
@@ -416,16 +414,14 @@ class LaStudio {
 				)
 			)
 		);
+		$content_types = new LaStudio_Content_Type( $post_types, $taxonomies );
 
-        if(!empty($this->extensions['content_type'])) {
-            $content_types = new LaStudio_Content_Type( $post_types, $taxonomies );
+		$this->loader->add_action('init', $content_types, 'setup_filters', 8 );
+		$this->loader->add_action('init', $content_types, 'register_content_type' );
+		$this->loader->add_filter('single_template', $content_types, 'single_template' );
+		$this->loader->add_filter('archive_template', $content_types, 'archive_template', 10 );
+		$this->loader->add_filter('taxonomy_template', $content_types, 'taxonomy_template', 10 );
 
-            $this->loader->add_action('init', $content_types, 'setup_filters', 8 );
-            $this->loader->add_action('init', $content_types, 'register_content_type' );
-            $this->loader->add_filter('single_template', $content_types, 'single_template' );
-            $this->loader->add_filter('archive_template', $content_types, 'archive_template', 10 );
-            $this->loader->add_filter('taxonomy_template', $content_types, 'taxonomy_template', 10 );
-        }
 		//$this->loader->add_action( 'init', $this, 'register_content_type', 8);
 
 		/**

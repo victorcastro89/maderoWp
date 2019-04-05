@@ -60,7 +60,7 @@ class LaStudio_Theme_Options {
     public function __construct( $settings, $options, $unique ) {
         $this->unique   = $unique;
         $this->settings = $settings;
-        $this->options  = apply_filters('LaStudio/framework_option/sections', $options, $settings, $unique);
+        $this->options  = $options;
 
         if( ! empty( $this->options ) ) {
             $this->sections   = $this->get_sections();

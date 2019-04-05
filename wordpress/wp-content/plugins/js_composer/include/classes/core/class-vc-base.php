@@ -371,13 +371,11 @@ class Vc_Base {
 		 * vc_filter: vc_base_build_shortcodes_custom_css
 		 * @since 4.4
 		 */
-		$css = apply_filters( 'vc_base_build_shortcodes_custom_css', $this->parseShortcodesCustomCss( $post->post_content ), $post_id );
+		$css = apply_filters( 'vc_base_build_shortcodes_custom_css', $this->parseShortcodesCustomCss( $post->post_content ) );
 		if ( empty( $css ) ) {
-			//			delete_post_meta( $post_id, '_wpb_shortcodes_custom_css' );
-			delete_metadata( 'post', $post_id, '_wpb_shortcodes_custom_css' );
+			delete_post_meta( $post_id, '_wpb_shortcodes_custom_css' );
 		} else {
-			//			update_post_meta( $post_id, '_wpb_shortcodes_custom_css', $css );
-			update_metadata( 'post', $post_id, '_wpb_shortcodes_custom_css', $css );
+			update_post_meta( $post_id, '_wpb_shortcodes_custom_css', $css );
 		}
 	}
 
@@ -441,12 +439,7 @@ class Vc_Base {
 		}
 
 		if ( $id ) {
-			if ( isset( $_GET['preview'] ) && 'true' === $_GET['preview'] ) {
-				$latest_revision = wp_get_post_revisions( $id );
-				$array_values = array_values( $latest_revision );
-				$id = $array_values[0]->ID;
-			}
-			$post_custom_css = get_metadata( 'post', $id, '_wpb_post_custom_css', true );
+			$post_custom_css = get_post_meta( $id, '_wpb_post_custom_css', true );
 			if ( ! empty( $post_custom_css ) ) {
 				$post_custom_css = strip_tags( $post_custom_css );
 				echo '<style type="text/css" data-type="vc_custom-css">';
@@ -477,12 +470,7 @@ class Vc_Base {
 		}
 
 		if ( $id ) {
-			if ( isset( $_GET['preview'] ) && 'true' === $_GET['preview'] ) {
-				$latest_revision = wp_get_post_revisions( $id );
-				$array_values = array_values( $latest_revision );
-				$id = $array_values[0]->ID;
-			}
-			$shortcodes_custom_css = get_metadata( 'post', $id, '_wpb_shortcodes_custom_css', true );
+			$shortcodes_custom_css = get_post_meta( $id, '_wpb_shortcodes_custom_css', true );
 			if ( ! empty( $shortcodes_custom_css ) ) {
 				$shortcodes_custom_css = strip_tags( $shortcodes_custom_css );
 				echo '<style type="text/css" data-type="vc_shortcodes-custom-css">';

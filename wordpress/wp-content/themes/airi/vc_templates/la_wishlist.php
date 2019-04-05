@@ -2,9 +2,6 @@
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
-if(!function_exists('wc_print_notices()')){
-    return;
-}
 ?>
 <div id="la_wishlist_table_wrapper">
     <div id="la_wishlist_table_wrapper2">

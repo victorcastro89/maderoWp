@@ -2,11 +2,6 @@
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
-
-if(!function_exists('wc_print_notices()')){
-    return;
-}
-
 ?>
 <div id="la_compare_table_wrapper">
     <div id="la_compare_table_wrapper2">
@@ -121,12 +116,12 @@ if(!function_exists('wc_print_notices()')){
                         $text_stock = '';
                         if ($item['availability'] && !empty($item['availability']['availability'])) {
                             $product2 = wc_get_product($item['id']);
-                            $availability_html = empty($item['availability']['availability']) ? '' : '<p class="stock ' . esc_attr($item['availability']['class']) . '">' . esc_html($item['availability']['availability']) . '</p>';
-                            $text_stock = apply_filters('woocommerce_stock_html', $availability_html, $item['availability']['availability'], $product2);
-                            $class_stock = esc_attr($item['availability']['class']);
+                            $availability_html = empty($term['availability']['availability']) ? '' : '<p class="stock ' . esc_attr($term['availability']['class']) . '">' . esc_html($term['availability']['availability']) . '</p>';
+                            $text_stock = apply_filters('woocommerce_stock_html', $availability_html, $term['availability']['availability'], $product2);
+                            $class_stock = esc_attr($term['availability']['class']);
                         }
                         else {
-                            if ($item['stock']) {
+                            if ($term['stock']) {
                                 $text_stock = __('In stock', 'airi');
                                 $class_stock = 'in-stock';
                             } else {

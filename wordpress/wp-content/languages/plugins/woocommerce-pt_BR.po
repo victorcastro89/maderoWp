@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-03-16 06:02:58+0000\n"
+"PO-Revision-Date: 2019-04-04 04:20:47+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -48,7 +48,7 @@ msgstr "A categoria padrão de produto não pode ser excluída."
 
 #: includes/import/abstract-wc-product-importer.php:444
 msgid "Variation cannot be imported: Parent product cannot be a product variation"
-msgstr "Variação não pode ser importada: Produto ascendente não pode ser uma variação de produto."
+msgstr "A variação não pode ser importada: O produto ascendente não pode ser uma variação de produto"
 
 #: includes/api/v2/class-wc-rest-system-status-tools-v2-controller.php:553
 msgid "Database upgrade routine has been scheduled to run in the background."
@@ -200,7 +200,7 @@ msgstr "Um pedido foi criado para você em %1$s. Sua fatura está abaixo, com um
 #: templates/emails/customer-completed-order.php:54
 #: templates/emails/plain/customer-completed-order.php:52
 msgid "Thanks for shopping with us."
-msgstr "Obrigado por comprar conosco!"
+msgstr "Agradecemos por comprar conosco."
 
 #. translators: %s: Site title
 #: templates/emails/customer-completed-order.php:30
@@ -228,7 +228,7 @@ msgstr "Seu pedido em %s foi marcado como concluído."
 #: templates/emails/plain/customer-new-account.php:25
 #: templates/emails/customer-new-account.php:27
 msgid "Hi %s,"
-msgstr "Olá, %s."
+msgstr "Olá, %s,"
 
 #. translators: %s: Customer billing full name
 #: templates/emails/admin-new-order.php:28
@@ -780,7 +780,7 @@ msgstr "Desculpe, não temos a quantidade suficiente de \"%1$s\" em estoque para
 
 #: includes/api/v2/class-wc-rest-orders-v2-controller.php:1406
 msgid "Shipping instance ID."
-msgstr "ID de instância de entrega"
+msgstr "ID de instância de entrega."
 
 #: includes/api/class-wc-rest-setting-options-controller.php:174
 msgid "An identifier for the group this setting belongs to."
@@ -907,7 +907,7 @@ msgstr "Limita o resultado para um e-mail de um autor específico."
 
 #: includes/api/class-wc-rest-product-reviews-controller.php:987
 msgid "Ensure result set excludes reviews assigned to specific user IDs."
-msgstr "Garante que os resultados excluem avaliações atribuídas a de IDs de usuários específicos. "
+msgstr "Certifique-se de que os resultados excluem avaliações atribuídas a IDs de usuários específicos."
 
 #: includes/api/class-wc-rest-product-reviews-controller.php:980
 msgid "Limit result set to reviews assigned to specific user IDs."
@@ -1020,7 +1020,7 @@ msgstr "Lista de estados suportados em um determinado país."
 
 #: includes/api/class-wc-rest-data-controller.php:93
 msgid "List of supported continents, countries, and states."
-msgstr "Lista de continentes, países e estados suportados"
+msgstr "Lista de continentes, países e estados suportados."
 
 #: includes/api/class-wc-rest-data-continents-controller.php:345
 msgid "The unit weights are defined in for this country."
@@ -1476,7 +1476,7 @@ msgstr "Dólar americano"
 #. year
 #: includes/payment-tokens/class-wc-payment-token-echeck.php:50
 msgid "eCheck ending in %1$s"
-msgstr "Cheque eletrônico terminando com %1$s"
+msgstr "Cheque eletrônico terminando em %1$s"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:94
 msgid "PayPal allows us to send one address. If you are using PayPal for shipping labels you may prefer to send the shipping address rather than billing. Turning this option off may prevent PayPal Seller protection from applying."
@@ -1510,7 +1510,7 @@ msgstr "%1$s (#%2$s)"
 #. Translators: %1$s shipping method name.
 #: includes/gateways/cod/class-wc-gateway-cod.php:81
 msgid "Any &quot;%1$s&quot; method"
-msgstr "Qualquer método &quot;%1$s&quot;"
+msgstr "Qualquer método de &quot;%1$s&quot;"
 
 #: includes/gateways/cheque/class-wc-gateway-cheque.php:32
 msgid "Take payments in person via checks. This offline gateway can also be useful to test purchases."
@@ -1663,7 +1663,7 @@ msgstr "Também usaremos cookies para acompanhar o conteúdo do carrinho enquant
 
 #: includes/class-wc-privacy.php:81
 msgid "Shipping address: we’ll ask you to enter this so we can, for instance, estimate shipping before you place an order, and send you the order!"
-msgstr "Endereço de entrega: solicitaremos que você insira isso para que possamos estimar as taxas de entrega antes de fazer um pedido e enviar o pedido para você."
+msgstr "Endereço de entrega: solicitaremos que você insira isso para que possamos estimar as taxas de entrega antes de fazer um pedido e enviar o pedido para você!"
 
 #: includes/class-wc-privacy.php:80
 msgid "Location, IP address and browser type: we’ll use this for purposes like estimating taxes and shipping"
@@ -1926,7 +1926,7 @@ msgstr "Excluiu todas as sessões ativas e %d salvou carrinhos."
 #. translators: %d: amount of permissions
 #: includes/api/v2/class-wc-rest-system-status-tools-v2-controller.php:465
 msgid "%d permissions deleted"
-msgstr "%d permissões excluídas."
+msgstr "%d permissões excluídas"
 
 #: includes/api/v2/class-wc-rest-system-status-tools-v2-controller.php:163
 msgid "This tool will delete all customer session data from the database, including current carts and saved carts in the database."
@@ -2004,7 +2004,7 @@ msgstr "O WooCommerce vai funcionar com essa versão do PHP, mas, essa versão c
 
 #: includes/admin/views/html-admin-page-status-report.php:197
 msgid "WooCommerce will run under this version of PHP, however, some features such as geolocation are not compatible. Support for this version will be dropped in the next major release. We recommend using PHP version 7.2 or above for greater performance and security."
-msgstr "O WooCommerce vai funcionar com essa versão do PHP, mas, alguns recursos como a geolocalização não são compatíveis. O suporte para ela versão será removido na próxima atualização. Nós recomendamos utilizar o PHP 7.2 ou superior para uma melhor performance e segurança. "
+msgstr "O WooCommerce vai funcionar com essa versão do PHP, mas, alguns recursos como a geolocalização não são compatíveis. O suporte para ela versão será removido na próxima atualização. Nós recomendamos utilizar o PHP 7.2 ou superior para uma melhor performance e segurança."
 
 #: includes/admin/views/html-admin-page-status-report.php:162
 msgid "Displays whether or not WordPress is using an external object cache."
@@ -2118,7 +2118,7 @@ msgstr "Pedidos pendentes não foram pagos e podem ter sidos abandonados pelo cl
 
 #: includes/admin/settings/class-wc-settings-accounts.php:182
 msgid "Retain pending orders "
-msgstr "Reter pedidos pendentes"
+msgstr "Reter pedidos pendentes "
 
 #: includes/admin/settings/class-wc-settings-accounts.php:171
 msgid "Inactive accounts are those which have not logged in, or placed an order, for the specified duration. They will be deleted. Any orders will be converted into guest orders."
@@ -2126,7 +2126,7 @@ msgstr "Contas inativas são aquelas que não fizeram log in, não fizeram pedid
 
 #: includes/admin/settings/class-wc-settings-accounts.php:170
 msgid "Retain inactive accounts "
-msgstr "Reter contas inativas"
+msgstr "Reter contas inativas "
 
 #: includes/admin/settings/class-wc-settings-accounts.php:165
 msgid "Choose how long to retain personal data when it's no longer needed for processing. Leave the following options blank to retain this data indefinitely."
@@ -2141,7 +2141,7 @@ msgstr "Retenção de dados pessoais"
 #: includes/wc-template-functions.php:753
 #: includes/customizer/class-wc-shop-customizer.php:736
 msgid "Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our %s."
-msgstr "Os seus dados pessoais serão utilizados para processar a sua compra, apoiar a sua experiência em todo este site e para outros fins descritos na nossa %s"
+msgstr "Os seus dados pessoais serão utilizados para processar a sua compra, apoiar a sua experiência em todo este site e para outros fins descritos na nossa %s."
 
 #: includes/admin/settings/class-wc-settings-accounts.php:152
 #: includes/customizer/class-wc-shop-customizer.php:800
@@ -2156,11 +2156,11 @@ msgstr "Política de privacidade da finalização de pedido"
 #: includes/admin/settings/class-wc-settings-accounts.php:145
 #: includes/wc-template-functions.php:757
 msgid "Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our %s."
-msgstr "Seus dados pessoais serão usados para aprimorar a sua experiência em todo este site, para gerenciar o acesso a sua conta e para outros propósitos, como descritos em nossa %s"
+msgstr "Seus dados pessoais serão usados para aprimorar a sua experiência em todo este site, para gerenciar o acesso a sua conta e para outros propósitos, como descritos em nossa %s."
 
 #: includes/admin/settings/class-wc-settings-accounts.php:142
 msgid "Optionally add some text about your store privacy policy to show on account registration forms."
-msgstr "Opcionalmente, adicione um texto sobre a política de privacidade da sua loja para ser exibida em formulários de cadastro. "
+msgstr "Opcionalmente, adicione um texto sobre a política de privacidade da sua loja para ser exibida em formulários de cadastro."
 
 #: includes/admin/settings/class-wc-settings-accounts.php:141
 msgid "Registration privacy policy"
@@ -2855,7 +2855,7 @@ msgstr "Após publicar suas alterações, novos tamanhos de imagens poderão nã
 #. translators: 1: tools URL 2: regen thumbs url
 #: includes/customizer/class-wc-shop-customizer.php:522
 msgid "After publishing your changes, new image sizes may not be shown until you regenerate thumbnails. You can do this from the <a href=\"%1$s\" target=\"_blank\">tools section in WooCommerce</a> or by using a plugin such as <a href=\"%2$s\" target=\"_blank\">Regenerate Thumbnails</a>."
-msgstr "Após publicar suas alterações, novos tamanhos de imagem podem não serem exibidos até terminar o processo de geração de miniaturas. Você pode fazer isso na <a href=\"%1$s\" target=\"_blank\">sessão de ferramentas no WooCommerce</a> ou usando um plugin como o <a href=\"%2$s\" target=\"_blank\">Regenerate Thumbnails</a>"
+msgstr "Após publicar suas alterações, novos tamanhos de imagem podem não serem exibidos até terminar o processo de geração de miniaturas. Você pode fazer isso na <a href=\"%1$s\" target=\"_blank\">sessão de ferramentas no WooCommerce</a> ou usando um plugin como o <a href=\"%2$s\" target=\"_blank\">Regenerate Thumbnails</a>."
 
 #: includes/customizer/class-wc-shop-customizer.php:519
 msgid "After publishing your changes, new image sizes will be generated automatically."
@@ -2917,7 +2917,7 @@ msgstr "Tornar &#8220;%s&#8221; a categoria padrão"
 #. translators: %s: default category
 #: includes/admin/class-wc-admin-taxonomies.php:330
 msgid "Deleting a category does not delete the products in that category. Instead, products that were only assigned to the deleted category are set to the category %s."
-msgstr "Deletando uma categoria não irá deletar os produtos pertencentes a categoria. No lugar, os produtos pertencentes a categoria deletada fazerem parte da categoria \"%s\". "
+msgstr "Excluir uma categoria não excluirá os produtos pertencentes à categoria. No lugar, os produtos pertencentes somente à categoria excluída serão definidos para a categoria \"%s\"."
 
 #: includes/libraries/wp-background-process.php:423
 msgid "Every %d Minutes"
@@ -2971,7 +2971,7 @@ msgstr "Ativar notificações de pagamento por e-mail (IPN)"
 
 #: includes/gateways/paypal/includes/settings-paypal.php:61
 msgid "IPN Email Notifications"
-msgstr "Notificações de pagamentos por e-mail "
+msgstr "Notificações de pagamentos por e-mail"
 
 #. translators: %s: Link to PayPal sandbox testing guide page
 #: includes/gateways/paypal/class-wc-gateway-paypal.php:67
@@ -2980,7 +2980,7 @@ msgstr "SANDBOX HABILITADO. Você pode utilizar apenas contas de teste do sandbo
 
 #: includes/data-stores/class-wc-webhook-data-store.php:106
 msgid "Invalid webhook."
-msgstr "Webhook inválido"
+msgstr "Webhook inválido."
 
 #: includes/data-stores/class-wc-customer-download-log-data-store.php:93
 msgid "Invalid download log: not found."
@@ -3150,7 +3150,7 @@ msgstr "Limita o resultado para produtos com REF(s) específicos. Utilize vírgu
 
 #: includes/api/v2/class-wc-rest-customer-downloads-v2-controller.php:81
 msgid "Download ID."
-msgstr "ID do download"
+msgstr "ID do download."
 
 #: includes/admin/views/html-admin-page-status-logs-db.php:14
 msgid "Search logs"
@@ -3267,7 +3267,7 @@ msgstr "Sob encomenda"
 
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:566
 msgid "Change status: "
-msgstr "Mudar status:"
+msgstr "Mudar status: "
 
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:558
 msgid "Completed"
@@ -4332,7 +4332,7 @@ msgstr "WooCommerce pode aceitar pagamentos on-line e off-line. <a href=\"%s\" t
 
 #: includes/admin/class-wc-admin-setup-wizard.php:1415
 msgid "PayPal email address:"
-msgstr "Endereço de e-mail no PayPal"
+msgstr "Endereço de e-mail no PayPal:"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:1378
 msgid "Stripe email address"
@@ -4700,7 +4700,7 @@ msgstr "Loja e resultados de pesquisa"
 
 #: includes/shortcodes/class-wc-shortcode-checkout.php:109
 msgid "This order cannot be paid for. Please contact us if you need assistance."
-msgstr "Esta compra não pode ser paga. Entre em contato conosco se você necessita de ajuda. "
+msgstr "Este pedido não pôde ser pago. Entre em contato conosco se você precisar de ajuda."
 
 #: includes/shortcodes/class-wc-shortcode-checkout.php:98
 msgid "Please log in to your account below to continue to the payment form."
@@ -5648,7 +5648,7 @@ msgstr "Criar"
 
 #: includes/cli/class-wc-cli-runner.php:115
 msgid "Zone ID."
-msgstr "ID da área"
+msgstr "ID da área."
 
 #: includes/cli/class-wc-cli-runner.php:116
 msgid "ID."
@@ -5674,7 +5674,7 @@ msgstr "Recalcular total? Isso irá calcular as taxas baseadas no país dos cons
 
 #: includes/api/v2/class-wc-rest-system-status-tools-v2-controller.php:523
 msgid "All missing WooCommerce pages successfully installed"
-msgstr "Todas as páginas do WooCommerce que faltavam foram instaladas com sucesso."
+msgstr "Todas as páginas do WooCommerce que faltavam foram instaladas com sucesso"
 
 #: includes/api/v2/class-wc-rest-system-status-v2-controller.php:499
 msgid "Terms in the product visibility taxonomy."
@@ -5733,7 +5733,7 @@ msgstr "Plugins ativados"
 
 #: includes/admin/views/html-admin-page-status-report.php:427
 msgid "MaxMind GeoIP database"
-msgstr "Banco de dados GeoIP da MaxMind."
+msgstr "Banco de dados GeoIP da MaxMind"
 
 #: includes/admin/views/html-admin-page-status-report.php:258
 msgid "Max upload size"
@@ -6400,7 +6400,7 @@ msgstr "A data que o webhook foi modificado pela última vez, em GMT."
 
 #: includes/api/v2/class-wc-rest-webhooks-v2-controller.php:160
 msgid "The date the webhook was created, as GMT."
-msgstr "A data em que o webhook foi criado, em GMT. "
+msgstr "A data em que o webhook foi criado, em GMT."
 
 #: includes/api/v2/class-wc-rest-webhook-deliveries-v2-controller.php:143
 msgid "The date the webhook delivery was logged, as GMT."
@@ -7154,8 +7154,8 @@ msgstr "O valor do desconto. Deve ser sempre um valor numérico, mesmo se for in
 #: includes/api/class-wc-rest-authentication.php:285
 msgid "Missing OAuth parameter %s"
 msgid_plural "Missing OAuth parameters %s"
-msgstr[0] "%s OAuth parâmetro faltando"
-msgstr[1] "%s OAuth parâmetros faltando"
+msgstr[0] "%s parâmetro OAuth ausente"
+msgstr[1] "%s parâmetros OAuth ausentes"
 
 #: includes/admin/views/html-report-by-date.php:22
 msgid "From %1$s to %2$s"
@@ -11133,7 +11133,7 @@ msgstr "ID do download (MD5)"
 #: includes/api/v1/class-wc-rest-customer-downloads-controller.php:169
 #: includes/api/v2/class-wc-rest-customer-downloads-v2-controller.php:87
 msgid "Download file URL."
-msgstr "Link do arquivo para download"
+msgstr "Link do arquivo para download."
 
 #: includes/api/v1/class-wc-rest-coupons-controller.php:572
 #: includes/api/v2/class-wc-rest-coupons-v2-controller.php:534
@@ -11267,7 +11267,7 @@ msgstr "A chave de API fornecida não tem permissão de leitura."
 #: includes/api/legacy/v3/class-wc-api-authentication.php:346
 #: includes/api/class-wc-rest-authentication.php:472
 msgid "Invalid nonce - nonce has already been used."
-msgstr "nonce inválido, o nonce já foi utilizado."
+msgstr "Código nonce inválido, esse nonce já foi utilizado."
 
 #: includes/api/legacy/v1/class-wc-api-authentication.php:332
 #: includes/api/legacy/v2/class-wc-api-authentication.php:330
@@ -11344,7 +11344,7 @@ msgstr "Adicionar métodos de entrega e áreas"
 #: includes/admin/views/html-notice-no-shipping-methods.php:19
 #: includes/admin/views/html-notice-legacy-shipping.php:20
 msgid "Learn more about shipping zones"
-msgstr "Aprenda mais sobre áreas de entrega."
+msgstr "Aprenda mais sobre áreas de entrega"
 
 #: includes/admin/views/html-notice-no-shipping-methods.php:18
 #: includes/admin/views/html-notice-legacy-shipping.php:18
@@ -11389,7 +11389,7 @@ msgstr "Modelo de arquivo"
 
 #: includes/admin/views/html-admin-page-status-report.php:699
 msgid "Page ID is set, but the page does not exist"
-msgstr "O ID da página foi definido, mas a página não existe."
+msgstr "O ID da página foi definido, mas a página não existe"
 
 #: includes/admin/views/html-admin-page-status-report.php:428
 msgid "The GeoIP database from MaxMind is used to geolocate customers."
@@ -11435,11 +11435,11 @@ msgstr "Listar 1 CEP por linha"
 
 #: includes/admin/settings/views/html-admin-page-shipping-zone-methods.php:62
 msgid "Limit to specific ZIP/postcodes"
-msgstr "Limitar para CEPs específicos."
+msgstr "Limitar para CEPs específicos"
 
 #: includes/admin/settings/views/html-admin-page-shipping-zone-methods.php:42
 msgid "Select regions within this zone"
-msgstr "Selecione as regiões desta área."
+msgstr "Selecione as regiões desta área"
 
 #: includes/admin/settings/views/html-admin-page-shipping-zones.php:65
 msgid "Add as many zones as you need &ndash; customers will only see the methods available for their address."
@@ -11568,7 +11568,7 @@ msgstr "A área não existe!"
 
 #: includes/admin/settings/class-wc-settings-shipping.php:114
 msgid "Force shipping to the customer billing address"
-msgstr "Forçar entrega para o endereço de cobrança do cliente."
+msgstr "Forçar entrega para o endereço de cobrança do cliente"
 
 #: includes/admin/settings/class-wc-settings-shipping.php:113
 msgid "Default to customer billing address"
@@ -12226,7 +12226,7 @@ msgstr "Limpar"
 #: templates/emails/admin-failed-order.php:28
 #: templates/emails/plain/admin-failed-order.php:25
 msgid "Payment for order #%1$s from %2$s has failed. The order was as follows:"
-msgstr "O pagamento malsucedido para o pedido #%1$s de %2$s. O pedido foi o seguinte:"
+msgstr "O pagamento para o pedido #%1$s de %2$s foi malsucedido. O pedido foi o seguinte:"
 
 #: templates/checkout/thankyou.php:30
 msgid "Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction. Please attempt your purchase again."
@@ -12834,8 +12834,8 @@ msgstr[1] "Tags:"
 #: templates/single-product/meta.php:35
 msgid "Category:"
 msgid_plural "Categories:"
-msgstr[0] "Categoria"
-msgstr[1] "Categorias"
+msgstr[0] "Categoria:"
+msgstr[1] "Categorias:"
 
 #: templates/single-product/meta.php:31
 #: includes/admin/meta-boxes/views/html-order-item.php:25
@@ -13707,7 +13707,7 @@ msgstr "Dirham dos Emirados Árabes Unidos"
 #: includes/class-wc-order-refund.php:67
 msgctxt "Order date parsed by strftime"
 msgid "%b %d, %Y @ %I:%M %p"
-msgstr " %d de %b de %Y às %R:%M"
+msgstr "%d de %b de %Y às %R:%M"
 
 #. translators: %s: Order date
 #: includes/data-stores/abstract-wc-order-data-store-cpt.php:230
@@ -13824,7 +13824,7 @@ msgstr "Quais CEPs estão disponíveis para retirada local?"
 #: includes/shipping/legacy-local-delivery/class-wc-shipping-legacy-local-delivery.php:155
 #: includes/shipping/legacy-local-pickup/class-wc-shipping-legacy-local-pickup.php:113
 msgid "Separate codes with a comma. Accepts wildcards, e.g. <code>P*</code> will match a postcode of PE30. Also accepts a pattern, e.g. <code>NG1___</code> would match NG1 1AA but not NG10 1AA"
-msgstr "Separe os códigos com virgula. São aceitos caracteres curingas, por exemplo <code>013*</code> irá combinar com o CEP 01310000. Também aceita padrões, por exemplo <code>030_____</code>."
+msgstr "Separe os códigos com virgula. São aceitos caracteres curingas, ex: <code>013*</code> irá combinar com o CEP 01310000. Também aceita padrões, ex.: <code>030_____</code>"
 
 #: includes/shipping/legacy-local-delivery/class-wc-shipping-legacy-local-delivery.php:153
 msgid "What ZIP/post codes are available for local delivery?"
@@ -13918,7 +13918,7 @@ msgstr "Nome da opção | Custo adicional [+- Percentual%] | Forma de cálculo (
 
 #: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:126
 msgid "One per line: Option name | Additional cost [+- Percents] | Per cost type (order, class, or item) Example: <code>Priority mail | 6.95 [+ 0.2%] | order</code>."
-msgstr "Um por linha: Nome da opção | Custo adicional [+- percentagem] | Tipo de custo (order, class, ou item) Exemplo: <code>Entrega prioritária | 6.95 [+ 0.2%] | order</code>"
+msgstr "Um por linha: Nome da opção | Custo adicional [+- Percentual] | Tipo de custo (order, class, ou item) Exemplo: <code>Entrega prioritária | 6.95 [+ 0.2%] | order</code>."
 
 #: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:121
 msgid "These rates are extra shipping options with additional costs (based on the flat rate)."
@@ -13932,7 +13932,7 @@ msgstr "Taxas adicionais"
 #: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:111
 #: includes/shipping/flat-rate/includes/settings-flat-rate.php:84
 msgid "Per order: Charge shipping for the most expensive shipping class"
-msgstr "Por pedido: Cobrar a entrega pela classe de entrega com o maior valor."
+msgstr "Por pedido: Cobrar a entrega pela classe de entrega com o maior valor"
 
 #: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:110
 #: includes/shipping/flat-rate/includes/settings-flat-rate.php:83
@@ -15446,11 +15446,11 @@ msgstr "Você precisa entrar na sua conta para fazer download dos arquivos."
 
 #: includes/class-wc-download-handler.php:148
 msgid "Sorry, this download has expired"
-msgstr "Desculpe, este download expirou."
+msgstr "Desculpe, este download expirou"
 
 #: includes/class-wc-download-handler.php:137
 msgid "Sorry, you have reached your download limit for this file"
-msgstr "Desculpe, você atingiu o limite de downloads para esse arquivo."
+msgstr "Desculpe, você atingiu o limite de downloads para esse arquivo"
 
 #: includes/shortcodes/class-wc-shortcode-my-account.php:134
 #: includes/shortcodes/class-wc-shortcode-checkout.php:210
@@ -15800,7 +15800,7 @@ msgstr "Acesso negado"
 
 #: includes/class-wc-auth.php:396
 msgid "You do not have permission to access this page"
-msgstr "Você não tem permissão para acessar esta página!"
+msgstr "Você não tem permissão para acessar esta página"
 
 #: includes/class-wc-auth.php:376
 msgid "Invalid nonce verification"
@@ -16163,7 +16163,7 @@ msgstr "Padrão"
 #: includes/api/legacy/v2/class-wc-api-products.php:604
 #: includes/api/legacy/v3/class-wc-api-products.php:663
 msgid "A product category with the provided ID could not be found"
-msgstr "Não foi possível encontrar uma categoria de produto com o ID informado "
+msgstr "Não foi possível encontrar uma categoria de produto com o ID informado"
 
 #: includes/api/legacy/v2/class-wc-api-products.php:593
 #: includes/api/legacy/v3/class-wc-api-products.php:652
@@ -16279,7 +16279,7 @@ msgstr "Cupom de desconto total deve ser uma quantidade positiva."
 #: includes/api/legacy/v2/class-wc-api-orders.php:1083
 #: includes/api/legacy/v3/class-wc-api-orders.php:1128
 msgid "Fee title is required"
-msgstr "O título da taxa é obrigatório "
+msgstr "O título da taxa é obrigatório"
 
 #: includes/api/legacy/v2/class-wc-api-orders.php:890
 #: includes/api/legacy/v3/class-wc-api-orders.php:934
@@ -16301,7 +16301,7 @@ msgstr "ID do produto ou REF é obrigatório"
 #: includes/api/legacy/v3/class-wc-api-orders.php:559
 #: includes/api/legacy/v3/class-wc-api-orders.php:1637
 msgid "Order ID is invalid"
-msgstr "O ID da compra é inválido."
+msgstr "O ID da compra é inválido"
 
 #: includes/api/legacy/v2/class-wc-api-orders.php:448
 #: includes/api/legacy/v2/class-wc-api-orders.php:600
@@ -16972,7 +16972,7 @@ msgstr "SUHOSIN instalado"
 
 #: includes/admin/views/html-admin-page-status-report.php:223
 msgid "The maximum number of variables your server can use for a single function to avoid overloads."
-msgstr "O número máximo de variáveis que seu servidor pode usar em uma única função para evitar sobrecargas"
+msgstr "O número máximo de variáveis que seu servidor pode usar em uma única função para evitar sobrecargas."
 
 #: includes/admin/views/html-admin-page-status-report.php:222
 msgid "PHP max input vars"
@@ -17080,7 +17080,7 @@ msgstr "Obter relatório do sistema"
 
 #: includes/admin/views/html-admin-page-status-report.php:30
 msgid "Please copy and paste this information in your ticket when contacting support:"
-msgstr "Copie e cole esta informação em seu relatório quando entrar em contato com o suporte: "
+msgstr "Copie e cole esta informação em seu relatório quando entrar em contato com o suporte:"
 
 #: includes/admin/views/html-admin-page-status-logs.php:44
 msgid "There are currently no logs to view."
@@ -17171,7 +17171,7 @@ msgstr "Classes de taxa adicionais"
 
 #: includes/admin/settings/views/settings-tax.php:59
 msgid "Round tax at subtotal level, instead of rounding per line"
-msgstr "Arrendondar taxa sobre o subtotal, ao invés de arrendondar por cada linha."
+msgstr "Arrendondar taxa sobre o subtotal, ao invés de arrendondar a cada linha"
 
 #: includes/admin/settings/views/settings-tax.php:58
 msgid "Rounding"
@@ -17421,7 +17421,7 @@ msgstr "Definir cidades para essa configuração. Ponto e vírgula (;) para sepa
 
 #: includes/admin/settings/views/html-settings-tax.php:27
 msgid "A 2 digit state code, e.g. AL. Leave blank to apply to all."
-msgstr "Um código de 2 dígitos do estado, por exemplo: SP. Deixe em branco para aplicar a todos. "
+msgstr "Um código de 2 dígitos do estado, por exemplo: SP. Deixe em branco para aplicar a todos."
 
 #: includes/admin/settings/views/html-settings-tax.php:26
 msgid "A 2 digit country code, e.g. US. Leave blank to apply to all."
@@ -17554,7 +17554,7 @@ msgstr "Unidades de medida"
 
 #: includes/admin/settings/class-wc-settings-products.php:373
 msgid "This controls what unit you will define weights in."
-msgstr "Isto controla qual unidade de peso será utilizada"
+msgstr "Isto controla qual unidade de peso será utilizada."
 
 #: includes/admin/settings/class-wc-settings-products.php:372
 msgid "Weight unit"
@@ -17752,7 +17752,7 @@ msgstr "Isto controla a posição do simbolo monetário."
 
 #: includes/admin/settings/class-wc-settings-general.php:235
 msgid "This controls what currency prices are listed at in the catalog and which currency gateways will take payments in."
-msgstr "Isto controla qual moeda será listada no catálogo e utilizada nos métodos de pagamento. "
+msgstr "Isto controla qual moeda será listada no catálogo e utilizada nos métodos de pagamento."
 
 #: includes/admin/settings/class-wc-settings-general.php:234
 #: includes/admin/views/html-admin-page-status-report.php:619
@@ -17885,7 +17885,7 @@ msgstr "Pagar"
 
 #: includes/admin/settings/class-wc-settings-advanced.php:158
 msgid "Endpoints are appended to your page URLs to handle specific actions during the checkout process. They should be unique."
-msgstr "Os pontos de extremidade (endpoints) são anexados às URLs de páginas para executar ações específicas das páginas de finalização de compra. Devem ter um valor exclusivo. "
+msgstr "Os pontos de extremidade (endpoints) são anexados às URLs de páginas para executar ações específicas das páginas de finalização de compra. Devem ter um valor exclusivo."
 
 #: includes/admin/settings/class-wc-settings-advanced.php:156
 msgid "Checkout endpoints"
@@ -18006,7 +18006,7 @@ msgstr "Lucro líquido"
 
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:214
 msgid "This is the sum of the 'Shipping total' field within your orders."
-msgstr "Esta é a soma dos campos \"Total de entrega\" dos seus pedidos"
+msgstr "Esta é a soma dos campos \"Total de entrega\" dos seus pedidos."
 
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:214
 msgid "Total shipping"
@@ -18244,7 +18244,7 @@ msgstr "Vendas para visitantes"
 #: includes/api/class-wc-rest-customers-controller.php:129
 #: includes/api/v2/class-wc-rest-customers-v2-controller.php:176
 msgid "Customer role."
-msgstr "Função do cliente"
+msgstr "Função do cliente."
 
 #. translators: %s: signups amount
 #: includes/admin/reports/class-wc-report-customers.php:44
@@ -18878,7 +18878,7 @@ msgstr "Aumentar preços promocionais (valor fixo ou porcentagem)"
 
 #: includes/admin/meta-boxes/views/html-product-data-variations.php:67
 msgid "Set sale prices"
-msgstr "Configurar preços promocionais"
+msgstr "Definir preços promocionais"
 
 #: includes/admin/meta-boxes/views/html-product-data-variations.php:66
 msgid "Decrease regular prices (fixed amount or percentage)"
@@ -19071,7 +19071,7 @@ msgstr "Peso"
 
 #: includes/admin/meta-boxes/views/html-product-data-inventory.php:118
 msgid "Enable this to only allow one of this item to be bought in a single order"
-msgstr "Ative para permitir que somente um item deste produto seja comprado por pedido."
+msgstr "Ative para permitir que somente um item deste produto seja comprado por pedido"
 
 #: includes/admin/meta-boxes/views/html-product-data-inventory.php:117
 msgid "Sold individually"
@@ -19318,7 +19318,7 @@ msgstr "Inventário"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:70
 msgid "Downloadable products give access to a file upon purchase."
-msgstr "Produtos baixáveis dão acesso a um arquivo mediate pagamento"
+msgstr "Produtos baixáveis dão acesso a um ou mais arquivos mediante pagamento."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:63
 msgid "Virtual products are intangible and are not shipped."
@@ -19662,7 +19662,7 @@ msgstr "Delimitador"
 
 #: includes/admin/importers/class-wc-tax-rate-importer.php:286
 msgid "OR enter path to file:"
-msgstr "ou informe o caminho para o arquivo:"
+msgstr "OU informe o caminho para o arquivo:"
 
 #. translators: %s: maximum upload size
 #: includes/admin/importers/class-wc-tax-rate-importer.php:277
@@ -19764,7 +19764,7 @@ msgstr "Você não tem permissões para atualizar Webhooks"
 #: includes/api/legacy/v3/class-wc-api-webhooks.php:199
 msgctxt "Webhook created on date parsed by strftime"
 msgid "%b %d, %Y @ %I:%M %p"
-msgstr " %d \\d\\e %b \\d\\e %Y \\à\\s %R:%M"
+msgstr "%d \\d\\e %b \\d\\e %Y \\à\\s %R:%M"
 
 #. translators: %s: date
 #: includes/admin/class-wc-admin-webhooks.php:69
@@ -20832,7 +20832,7 @@ msgstr "Preços"
 
 #: includes/admin/class-wc-admin-pointers.php:125
 msgid "If purchasing this product gives a customer access to a downloadable file, e.g. software, check this box."
-msgstr "Se comprando este produto é permitido ao cliente acesso para baixar arquivos. por exemplo softwares, marque esta caixa"
+msgstr "Se comprando este produto é permitido ao cliente acesso para baixar arquivos. por exemplo softwares, marque esta caixa."
 
 #: includes/admin/class-wc-admin-pointers.php:109
 msgid "Check the \"Virtual\" box if this is a non-physical item, for example a service, which does not need shipping."
@@ -21333,7 +21333,7 @@ msgstr "Nome do atributo (mostrado no site)."
 
 #: includes/admin/class-wc-admin-attributes.php:173
 msgid "Error: non-existing attribute ID."
-msgstr "Erro: o ID do atributo não existe"
+msgstr "Erro: o ID do atributo não existe."
 
 #: includes/admin/class-wc-admin-attributes.php:169
 msgid "Edit attribute"
@@ -21582,7 +21582,7 @@ msgstr "Digite no formato monetário decimal (%s), sem os separadores de milhar 
 #. translators: %s: decimal
 #: includes/admin/class-wc-admin-assets.php:164
 msgid "Please enter in decimal (%s) format without thousand separators."
-msgstr " Digite no formato decimal (%s), sem os separadores de milhar."
+msgstr "Digite no formato decimal (%s), sem os separadores de milhar."
 
 #: includes/admin/class-wc-admin-setup-wizard.php:174
 #: includes/admin/class-wc-admin-assets.php:124

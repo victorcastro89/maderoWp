@@ -48,7 +48,7 @@ default: query
 
 backup:
 	@echo "Backuping databases..."
-	docker-compose exec mariadb sh -c 'exec mysqldump --all-databases -uroot -p"$(DB_ROOT_PASSWORD)"' >./backup_db/Maderos_Backup_`date +%d-%m-%Y-%T`.sql
+	docker-compose exec mariadb sh -c 'exec mysqldump --all-databases -uroot -p"$(WORDPRESS_DB_ROOT_PASSWORD)"' >./backup_db/Maderos_Backup_`date +%d-%m-%Y-%T`.sql
 
 query:
 	$(call check_defined, query)

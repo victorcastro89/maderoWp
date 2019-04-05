@@ -1,0 +1,14 @@
+{
+    "name": "lipemat/simple-links",
+    "description": "Simple Links WordPress Plugin",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lipemat",
+            "email": "mat@matlipe.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
