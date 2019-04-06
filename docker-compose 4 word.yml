@@ -78,24 +78,7 @@ services:
     depends_on:
       -  mariadb
 
-  wordpress4:
-    image: wordpress:${WORDPRESS_VERSION:-php7.3-fpm}
-    container_name: wordpress4
-    restart: always
-    volumes:
-      - ${WORDPRESS_DATA_DIR}:/var/www/html:rw
-      - ./php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini  
-      - ./php/www.conf:/usr/local/etc/php-fpm.d/www.conf
-    environment:
-      - WORDPRESS_DB_NAME=${WORDPRESS_DB_NAME:-wordpress}
-      - WORDPRESS_TABLE_PREFIX=${WORDPRESS_TABLE_PREFIX:-wp_}
-      - WORDPRESS_DB_HOST=${WORDPRESS_DB_HOST:-mysql}
-      - WORDPRESS_DB_USER=${WORDPRESS_DB_USER:-root}
-      - WORDPRESS_DB_PASSWORD=${WORDPRESS_DB_PASSWORD:-password}
-    labels:
-      - traefik.enable=false
-    depends_on:
-      -  mariadb      
+
   # varnish:
   #   image: emgag/varnish:6.0.1
   #   container_name: varnish
@@ -155,17 +138,17 @@ services:
       - --docker 
       - --logLevel=INFO
       - "--api"
-      # - "--entrypoints=Name:http Address::80 Redirect.EntryPoint:https"
-      # - "--entrypoints=Name:https Address::443 TLS"
-      # - "--defaultentrypoints=http,https"
-      # - "--acme"
-      # - "--acme.storage=./acme.json"
-      # - "--acme.entryPoint=https"
-      # - "--acme.httpChallenge.entryPoint=http"
-      # - "--acme.onHostRule=true"
-      # - "--acme.onDemand=false"
-      # - "--acme.email=victorcastro89@hotmail.com"
-#      - "--acme.caServer=https://acme-staging-v02.api.letsencrypt.org/directory"
+      - "--entrypoints=Name:http Address::80 Redirect.EntryPoint:https"
+      - "--entrypoints=Name:https Address::443 TLS"
+      - "--defaultentrypoints=http,https"
+      - "--acme"
+      - "--acme.storage=./acme.json"
+      - "--acme.entryPoint=https"
+      - "--acme.httpChallenge.entryPoint=http"
+      - "--acme.onHostRule=true"
+      - "--acme.onDemand=false"
+      - "--acme.email=victorcastro89@hotmail.com"
+     - "--acme.caServer=https://acme-staging-v02.api.letsencrypt.org/directory"
       - "--docker.watch"    
       - "--docker.exposedByDefault=false"
     ports:

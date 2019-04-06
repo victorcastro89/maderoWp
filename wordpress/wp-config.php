@@ -18,6 +18,10 @@
  * @package WordPress
  */
 
+define( 'WP_HOME', 'http://maderos.com.br' );
+define( 'WP_SITEURL', 'http://maderos.com.br' );
+
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'bitnami_wordpress');
@@ -37,6 +41,7 @@ define( 'DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '');
 
+define('FS_METHOD','direct');
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -79,8 +84,6 @@ $table_prefix = 'wp_';
  */
 define( 'WP_DEBUG', false );
 
-// If we're behind a proxy server and using HTTPS, we need to alert Wordpress of that fact
-// see also http://codex.wordpress.org/Administration_Over_SSL#Using_a_Reverse_Proxy
 if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
 	$_SERVER['HTTPS'] = 'on';
 }

@@ -132,20 +132,24 @@ services:
   traefik:
     image: traefik
     container_name: traefik
+    environment:
+      CF_API_EMAIL: "victorcastro89@hotmail.com"
+      CF_API_KEY: "f313ecb781244e68c6ebb2adb43d96dbbc693"
     command: 
       - --docker 
-      - --logLevel=INFO
+      - --logLevel=DEBUG
       - "--api"
-      # - "--entrypoints=Name:http Address::80 Redirect.EntryPoint:https"
-      # - "--entrypoints=Name:https Address::443 TLS"
-      # - "--defaultentrypoints=http,https"
-      # - "--acme"
-      # - "--acme.storage=./acme.json"
-      # - "--acme.entryPoint=https"
-      # - "--acme.httpChallenge.entryPoint=http"
-      # - "--acme.onHostRule=true"
-      # - "--acme.onDemand=false"
-      # - "--acme.email=victorcastro89@hotmail.com"
+      - "--entrypoints=Name:http Address::80" # Redirect.EntryPoint:https"
+      - "--entrypoints=Name:https Address::443 TLS"
+      - "--defaultentrypoints=http,https"
+      - "--acme"
+      - "--acme.storage=./acme.json"
+      - "--acme.entryPoint=https"
+      - "--acme.httpChallenge.entryPoint=http"
+      - "--acme.dnsChallenge.provider=cloudflare"
+      - "--acme.onHostRule=true"
+      - "--acme.domains=*.maderos.com.br"
+      - "--acme.email=victorcastro89@hotmail.com"
 #      - "--acme.caServer=https://acme-staging-v02.api.letsencrypt.org/directory"
       - "--docker.watch"    
       - "--docker.exposedByDefault=false"
@@ -177,7 +181,7 @@ services:
       MYSQL_OPTIMIZER_SEARCH_DEPTH: 8
       MYSQL_MAX_CONNECTIONS: 500
     volumes:
-  #    - ./backup_db:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
+      - ./backup_db:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
       - ~/mariadb_data:/var/lib/mysql # I want to manage volumes manually.
 
     labels:
