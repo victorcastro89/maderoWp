@@ -137,17 +137,16 @@ services:
       CF_API_KEY: "f313ecb781244e68c6ebb2adb43d96dbbc693"
     command: 
       - --docker 
-      - --logLevel=DEBUG
+      - --logLevel=INFO
       - "--api"
-      - "--entrypoints=Name:http Address::80" # Redirect.EntryPoint:https"
+      - "--entrypoints=Name:http Address::80  Redirect.EntryPoint:https" 
       - "--entrypoints=Name:https Address::443 TLS"
       - "--defaultentrypoints=http,https"
       - "--acme"
       - "--acme.storage=./acme.json"
       - "--acme.entryPoint=https"
-      - "--acme.httpChallenge.entryPoint=http"
       - "--acme.dnsChallenge.provider=cloudflare"
-      - "--acme.onHostRule=true"
+#      - "--acme.onHostRule=true"
       - "--acme.domains=*.maderos.com.br"
       - "--acme.email=victorcastro89@hotmail.com"
 #      - "--acme.caServer=https://acme-staging-v02.api.letsencrypt.org/directory"
