@@ -6300,7 +6300,7 @@ msgstr ""
 #: framework/classes/class-woocommerce.php:1143
 msgctxt "front-end"
 msgid "Share with"
-msgstr ""
+msgstr "Compartilhe com seus amigos"
 
 #: vc_templates/la_portfolio_info.php:10
 msgctxt "front-end"

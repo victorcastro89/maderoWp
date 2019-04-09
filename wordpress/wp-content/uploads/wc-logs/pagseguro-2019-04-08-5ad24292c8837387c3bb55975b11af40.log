@@ -1,0 +1,2342 @@
+04-08-2019 @ 20:27:43 - Requesting direct payment for order 1321 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<payment>
+  <mode>default</mode>
+  <method>creditCard</method>
+  <currency>BRL</currency>
+  <notificationURL><![CDATA[https://maderos.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Limited edition v-neck t-shirt]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+    <item>
+      <id>2</id>
+      <description><![CDATA[Hig-Rise Skinny Jean]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <reference><![CDATA[Maderos -1321]]></reference>
+  <sender>
+    <email><![CDATA[victorcastro89@hotmail.com]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09699183640</value>
+      </document>
+    </documents>
+    <name><![CDATA[Victor Faria]]></name>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>974787270</number>
+    </phone>
+    <hash>0fa6f82e733567f7f61570f5b1393536fd1aa8751f61668293882ecdb9ee604d</hash>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <postalCode>01307906</postalCode>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <creditCard>
+    <token>cdcd3d8d023645b1bd9a88208d5ed3a4</token>
+    <installment>
+      <quantity>1</quantity>
+      <value>98.00</value>
+    </installment>
+    <holder>
+      <name><![CDATA[Vasda asd]]></name>
+      <documents>
+        <document>
+          <type>CPF</type>
+          <value>09699183640</value>
+        </document>
+      </documents>
+      <birthDate>26/12/1989</birthDate>
+      <phone>
+        <areaCode>11</areaCode>
+        <number>974787270</number>
+      </phone>
+    </holder>
+    <billingAddress>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+      <postalCode>01307906</postalCode>
+    </billingAddress>
+  </creditCard>
+</payment>
+
+04-08-2019 @ 20:27:43 - The user does not have permissions to use the PagSeguro Transparent Checkout!
+04-08-2019 @ 20:32:57 - Requesting direct payment for order 1321 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<payment>
+  <mode>default</mode>
+  <method>creditCard</method>
+  <currency>BRL</currency>
+  <notificationURL><![CDATA[https://maderos.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Limited edition v-neck t-shirt]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+    <item>
+      <id>2</id>
+      <description><![CDATA[Hig-Rise Skinny Jean]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <reference><![CDATA[Maderos -1321]]></reference>
+  <sender>
+    <email><![CDATA[victorcastro89@hotmail.com]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09699183640</value>
+      </document>
+    </documents>
+    <name><![CDATA[Victor Faria]]></name>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>974787270</number>
+    </phone>
+    <hash>0fa6f82e733567f7f61570f5b1393536fd1aa8751f61668293882ecdb9ee604d</hash>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <postalCode>01307906</postalCode>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <creditCard>
+    <token>32b51ab861ed4fefbb65fa53e5f51416</token>
+    <installment>
+      <quantity>1</quantity>
+      <value>98.00</value>
+    </installment>
+    <holder>
+      <name><![CDATA[Vasda asd]]></name>
+      <documents>
+        <document>
+          <type>CPF</type>
+          <value>09699183640</value>
+        </document>
+      </documents>
+      <birthDate>26/12/1989</birthDate>
+      <phone>
+        <areaCode>11</areaCode>
+        <number>974787270</number>
+      </phone>
+    </holder>
+    <billingAddress>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+      <postalCode>01307906</postalCode>
+    </billingAddress>
+  </creditCard>
+</payment>
+
+04-08-2019 @ 20:32:57 - The user does not have permissions to use the PagSeguro Transparent Checkout!
+04-08-2019 @ 20:33:11 - Requesting direct payment for order 1321 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<payment>
+  <mode>default</mode>
+  <method>creditCard</method>
+  <currency>BRL</currency>
+  <notificationURL><![CDATA[https://maderos.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Limited edition v-neck t-shirt]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+    <item>
+      <id>2</id>
+      <description><![CDATA[Hig-Rise Skinny Jean]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <reference><![CDATA[Maderos -1321]]></reference>
+  <sender>
+    <email><![CDATA[victorcastro89@hotmail.com]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09699183640</value>
+      </document>
+    </documents>
+    <name><![CDATA[Victor Faria]]></name>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>974787270</number>
+    </phone>
+    <hash>0fa6f82e733567f7f61570f5b1393536fd1aa8751f61668293882ecdb9ee604d</hash>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <postalCode>01307906</postalCode>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <creditCard>
+    <token>bed928edffb0426886ad92e1cf5a774a</token>
+    <installment>
+      <quantity>2</quantity>
+      <value>51.21</value>
+    </installment>
+    <holder>
+      <name><![CDATA[Vasda asd]]></name>
+      <documents>
+        <document>
+          <type>CPF</type>
+          <value>09699183640</value>
+        </document>
+      </documents>
+      <birthDate>26/12/1989</birthDate>
+      <phone>
+        <areaCode>11</areaCode>
+        <number>974787270</number>
+      </phone>
+    </holder>
+    <billingAddress>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+      <postalCode>01307906</postalCode>
+    </billingAddress>
+  </creditCard>
+</payment>
+
+04-08-2019 @ 20:33:11 - An error occurred while generating the PagSeguro direct payment: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [date] => Mon, 08 Apr 2019 23:33:11 GMT
+                    [server] => Apache-Coyote/1.1
+                    [content-type] => application/xml;charset=ISO-8859-1
+                    [cache-control] => max-age=180
+                    [expires] => Mon, 08 Apr 2019 23:36:10 GMT
+                    [vary] => Accept-Encoding,User-Agent
+                    [content-encoding] => gzip
+                    [access-control-allow-origin] => https://dev.pagseguro.uol.com.br
+                    [access-control-allow-methods] => POST, GET, OPTIONS
+                    [access-control-allow-headers] => Content-Type, origin, accept
+                )
+
+        )
+
+    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>53122</code><message>sender email invalid domain: victorcastro89@hotmail.com. You must use an email @sandbox.pagseguro.com.br</message></error></errors>
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>53122</code><message>sender email invalid domain: victorcastro89@hotmail.com. You must use an email @sandbox.pagseguro.com.br</message></error></errors>
+                    [raw] => HTTP/1.1 400 Bad Request
+Date: Mon, 08 Apr 2019 23:33:11 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/xml;charset=ISO-8859-1
+Cache-Control: max-age=180
+Expires: Mon, 08 Apr 2019 23:36:10 GMT
+Vary: Accept-Encoding,User-Agent
+Content-Encoding: gzip
+Access-Control-Allow-Origin: https://dev.pagseguro.uol.com.br
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+Access-Control-Allow-Headers: Content-Type, origin, accept
+Connection: close
+Transfer-Encoding: chunked
+
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>53122</code><message>sender email invalid domain: victorcastro89@hotmail.com. You must use an email @sandbox.pagseguro.com.br</message></error></errors>
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Array
+                                        (
+                                            [0] => Mon, 08 Apr 2019 23:33:11 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => Apache-Coyote/1.1
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => application/xml;charset=ISO-8859-1
+                                        )
+
+                                    [cache-control] => Array
+                                        (
+                                            [0] => max-age=180
+                                        )
+
+                                    [expires] => Array
+                                        (
+                                            [0] => Mon, 08 Apr 2019 23:36:10 GMT
+                                        )
+
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding,User-Agent
+                                        )
+
+                                    [content-encoding] => Array
+                                        (
+                                            [0] => gzip
+                                        )
+
+                                    [access-control-allow-origin] => Array
+                                        (
+                                            [0] => https://dev.pagseguro.uol.com.br
+                                        )
+
+                                    [access-control-allow-methods] => Array
+                                        (
+                                            [0] => POST, GET, OPTIONS
+                                        )
+
+                                    [access-control-allow-headers] => Array
+                                        (
+                                            [0] => Content-Type, origin, accept
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 400
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://ws.sandbox.pagseguro.uol.com.br/v2/transactions?email=victorcastro89@hotmail.com&token=F450948552B848B48063560CF120F8A2
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+
+04-08-2019 @ 20:33:56 - Requesting direct payment for order 1321 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<payment>
+  <mode>default</mode>
+  <method>creditCard</method>
+  <currency>BRL</currency>
+  <notificationURL><![CDATA[https://maderos.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Limited edition v-neck t-shirt]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+    <item>
+      <id>2</id>
+      <description><![CDATA[Hig-Rise Skinny Jean]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <reference><![CDATA[Maderos -1321]]></reference>
+  <sender>
+    <email><![CDATA[victorcastro89@hotmail.com]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09699183640</value>
+      </document>
+    </documents>
+    <name><![CDATA[Victor Faria]]></name>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>974787270</number>
+    </phone>
+    <hash>0fa6f82e733567f7f61570f5b1393536fd1aa8751f61668293882ecdb9ee604d</hash>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <postalCode>01307906</postalCode>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <creditCard>
+    <token>dccf5361031e484eac8fd60f0ac5e8c0</token>
+    <installment>
+      <quantity>1</quantity>
+      <value>98.00</value>
+    </installment>
+    <holder>
+      <name><![CDATA[Vasda asd]]></name>
+      <documents>
+        <document>
+          <type>CPF</type>
+          <value>09699183640</value>
+        </document>
+      </documents>
+      <birthDate>26/12/1989</birthDate>
+      <phone>
+        <areaCode>11</areaCode>
+        <number>974787270</number>
+      </phone>
+    </holder>
+    <billingAddress>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+      <postalCode>01307906</postalCode>
+    </billingAddress>
+  </creditCard>
+</payment>
+
+04-08-2019 @ 20:33:56 - An error occurred while generating the PagSeguro direct payment: Array
+(
+    [headers] => Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] => Array
+                (
+                    [date] => Mon, 08 Apr 2019 23:33:56 GMT
+                    [server] => Apache-Coyote/1.1
+                    [content-type] => application/xml;charset=ISO-8859-1
+                    [cache-control] => max-age=180
+                    [expires] => Mon, 08 Apr 2019 23:36:56 GMT
+                    [vary] => Accept-Encoding,User-Agent
+                    [content-encoding] => gzip
+                    [access-control-allow-origin] => https://dev.pagseguro.uol.com.br
+                    [access-control-allow-methods] => POST, GET, OPTIONS
+                    [access-control-allow-headers] => Content-Type, origin, accept
+                )
+
+        )
+
+    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>53122</code><message>sender email invalid domain: victorcastro89@hotmail.com. You must use an email @sandbox.pagseguro.com.br</message></error></errors>
+    [response] => Array
+        (
+            [code] => 400
+            [message] => Bad Request
+        )
+
+    [cookies] => Array
+        (
+        )
+
+    [filename] => 
+    [http_response] => WP_HTTP_Requests_Response Object
+        (
+            [response:protected] => Requests_Response Object
+                (
+                    [body] => <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>53122</code><message>sender email invalid domain: victorcastro89@hotmail.com. You must use an email @sandbox.pagseguro.com.br</message></error></errors>
+                    [raw] => HTTP/1.1 400 Bad Request
+Date: Mon, 08 Apr 2019 23:33:56 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/xml;charset=ISO-8859-1
+Cache-Control: max-age=180
+Expires: Mon, 08 Apr 2019 23:36:56 GMT
+Vary: Accept-Encoding,User-Agent
+Content-Encoding: gzip
+Access-Control-Allow-Origin: https://dev.pagseguro.uol.com.br
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+Access-Control-Allow-Headers: Content-Type, origin, accept
+Connection: close
+Transfer-Encoding: chunked
+
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>53122</code><message>sender email invalid domain: victorcastro89@hotmail.com. You must use an email @sandbox.pagseguro.com.br</message></error></errors>
+                    [headers] => Requests_Response_Headers Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Array
+                                        (
+                                            [0] => Mon, 08 Apr 2019 23:33:56 GMT
+                                        )
+
+                                    [server] => Array
+                                        (
+                                            [0] => Apache-Coyote/1.1
+                                        )
+
+                                    [content-type] => Array
+                                        (
+                                            [0] => application/xml;charset=ISO-8859-1
+                                        )
+
+                                    [cache-control] => Array
+                                        (
+                                            [0] => max-age=180
+                                        )
+
+                                    [expires] => Array
+                                        (
+                                            [0] => Mon, 08 Apr 2019 23:36:56 GMT
+                                        )
+
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding,User-Agent
+                                        )
+
+                                    [content-encoding] => Array
+                                        (
+                                            [0] => gzip
+                                        )
+
+                                    [access-control-allow-origin] => Array
+                                        (
+                                            [0] => https://dev.pagseguro.uol.com.br
+                                        )
+
+                                    [access-control-allow-methods] => Array
+                                        (
+                                            [0] => POST, GET, OPTIONS
+                                        )
+
+                                    [access-control-allow-headers] => Array
+                                        (
+                                            [0] => Content-Type, origin, accept
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] => 400
+                    [protocol_version] => 1.1
+                    [success] => 
+                    [redirects] => 0
+                    [url] => https://ws.sandbox.pagseguro.uol.com.br/v2/transactions?email=victorcastro89@hotmail.com&token=F450948552B848B48063560CF120F8A2
+                    [history] => Array
+                        (
+                        )
+
+                    [cookies] => Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] => 
+            [data] => 
+            [headers] => 
+            [status] => 
+        )
+
+)
+
+04-08-2019 @ 20:35:21 - Requesting token for order 1321 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[Maderos -1321]]></reference>
+  <sender>
+    <email><![CDATA[victorcastro89@hotmail.com]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09699183640</value>
+      </document>
+    </documents>
+    <name><![CDATA[Victor Faria]]></name>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>974787270</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <postalCode>01307906</postalCode>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Limited edition v-neck t-shirt]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+    <item>
+      <id>2</id>
+      <description><![CDATA[Hig-Rise Skinny Jean]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[https://maderos.com.br/checkout/order-received/1321/?key=wc_order_HGPwdb9nnrU65]]></redirectURL>
+  <notificationURL><![CDATA[https://maderos.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+04-08-2019 @ 20:35:21 - PagSeguro Payment Token created with success! The Token is: 6577EFE43434A1BCC4524FB3D649435E
+04-08-2019 @ 20:37:09 - Requesting token for order 1322 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[Maderos -1322]]></reference>
+  <sender>
+    <email><![CDATA[victorcastro89@hotmail.com]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09699183640</value>
+      </document>
+    </documents>
+    <name><![CDATA[Victor Faria]]></name>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>974787270</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <postalCode>01307906</postalCode>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Limited edition v-neck t-shirt]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+    <item>
+      <id>2</id>
+      <description><![CDATA[Hig-Rise Skinny Jean]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[https://maderos.com.br/checkout/order-received/1322/?key=wc_order_oKyGt7SK585mi]]></redirectURL>
+  <notificationURL><![CDATA[https://maderos.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+04-08-2019 @ 20:37:10 - Invalid token and/or email settings!
+04-08-2019 @ 20:38:18 - Requesting token for order 1322 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[Maderos -1322]]></reference>
+  <sender>
+    <email><![CDATA[victorcastro89@hotmail.com]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09699183640</value>
+      </document>
+    </documents>
+    <name><![CDATA[Victor Faria]]></name>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>974787270</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <postalCode>01307906</postalCode>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Limited edition v-neck t-shirt]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+    <item>
+      <id>2</id>
+      <description><![CDATA[Hig-Rise Skinny Jean]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[https://maderos.com.br/checkout/order-received/1322/?key=wc_order_oKyGt7SK585mi]]></redirectURL>
+  <notificationURL><![CDATA[https://maderos.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+04-08-2019 @ 20:38:19 - Invalid token and/or email settings!
+04-08-2019 @ 20:39:09 - Requesting token for order 1322 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[Maderos -1322]]></reference>
+  <sender>
+    <email><![CDATA[victorcastro89@hotmail.com]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09699183640</value>
+      </document>
+    </documents>
+    <name><![CDATA[Victor Faria]]></name>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>974787270</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <postalCode>01307906</postalCode>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Limited edition v-neck t-shirt]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+    <item>
+      <id>2</id>
+      <description><![CDATA[Hig-Rise Skinny Jean]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[https://maderos.com.br/checkout/order-received/1322/?key=wc_order_oKyGt7SK585mi]]></redirectURL>
+  <notificationURL><![CDATA[https://maderos.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+04-08-2019 @ 20:39:09 - PagSeguro Payment Token created with success! The Token is: DE3665078C8C216DD4E78FB4C7A2E6D6
+04-08-2019 @ 20:40:25 - Requesting token for order 1323 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<checkout>
+  <currency>BRL</currency>
+  <reference><![CDATA[Maderos -1323]]></reference>
+  <sender>
+    <email><![CDATA[vfaria@uolinc.com]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09699183640</value>
+      </document>
+    </documents>
+    <name><![CDATA[Victor Faria]]></name>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>974787270</number>
+    </phone>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <postalCode>01307906</postalCode>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Hig-Rise Skinny Jean]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <redirectURL><![CDATA[https://maderos.com.br/checkout/order-received/1323/?key=wc_order_IdJkKTL6m6hfJ]]></redirectURL>
+  <notificationURL><![CDATA[https://maderos.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <maxUses>1</maxUses>
+  <maxAge>120</maxAge>
+</checkout>
+
+04-08-2019 @ 20:40:25 - PagSeguro Payment Token created with success! The Token is: 0623080DB8B8F81CC4404F8F095C0093
+04-08-2019 @ 20:43:06 - Requesting session ID...
+04-08-2019 @ 20:43:06 - PagSeguro session is valid! The return is: SimpleXMLElement Object
+(
+    [id] => ff8d0ecdd2214260ba66f1be349edc99
+)
+
+04-08-2019 @ 20:44:17 - Requesting direct payment for order 1324 with the following data: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<payment>
+  <mode>default</mode>
+  <method>creditCard</method>
+  <currency>BRL</currency>
+  <notificationURL><![CDATA[https://maderos.com.br/wc-api/WC_PagSeguro_Gateway/]]></notificationURL>
+  <items>
+    <item>
+      <id>1</id>
+      <description><![CDATA[Waxed-effect pleated skirt]]></description>
+      <amount>49.00</amount>
+      <quantity>1</quantity>
+    </item>
+  </items>
+  <reference><![CDATA[Maderos -1324]]></reference>
+  <sender>
+    <email><![CDATA[c11468285293315731923@sandbox.pagseguro.com.br]]></email>
+    <documents>
+      <document>
+        <type>CPF</type>
+        <value>09699183640</value>
+      </document>
+    </documents>
+    <name><![CDATA[Victor Faria]]></name>
+    <phone>
+      <areaCode>11</areaCode>
+      <number>974787270</number>
+    </phone>
+    <hash>f28848d50a18be1b5e5d7333b15777b401dbd5167b6b19a9b8da32a729c2831d</hash>
+  </sender>
+  <shipping>
+    <type>3</type>
+    <address>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <postalCode>01307906</postalCode>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+    </address>
+    <cost>0</cost>
+  </shipping>
+  <creditCard>
+    <token>29f73c56861b4e16942763a543bafba2</token>
+    <installment>
+      <quantity>1</quantity>
+      <value>49.00</value>
+    </installment>
+    <holder>
+      <name><![CDATA[asdsa asd asd]]></name>
+      <documents>
+        <document>
+          <type>CPF</type>
+          <value>09699183640</value>
+        </document>
+      </documents>
+      <birthDate>26/12/1989</birthDate>
+      <phone>
+        <areaCode>11</areaCode>
+        <number>974787270</number>
+      </phone>
+    </holder>
+    <billingAddress>
+      <street><![CDATA[Rua Frei Caneca]]></street>
+      <number>1114</number>
+      <complement><![CDATA[114]]></complement>
+      <district><![CDATA[Consolacao]]></district>
+      <city><![CDATA[Sp]]></city>
+      <state>SP</state>
+      <country>BRA</country>
+      <postalCode>01307906</postalCode>
+    </billingAddress>
+  </creditCard>
+</payment>
+
+04-08-2019 @ 20:44:19 - PagSeguro direct payment created successfully!
+04-08-2019 @ 20:44:19 - PagSeguro payment status for order 1324 is: 1
+04-08-2019 @ 20:52:00 - Payment arguments for order #1326: WC_Order Object
+(
+    [status_transition:protected] => 
+    [data:protected] => Array
+        (
+            [parent_id] => 0
+            [status] => pending
+            [currency] => BRL
+            [version] => 3.5.7
+            [prices_include_tax] => 
+            [date_created] => WC_DateTime Object
+                (
+                    [utc_offset:protected] => 0
+                    [date] => 2019-04-08 20:52:00.000000
+                    [timezone_type] => 3
+                    [timezone] => America/Sao_Paulo
+                )
+
+            [date_modified] => WC_DateTime Object
+                (
+                    [utc_offset:protected] => 0
+                    [date] => 2019-04-08 20:52:00.000000
+                    [timezone_type] => 3
+                    [timezone] => America/Sao_Paulo
+                )
+
+            [discount_total] => 0
+            [discount_tax] => 0
+            [shipping_total] => 0.00
+            [shipping_tax] => 0
+            [cart_tax] => 0
+            [total] => 49.00
+            [total_tax] => 0
+            [customer_id] => 1
+            [order_key] => wc_order_CoQEBOOp2SRV9
+            [billing] => Array
+                (
+                    [first_name] => Victor
+                    [last_name] => Faria
+                    [company] => 
+                    [address_1] => Rua São João, 11
+                    [address_2] => 114
+                    [city] => Sp
+                    [state] => SP
+                    [postcode] => 01307-906
+                    [country] => BR
+                    [email] => c11468285293315731923@sandbox.pagseguro.com.br
+                    [phone] => 11974787270
+                )
+
+            [shipping] => Array
+                (
+                    [first_name] => Victor
+                    [last_name] => Faria
+                    [company] => 
+                    [address_1] => Rua São João, 11
+                    [address_2] => 114
+                    [city] => Sp
+                    [state] => SP
+                    [postcode] => 01307-906
+                    [country] => BR
+                )
+
+            [payment_method] => pagseguro
+            [payment_method_title] => PagSeguro
+            [transaction_id] => 
+            [customer_ip_address] => 172.26.0.1
+            [customer_user_agent] => Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+            [created_via] => checkout
+            [customer_note] => 
+            [date_completed] => 
+            [date_paid] => 
+            [cart_hash] => 4a0472025bd9d8295554861e731df10a
+        )
+
+    [items:protected] => Array
+        (
+        )
+
+    [items_to_delete:protected] => Array
+        (
+        )
+
+    [cache_group:protected] => orders
+    [data_store_name:protected] => order
+    [object_type:protected] => order
+    [id:protected] => 1326
+    [changes:protected] => Array
+        (
+        )
+
+    [object_read:protected] => 1
+    [extra_data:protected] => Array
+        (
+        )
+
+    [default_data:protected] => Array
+        (
+            [parent_id] => 0
+            [status] => 
+            [currency] => 
+            [version] => 
+            [prices_include_tax] => 
+            [date_created] => 
+            [date_modified] => 
+            [discount_total] => 0
+            [discount_tax] => 0
+            [shipping_total] => 0
+            [shipping_tax] => 0
+            [cart_tax] => 0
+            [total] => 0
+            [total_tax] => 0
+            [customer_id] => 0
+            [order_key] => 
+            [billing] => Array
+                (
+                    [first_name] => 
+                    [last_name] => 
+                    [company] => 
+                    [address_1] => 
+                    [address_2] => 
+                    [city] => 
+                    [state] => 
+                    [postcode] => 
+                    [country] => 
+                    [email] => 
+                    [phone] => 
+                )
+
+            [shipping] => Array
+                (
+                    [first_name] => 
+                    [last_name] => 
+                    [company] => 
+                    [address_1] => 
+                    [address_2] => 
+                    [city] => 
+                    [state] => 
+                    [postcode] => 
+                    [country] => 
+                )
+
+            [payment_method] => 
+            [payment_method_title] => 
+            [transaction_id] => 
+            [customer_ip_address] => 
+            [customer_user_agent] => 
+            [created_via] => 
+            [customer_note] => 
+            [date_completed] => 
+            [date_paid] => 
+            [cart_hash] => 
+        )
+
+    [data_store:protected] => WC_Data_Store Object
+        (
+            [instance:WC_Data_Store:private] => WC_Order_Data_Store_CPT Object
+                (
+                    [internal_meta_keys:protected] => Array
+                        (
+                            [0] => _parent_id
+                            [1] => _status
+                            [2] => _currency
+                            [3] => _version
+                            [4] => _prices_include_tax
+                            [5] => _date_created
+                            [6] => _date_modified
+                            [7] => _discount_total
+                            [8] => _discount_tax
+                            [9] => _shipping_total
+                            [10] => _shipping_tax
+                            [11] => _cart_tax
+                            [12] => _total
+                            [13] => _total_tax
+                            [14] => _customer_id
+                            [15] => _order_key
+                            [16] => _billing
+                            [17] => _shipping
+                            [18] => _payment_method
+                            [19] => _payment_method_title
+                            [20] => _transaction_id
+                            [21] => _customer_ip_address
+                            [22] => _customer_user_agent
+                            [23] => _created_via
+                            [24] => _customer_note
+                            [25] => _date_completed
+                            [26] => _date_paid
+                            [27] => _cart_hash
+                            [28] => _customer_user
+                            [29] => _order_key
+                            [30] => _order_currency
+                            [31] => _billing_first_name
+                            [32] => _billing_last_name
+                            [33] => _billing_company
+                            [34] => _billing_address_1
+                            [35] => _billing_address_2
+                            [36] => _billing_city
+                            [37] => _billing_state
+                            [38] => _billing_postcode
+                            [39] => _billing_country
+                            [40] => _billing_email
+                            [41] => _billing_phone
+                            [42] => _shipping_first_name
+                            [43] => _shipping_last_name
+                            [44] => _shipping_company
+                            [45] => _shipping_address_1
+                            [46] => _shipping_address_2
+                            [47] => _shipping_city
+                            [48] => _shipping_state
+                            [49] => _shipping_postcode
+                            [50] => _shipping_country
+                            [51] => _completed_date
+                            [52] => _paid_date
+                            [53] => _edit_lock
+                            [54] => _edit_last
+                            [55] => _cart_discount
+                            [56] => _cart_discount_tax
+                            [57] => _order_shipping
+                            [58] => _order_shipping_tax
+                            [59] => _order_tax
+                            [60] => _order_total
+                            [61] => _payment_method
+                            [62] => _payment_method_title
+                            [63] => _transaction_id
+                            [64] => _customer_ip_address
+                            [65] => _customer_user_agent
+                            [66] => _created_via
+                            [67] => _order_version
+                            [68] => _prices_include_tax
+                            [69] => _date_completed
+                            [70] => _date_paid
+                            [71] => _payment_tokens
+                            [72] => _billing_address_index
+                            [73] => _shipping_address_index
+                            [74] => _recorded_sales
+                            [75] => _recorded_coupon_usage_counts
+                            [76] => _download_permissions_granted
+                            [77] => _order_stock_reduced
+                        )
+
+                    [meta_type:protected] => post
+                    [object_id_field_for_meta:protected] => 
+                )
+
+            [stores:WC_Data_Store:private] => Array
+                (
+                    [coupon] => WC_Coupon_Data_Store_CPT
+                    [customer] => WC_Customer_Data_Store
+                    [customer-download] => WC_Customer_Download_Data_Store
+                    [customer-download-log] => WC_Customer_Download_Log_Data_Store
+                    [customer-session] => WC_Customer_Data_Store_Session
+                    [order] => WC_Order_Data_Store_CPT
+                    [order-refund] => WC_Order_Refund_Data_Store_CPT
+                    [order-item] => WC_Order_Item_Data_Store
+                    [order-item-coupon] => WC_Order_Item_Coupon_Data_Store
+                    [order-item-fee] => WC_Order_Item_Fee_Data_Store
+                    [order-item-product] => WC_Order_Item_Product_Data_Store
+                    [order-item-shipping] => WC_Order_Item_Shipping_Data_Store
+                    [order-item-tax] => WC_Order_Item_Tax_Data_Store
+                    [payment-token] => WC_Payment_Token_Data_Store
+                    [product] => WC_Product_Data_Store_CPT
+                    [product-grouped] => WC_Product_Grouped_Data_Store_CPT
+                    [product-variable] => WC_Product_Variable_Data_Store_CPT
+                    [product-variation] => WC_Product_Variation_Data_Store_CPT
+                    [shipping-zone] => WC_Shipping_Zone_Data_Store
+                    [webhook] => WC_Webhook_Data_Store
+                )
+
+            [current_class_name:WC_Data_Store:private] => WC_Order_Data_Store_CPT
+            [object_type:WC_Data_Store:private] => order
+        )
+
+    [meta_data:protected] => Array
+        (
+        )
+
+)
+
+04-08-2019 @ 20:52:25 - Payment arguments for order #1327: WC_Order Object
+(
+    [status_transition:protected] => 
+    [data:protected] => Array
+        (
+            [parent_id] => 0
+            [status] => pending
+            [currency] => BRL
+            [version] => 3.5.7
+            [prices_include_tax] => 
+            [date_created] => WC_DateTime Object
+                (
+                    [utc_offset:protected] => 0
+                    [date] => 2019-04-08 20:52:25.000000
+                    [timezone_type] => 3
+                    [timezone] => America/Sao_Paulo
+                )
+
+            [date_modified] => WC_DateTime Object
+                (
+                    [utc_offset:protected] => 0
+                    [date] => 2019-04-08 20:52:25.000000
+                    [timezone_type] => 3
+                    [timezone] => America/Sao_Paulo
+                )
+
+            [discount_total] => 0
+            [discount_tax] => 0
+            [shipping_total] => 0.00
+            [shipping_tax] => 0
+            [cart_tax] => 0
+            [total] => 49.00
+            [total_tax] => 0
+            [customer_id] => 1
+            [order_key] => wc_order_oy12ZEKr3v3cs
+            [billing] => Array
+                (
+                    [first_name] => Victor
+                    [last_name] => Faria
+                    [company] => 
+                    [address_1] => Rua Frei Caneca, 115
+                    [address_2] => 114
+                    [city] => Sp
+                    [state] => SP
+                    [postcode] => 01307-906
+                    [country] => BR
+                    [email] => c11468285293315731923@sandbox.pagseguro.com.br
+                    [phone] => 11974787270
+                )
+
+            [shipping] => Array
+                (
+                    [first_name] => Victor
+                    [last_name] => Faria
+                    [company] => 
+                    [address_1] => Rua Frei Caneca, 115
+                    [address_2] => 114
+                    [city] => Sp
+                    [state] => SP
+                    [postcode] => 01307-906
+                    [country] => BR
+                )
+
+            [payment_method] => pagseguro
+            [payment_method_title] => PagSeguro
+            [transaction_id] => 
+            [customer_ip_address] => 172.26.0.1
+            [customer_user_agent] => Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+            [created_via] => checkout
+            [customer_note] => 
+            [date_completed] => 
+            [date_paid] => 
+            [cart_hash] => 4a0472025bd9d8295554861e731df10a
+        )
+
+    [items:protected] => Array
+        (
+        )
+
+    [items_to_delete:protected] => Array
+        (
+        )
+
+    [cache_group:protected] => orders
+    [data_store_name:protected] => order
+    [object_type:protected] => order
+    [id:protected] => 1327
+    [changes:protected] => Array
+        (
+        )
+
+    [object_read:protected] => 1
+    [extra_data:protected] => Array
+        (
+        )
+
+    [default_data:protected] => Array
+        (
+            [parent_id] => 0
+            [status] => 
+            [currency] => 
+            [version] => 
+            [prices_include_tax] => 
+            [date_created] => 
+            [date_modified] => 
+            [discount_total] => 0
+            [discount_tax] => 0
+            [shipping_total] => 0
+            [shipping_tax] => 0
+            [cart_tax] => 0
+            [total] => 0
+            [total_tax] => 0
+            [customer_id] => 0
+            [order_key] => 
+            [billing] => Array
+                (
+                    [first_name] => 
+                    [last_name] => 
+                    [company] => 
+                    [address_1] => 
+                    [address_2] => 
+                    [city] => 
+                    [state] => 
+                    [postcode] => 
+                    [country] => 
+                    [email] => 
+                    [phone] => 
+                )
+
+            [shipping] => Array
+                (
+                    [first_name] => 
+                    [last_name] => 
+                    [company] => 
+                    [address_1] => 
+                    [address_2] => 
+                    [city] => 
+                    [state] => 
+                    [postcode] => 
+                    [country] => 
+                )
+
+            [payment_method] => 
+            [payment_method_title] => 
+            [transaction_id] => 
+            [customer_ip_address] => 
+            [customer_user_agent] => 
+            [created_via] => 
+            [customer_note] => 
+            [date_completed] => 
+            [date_paid] => 
+            [cart_hash] => 
+        )
+
+    [data_store:protected] => WC_Data_Store Object
+        (
+            [instance:WC_Data_Store:private] => WC_Order_Data_Store_CPT Object
+                (
+                    [internal_meta_keys:protected] => Array
+                        (
+                            [0] => _parent_id
+                            [1] => _status
+                            [2] => _currency
+                            [3] => _version
+                            [4] => _prices_include_tax
+                            [5] => _date_created
+                            [6] => _date_modified
+                            [7] => _discount_total
+                            [8] => _discount_tax
+                            [9] => _shipping_total
+                            [10] => _shipping_tax
+                            [11] => _cart_tax
+                            [12] => _total
+                            [13] => _total_tax
+                            [14] => _customer_id
+                            [15] => _order_key
+                            [16] => _billing
+                            [17] => _shipping
+                            [18] => _payment_method
+                            [19] => _payment_method_title
+                            [20] => _transaction_id
+                            [21] => _customer_ip_address
+                            [22] => _customer_user_agent
+                            [23] => _created_via
+                            [24] => _customer_note
+                            [25] => _date_completed
+                            [26] => _date_paid
+                            [27] => _cart_hash
+                            [28] => _customer_user
+                            [29] => _order_key
+                            [30] => _order_currency
+                            [31] => _billing_first_name
+                            [32] => _billing_last_name
+                            [33] => _billing_company
+                            [34] => _billing_address_1
+                            [35] => _billing_address_2
+                            [36] => _billing_city
+                            [37] => _billing_state
+                            [38] => _billing_postcode
+                            [39] => _billing_country
+                            [40] => _billing_email
+                            [41] => _billing_phone
+                            [42] => _shipping_first_name
+                            [43] => _shipping_last_name
+                            [44] => _shipping_company
+                            [45] => _shipping_address_1
+                            [46] => _shipping_address_2
+                            [47] => _shipping_city
+                            [48] => _shipping_state
+                            [49] => _shipping_postcode
+                            [50] => _shipping_country
+                            [51] => _completed_date
+                            [52] => _paid_date
+                            [53] => _edit_lock
+                            [54] => _edit_last
+                            [55] => _cart_discount
+                            [56] => _cart_discount_tax
+                            [57] => _order_shipping
+                            [58] => _order_shipping_tax
+                            [59] => _order_tax
+                            [60] => _order_total
+                            [61] => _payment_method
+                            [62] => _payment_method_title
+                            [63] => _transaction_id
+                            [64] => _customer_ip_address
+                            [65] => _customer_user_agent
+                            [66] => _created_via
+                            [67] => _order_version
+                            [68] => _prices_include_tax
+                            [69] => _date_completed
+                            [70] => _date_paid
+                            [71] => _payment_tokens
+                            [72] => _billing_address_index
+                            [73] => _shipping_address_index
+                            [74] => _recorded_sales
+                            [75] => _recorded_coupon_usage_counts
+                            [76] => _download_permissions_granted
+                            [77] => _order_stock_reduced
+                        )
+
+                    [meta_type:protected] => post
+                    [object_id_field_for_meta:protected] => 
+                )
+
+            [stores:WC_Data_Store:private] => Array
+                (
+                    [coupon] => WC_Coupon_Data_Store_CPT
+                    [customer] => WC_Customer_Data_Store
+                    [customer-download] => WC_Customer_Download_Data_Store
+                    [customer-download-log] => WC_Customer_Download_Log_Data_Store
+                    [customer-session] => WC_Customer_Data_Store_Session
+                    [order] => WC_Order_Data_Store_CPT
+                    [order-refund] => WC_Order_Refund_Data_Store_CPT
+                    [order-item] => WC_Order_Item_Data_Store
+                    [order-item-coupon] => WC_Order_Item_Coupon_Data_Store
+                    [order-item-fee] => WC_Order_Item_Fee_Data_Store
+                    [order-item-product] => WC_Order_Item_Product_Data_Store
+                    [order-item-shipping] => WC_Order_Item_Shipping_Data_Store
+                    [order-item-tax] => WC_Order_Item_Tax_Data_Store
+                    [payment-token] => WC_Payment_Token_Data_Store
+                    [product] => WC_Product_Data_Store_CPT
+                    [product-grouped] => WC_Product_Grouped_Data_Store_CPT
+                    [product-variable] => WC_Product_Variable_Data_Store_CPT
+                    [product-variation] => WC_Product_Variation_Data_Store_CPT
+                    [shipping-zone] => WC_Shipping_Zone_Data_Store
+                    [webhook] => WC_Webhook_Data_Store
+                )
+
+            [current_class_name:WC_Data_Store:private] => WC_Order_Data_Store_CPT
+            [object_type:WC_Data_Store:private] => order
+        )
+
+    [meta_data:protected] => Array
+        (
+        )
+
+)
+
+04-08-2019 @ 20:53:54 - Payment arguments for order #1328: WC_Order Object
+(
+    [status_transition:protected] => 
+    [data:protected] => Array
+        (
+            [parent_id] => 0
+            [status] => pending
+            [currency] => BRL
+            [version] => 3.5.7
+            [prices_include_tax] => 
+            [date_created] => WC_DateTime Object
+                (
+                    [utc_offset:protected] => 0
+                    [date] => 2019-04-08 20:53:54.000000
+                    [timezone_type] => 3
+                    [timezone] => America/Sao_Paulo
+                )
+
+            [date_modified] => WC_DateTime Object
+                (
+                    [utc_offset:protected] => 0
+                    [date] => 2019-04-08 20:53:54.000000
+                    [timezone_type] => 3
+                    [timezone] => America/Sao_Paulo
+                )
+
+            [discount_total] => 0
+            [discount_tax] => 0
+            [shipping_total] => 0.00
+            [shipping_tax] => 0
+            [cart_tax] => 0
+            [total] => 59.00
+            [total_tax] => 0
+            [customer_id] => 1
+            [order_key] => wc_order_lHnbtitflrAWQ
+            [billing] => Array
+                (
+                    [first_name] => Victor
+                    [last_name] => Faria
+                    [company] => 
+                    [address_1] => Rua Frei Caneca, 115
+                    [address_2] => 114
+                    [city] => Sp
+                    [state] => SP
+                    [postcode] => 01307-906
+                    [country] => BR
+                    [email] => c11468285293315731923@sandbox.pagseguro.com.br
+                    [phone] => 11974787270
+                )
+
+            [shipping] => Array
+                (
+                    [first_name] => Victor
+                    [last_name] => Faria
+                    [company] => 
+                    [address_1] => Rua Frei Caneca, 115
+                    [address_2] => 114
+                    [city] => Sp
+                    [state] => SP
+                    [postcode] => 01307-906
+                    [country] => BR
+                )
+
+            [payment_method] => pagseguro
+            [payment_method_title] => PagSeguro
+            [transaction_id] => 
+            [customer_ip_address] => 172.26.0.1
+            [customer_user_agent] => Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+            [created_via] => checkout
+            [customer_note] => 
+            [date_completed] => 
+            [date_paid] => 
+            [cart_hash] => d87a321f1ac881c7fb23e9068864b995
+        )
+
+    [items:protected] => Array
+        (
+        )
+
+    [items_to_delete:protected] => Array
+        (
+        )
+
+    [cache_group:protected] => orders
+    [data_store_name:protected] => order
+    [object_type:protected] => order
+    [id:protected] => 1328
+    [changes:protected] => Array
+        (
+        )
+
+    [object_read:protected] => 1
+    [extra_data:protected] => Array
+        (
+        )
+
+    [default_data:protected] => Array
+        (
+            [parent_id] => 0
+            [status] => 
+            [currency] => 
+            [version] => 
+            [prices_include_tax] => 
+            [date_created] => 
+            [date_modified] => 
+            [discount_total] => 0
+            [discount_tax] => 0
+            [shipping_total] => 0
+            [shipping_tax] => 0
+            [cart_tax] => 0
+            [total] => 0
+            [total_tax] => 0
+            [customer_id] => 0
+            [order_key] => 
+            [billing] => Array
+                (
+                    [first_name] => 
+                    [last_name] => 
+                    [company] => 
+                    [address_1] => 
+                    [address_2] => 
+                    [city] => 
+                    [state] => 
+                    [postcode] => 
+                    [country] => 
+                    [email] => 
+                    [phone] => 
+                )
+
+            [shipping] => Array
+                (
+                    [first_name] => 
+                    [last_name] => 
+                    [company] => 
+                    [address_1] => 
+                    [address_2] => 
+                    [city] => 
+                    [state] => 
+                    [postcode] => 
+                    [country] => 
+                )
+
+            [payment_method] => 
+            [payment_method_title] => 
+            [transaction_id] => 
+            [customer_ip_address] => 
+            [customer_user_agent] => 
+            [created_via] => 
+            [customer_note] => 
+            [date_completed] => 
+            [date_paid] => 
+            [cart_hash] => 
+        )
+
+    [data_store:protected] => WC_Data_Store Object
+        (
+            [instance:WC_Data_Store:private] => WC_Order_Data_Store_CPT Object
+                (
+                    [internal_meta_keys:protected] => Array
+                        (
+                            [0] => _parent_id
+                            [1] => _status
+                            [2] => _currency
+                            [3] => _version
+                            [4] => _prices_include_tax
+                            [5] => _date_created
+                            [6] => _date_modified
+                            [7] => _discount_total
+                            [8] => _discount_tax
+                            [9] => _shipping_total
+                            [10] => _shipping_tax
+                            [11] => _cart_tax
+                            [12] => _total
+                            [13] => _total_tax
+                            [14] => _customer_id
+                            [15] => _order_key
+                            [16] => _billing
+                            [17] => _shipping
+                            [18] => _payment_method
+                            [19] => _payment_method_title
+                            [20] => _transaction_id
+                            [21] => _customer_ip_address
+                            [22] => _customer_user_agent
+                            [23] => _created_via
+                            [24] => _customer_note
+                            [25] => _date_completed
+                            [26] => _date_paid
+                            [27] => _cart_hash
+                            [28] => _customer_user
+                            [29] => _order_key
+                            [30] => _order_currency
+                            [31] => _billing_first_name
+                            [32] => _billing_last_name
+                            [33] => _billing_company
+                            [34] => _billing_address_1
+                            [35] => _billing_address_2
+                            [36] => _billing_city
+                            [37] => _billing_state
+                            [38] => _billing_postcode
+                            [39] => _billing_country
+                            [40] => _billing_email
+                            [41] => _billing_phone
+                            [42] => _shipping_first_name
+                            [43] => _shipping_last_name
+                            [44] => _shipping_company
+                            [45] => _shipping_address_1
+                            [46] => _shipping_address_2
+                            [47] => _shipping_city
+                            [48] => _shipping_state
+                            [49] => _shipping_postcode
+                            [50] => _shipping_country
+                            [51] => _completed_date
+                            [52] => _paid_date
+                            [53] => _edit_lock
+                            [54] => _edit_last
+                            [55] => _cart_discount
+                            [56] => _cart_discount_tax
+                            [57] => _order_shipping
+                            [58] => _order_shipping_tax
+                            [59] => _order_tax
+                            [60] => _order_total
+                            [61] => _payment_method
+                            [62] => _payment_method_title
+                            [63] => _transaction_id
+                            [64] => _customer_ip_address
+                            [65] => _customer_user_agent
+                            [66] => _created_via
+                            [67] => _order_version
+                            [68] => _prices_include_tax
+                            [69] => _date_completed
+                            [70] => _date_paid
+                            [71] => _payment_tokens
+                            [72] => _billing_address_index
+                            [73] => _shipping_address_index
+                            [74] => _recorded_sales
+                            [75] => _recorded_coupon_usage_counts
+                            [76] => _download_permissions_granted
+                            [77] => _order_stock_reduced
+                        )
+
+                    [meta_type:protected] => post
+                    [object_id_field_for_meta:protected] => 
+                )
+
+            [stores:WC_Data_Store:private] => Array
+                (
+                    [coupon] => WC_Coupon_Data_Store_CPT
+                    [customer] => WC_Customer_Data_Store
+                    [customer-download] => WC_Customer_Download_Data_Store
+                    [customer-download-log] => WC_Customer_Download_Log_Data_Store
+                    [customer-session] => WC_Customer_Data_Store_Session
+                    [order] => WC_Order_Data_Store_CPT
+                    [order-refund] => WC_Order_Refund_Data_Store_CPT
+                    [order-item] => WC_Order_Item_Data_Store
+                    [order-item-coupon] => WC_Order_Item_Coupon_Data_Store
+                    [order-item-fee] => WC_Order_Item_Fee_Data_Store
+                    [order-item-product] => WC_Order_Item_Product_Data_Store
+                    [order-item-shipping] => WC_Order_Item_Shipping_Data_Store
+                    [order-item-tax] => WC_Order_Item_Tax_Data_Store
+                    [payment-token] => WC_Payment_Token_Data_Store
+                    [product] => WC_Product_Data_Store_CPT
+                    [product-grouped] => WC_Product_Grouped_Data_Store_CPT
+                    [product-variable] => WC_Product_Variable_Data_Store_CPT
+                    [product-variation] => WC_Product_Variation_Data_Store_CPT
+                    [shipping-zone] => WC_Shipping_Zone_Data_Store
+                    [webhook] => WC_Webhook_Data_Store
+                )
+
+            [current_class_name:WC_Data_Store:private] => WC_Order_Data_Store_CPT
+            [object_type:WC_Data_Store:private] => order
+        )
+
+    [meta_data:protected] => Array
+        (
+        )
+
+)
+
+04-08-2019 @ 20:57:10 - Payment arguments for order #1329: WC_Order Object
+(
+    [status_transition:protected] => 
+    [data:protected] => Array
+        (
+            [parent_id] => 0
+            [status] => pending
+            [currency] => BRL
+            [version] => 3.5.7
+            [prices_include_tax] => 
+            [date_created] => WC_DateTime Object
+                (
+                    [utc_offset:protected] => 0
+                    [date] => 2019-04-08 20:57:10.000000
+                    [timezone_type] => 3
+                    [timezone] => America/Sao_Paulo
+                )
+
+            [date_modified] => WC_DateTime Object
+                (
+                    [utc_offset:protected] => 0
+                    [date] => 2019-04-08 20:57:10.000000
+                    [timezone_type] => 3
+                    [timezone] => America/Sao_Paulo
+                )
+
+            [discount_total] => 0
+            [discount_tax] => 0
+            [shipping_total] => 0.00
+            [shipping_tax] => 0
+            [cart_tax] => 0
+            [total] => 159.00
+            [total_tax] => 0
+            [customer_id] => 1
+            [order_key] => wc_order_g12KLA58oAaSW
+            [billing] => Array
+                (
+                    [first_name] => Victor
+                    [last_name] => Faria
+                    [company] => 
+                    [address_1] => Rua Frei Caneca, 115
+                    [address_2] => 114
+                    [city] => Sp
+                    [state] => SP
+                    [postcode] => 01307-906
+                    [country] => BR
+                    [email] => c11468285293315731923@sandbox.pagseguro.com.br
+                    [phone] => 11974787270
+                )
+
+            [shipping] => Array
+                (
+                    [first_name] => Victor
+                    [last_name] => Faria
+                    [company] => 
+                    [address_1] => Rua Frei Caneca, 115
+                    [address_2] => 114
+                    [city] => Sp
+                    [state] => SP
+                    [postcode] => 01307-906
+                    [country] => BR
+                )
+
+            [payment_method] => pagseguro
+            [payment_method_title] => PagSeguro
+            [transaction_id] => 
+            [customer_ip_address] => 172.26.0.1
+            [customer_user_agent] => Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+            [created_via] => checkout
+            [customer_note] => 
+            [date_completed] => 
+            [date_paid] => 
+            [cart_hash] => 6c771ba135ed2f70c2a74aaac5b3193e
+        )
+
+    [items:protected] => Array
+        (
+        )
+
+    [items_to_delete:protected] => Array
+        (
+        )
+
+    [cache_group:protected] => orders
+    [data_store_name:protected] => order
+    [object_type:protected] => order
+    [id:protected] => 1329
+    [changes:protected] => Array
+        (
+        )
+
+    [object_read:protected] => 1
+    [extra_data:protected] => Array
+        (
+        )
+
+    [default_data:protected] => Array
+        (
+            [parent_id] => 0
+            [status] => 
+            [currency] => 
+            [version] => 
+            [prices_include_tax] => 
+            [date_created] => 
+            [date_modified] => 
+            [discount_total] => 0
+            [discount_tax] => 0
+            [shipping_total] => 0
+            [shipping_tax] => 0
+            [cart_tax] => 0
+            [total] => 0
+            [total_tax] => 0
+            [customer_id] => 0
+            [order_key] => 
+            [billing] => Array
+                (
+                    [first_name] => 
+                    [last_name] => 
+                    [company] => 
+                    [address_1] => 
+                    [address_2] => 
+                    [city] => 
+                    [state] => 
+                    [postcode] => 
+                    [country] => 
+                    [email] => 
+                    [phone] => 
+                )
+
+            [shipping] => Array
+                (
+                    [first_name] => 
+                    [last_name] => 
+                    [company] => 
+                    [address_1] => 
+                    [address_2] => 
+                    [city] => 
+                    [state] => 
+                    [postcode] => 
+                    [country] => 
+                )
+
+            [payment_method] => 
+            [payment_method_title] => 
+            [transaction_id] => 
+            [customer_ip_address] => 
+            [customer_user_agent] => 
+            [created_via] => 
+            [customer_note] => 
+            [date_completed] => 
+            [date_paid] => 
+            [cart_hash] => 
+        )
+
+    [data_store:protected] => WC_Data_Store Object
+        (
+            [instance:WC_Data_Store:private] => WC_Order_Data_Store_CPT Object
+                (
+                    [internal_meta_keys:protected] => Array
+                        (
+                            [0] => _parent_id
+                            [1] => _status
+                            [2] => _currency
+                            [3] => _version
+                            [4] => _prices_include_tax
+                            [5] => _date_created
+                            [6] => _date_modified
+                            [7] => _discount_total
+                            [8] => _discount_tax
+                            [9] => _shipping_total
+                            [10] => _shipping_tax
+                            [11] => _cart_tax
+                            [12] => _total
+                            [13] => _total_tax
+                            [14] => _customer_id
+                            [15] => _order_key
+                            [16] => _billing
+                            [17] => _shipping
+                            [18] => _payment_method
+                            [19] => _payment_method_title
+                            [20] => _transaction_id
+                            [21] => _customer_ip_address
+                            [22] => _customer_user_agent
+                            [23] => _created_via
+                            [24] => _customer_note
+                            [25] => _date_completed
+                            [26] => _date_paid
+                            [27] => _cart_hash
+                            [28] => _customer_user
+                            [29] => _order_key
+                            [30] => _order_currency
+                            [31] => _billing_first_name
+                            [32] => _billing_last_name
+                            [33] => _billing_company
+                            [34] => _billing_address_1
+                            [35] => _billing_address_2
+                            [36] => _billing_city
+                            [37] => _billing_state
+                            [38] => _billing_postcode
+                            [39] => _billing_country
+                            [40] => _billing_email
+                            [41] => _billing_phone
+                            [42] => _shipping_first_name
+                            [43] => _shipping_last_name
+                            [44] => _shipping_company
+                            [45] => _shipping_address_1
+                            [46] => _shipping_address_2
+                            [47] => _shipping_city
+                            [48] => _shipping_state
+                            [49] => _shipping_postcode
+                            [50] => _shipping_country
+                            [51] => _completed_date
+                            [52] => _paid_date
+                            [53] => _edit_lock
+                            [54] => _edit_last
+                            [55] => _cart_discount
+                            [56] => _cart_discount_tax
+                            [57] => _order_shipping
+                            [58] => _order_shipping_tax
+                            [59] => _order_tax
+                            [60] => _order_total
+                            [61] => _payment_method
+                            [62] => _payment_method_title
+                            [63] => _transaction_id
+                            [64] => _customer_ip_address
+                            [65] => _customer_user_agent
+                            [66] => _created_via
+                            [67] => _order_version
+                            [68] => _prices_include_tax
+                            [69] => _date_completed
+                            [70] => _date_paid
+                            [71] => _payment_tokens
+                            [72] => _billing_address_index
+                            [73] => _shipping_address_index
+                            [74] => _recorded_sales
+                            [75] => _recorded_coupon_usage_counts
+                            [76] => _download_permissions_granted
+                            [77] => _order_stock_reduced
+                        )
+
+                    [meta_type:protected] => post
+                    [object_id_field_for_meta:protected] => 
+                )
+
+            [stores:WC_Data_Store:private] => Array
+                (
+                    [coupon] => WC_Coupon_Data_Store_CPT
+                    [customer] => WC_Customer_Data_Store
+                    [customer-download] => WC_Customer_Download_Data_Store
+                    [customer-download-log] => WC_Customer_Download_Log_Data_Store
+                    [customer-session] => WC_Customer_Data_Store_Session
+                    [order] => WC_Order_Data_Store_CPT
+                    [order-refund] => WC_Order_Refund_Data_Store_CPT
+                    [order-item] => WC_Order_Item_Data_Store
+                    [order-item-coupon] => WC_Order_Item_Coupon_Data_Store
+                    [order-item-fee] => WC_Order_Item_Fee_Data_Store
+                    [order-item-product] => WC_Order_Item_Product_Data_Store
+                    [order-item-shipping] => WC_Order_Item_Shipping_Data_Store
+                    [order-item-tax] => WC_Order_Item_Tax_Data_Store
+                    [payment-token] => WC_Payment_Token_Data_Store
+                    [product] => WC_Product_Data_Store_CPT
+                    [product-grouped] => WC_Product_Grouped_Data_Store_CPT
+                    [product-variable] => WC_Product_Variable_Data_Store_CPT
+                    [product-variation] => WC_Product_Variation_Data_Store_CPT
+                    [shipping-zone] => WC_Shipping_Zone_Data_Store
+                    [webhook] => WC_Webhook_Data_Store
+                )
+
+            [current_class_name:WC_Data_Store:private] => WC_Order_Data_Store_CPT
+            [object_type:WC_Data_Store:private] => order
+        )
+
+    [meta_data:protected] => Array
+        (
+        )
+
+)
+
+04-08-2019 @ 20:58:18 - Payment arguments for order #1330: WC_Order Object
+(
+    [status_transition:protected] => 
+    [data:protected] => Array
+        (
+            [parent_id] => 0
+            [status] => pending
+            [currency] => BRL
+            [version] => 3.5.7
+            [prices_include_tax] => 
+            [date_created] => WC_DateTime Object
+                (
+                    [utc_offset:protected] => 0
+                    [date] => 2019-04-08 20:58:18.000000
+                    [timezone_type] => 3
+                    [timezone] => America/Sao_Paulo
+                )
+
+            [date_modified] => WC_DateTime Object
+                (
+                    [utc_offset:protected] => 0
+                    [date] => 2019-04-08 20:58:18.000000
+                    [timezone_type] => 3
+                    [timezone] => America/Sao_Paulo
+                )
+
+            [discount_total] => 0
+            [discount_tax] => 0
+            [shipping_total] => 0.00
+            [shipping_tax] => 0
+            [cart_tax] => 0
+            [total] => 159.00
+            [total_tax] => 0
+            [customer_id] => 1
+            [order_key] => wc_order_CYUnkUM9Lbdt3
+            [billing] => Array
+                (
+                    [first_name] => Victor
+                    [last_name] => Faria
+                    [company] => 
+                    [address_1] => Rua Frei Caneca, 115
+                    [address_2] => 114
+                    [city] => Sp
+                    [state] => SP
+                    [postcode] => 01307-906
+                    [country] => BR
+                    [email] => c11468285293315731923@sandbox.pagseguro.com.br
+                    [phone] => 11974787270
+                )
+
+            [shipping] => Array
+                (
+                    [first_name] => Victor
+                    [last_name] => Faria
+                    [company] => 
+                    [address_1] => Rua Frei Caneca, 115
+                    [address_2] => 114
+                    [city] => Sp
+                    [state] => SP
+                    [postcode] => 01307-906
+                    [country] => BR
+                )
+
+            [payment_method] => pagseguro
+            [payment_method_title] => PagSeguro
+            [transaction_id] => 
+            [customer_ip_address] => 172.26.0.1
+            [customer_user_agent] => Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0
+            [created_via] => checkout
+            [customer_note] => 
+            [date_completed] => 
+            [date_paid] => 
+            [cart_hash] => 6c771ba135ed2f70c2a74aaac5b3193e
+        )
+
+    [items:protected] => Array
+        (
+        )
+
+    [items_to_delete:protected] => Array
+        (
+        )
+
+    [cache_group:protected] => orders
+    [data_store_name:protected] => order
+    [object_type:protected] => order
+    [id:protected] => 1330
+    [changes:protected] => Array
+        (
+        )
+
+    [object_read:protected] => 1
+    [extra_data:protected] => Array
+        (
+        )
+
+    [default_data:protected] => Array
+        (
+            [parent_id] => 0
+            [status] => 
+            [currency] => 
+            [version] => 
+            [prices_include_tax] => 
+            [date_created] => 
+            [date_modified] => 
+            [discount_total] => 0
+            [discount_tax] => 0
+            [shipping_total] => 0
+            [shipping_tax] => 0
+            [cart_tax] => 0
+            [total] => 0
+            [total_tax] => 0
+            [customer_id] => 0
+            [order_key] => 
+            [billing] => Array
+                (
+                    [first_name] => 
+                    [last_name] => 
+                    [company] => 
+                    [address_1] => 
+                    [address_2] => 
+                    [city] => 
+                    [state] => 
+                    [postcode] => 
+                    [country] => 
+                    [email] => 
+                    [phone] => 
+                )
+
+            [shipping] => Array
+                (
+                    [first_name] => 
+                    [last_name] => 
+                    [company] => 
+                    [address_1] => 
+                    [address_2] => 
+                    [city] => 
+                    [state] => 
+                    [postcode] => 
+                    [country] => 
+                )
+
+            [payment_method] => 
+            [payment_method_title] => 
+            [transaction_id] => 
+            [customer_ip_address] => 
+            [customer_user_agent] => 
+            [created_via] => 
+            [customer_note] => 
+            [date_completed] => 
+            [date_paid] => 
+            [cart_hash] => 
+        )
+
+    [data_store:protected] => WC_Data_Store Object
+        (
+            [instance:WC_Data_Store:private] => WC_Order_Data_Store_CPT Object
+                (
+                    [internal_meta_keys:protected] => Array
+                        (
+                            [0] => _parent_id
+                            [1] => _status
+                            [2] => _currency
+                            [3] => _version
+                            [4] => _prices_include_tax
+                            [5] => _date_created
+                            [6] => _date_modified
+                            [7] => _discount_total
+                            [8] => _discount_tax
+                            [9] => _shipping_total
+                            [10] => _shipping_tax
+                            [11] => _cart_tax
+                            [12] => _total
+                            [13] => _total_tax
+                            [14] => _customer_id
+                            [15] => _order_key
+                            [16] => _billing
+                            [17] => _shipping
+                            [18] => _payment_method
+                            [19] => _payment_method_title
+                            [20] => _transaction_id
+                            [21] => _customer_ip_address
+                            [22] => _customer_user_agent
+                            [23] => _created_via
+                            [24] => _customer_note
+                            [25] => _date_completed
+                            [26] => _date_paid
+                            [27] => _cart_hash
+                            [28] => _customer_user
+                            [29] => _order_key
+                            [30] => _order_currency
+                            [31] => _billing_first_name
+                            [32] => _billing_last_name
+                            [33] => _billing_company
+                            [34] => _billing_address_1
+                            [35] => _billing_address_2
+                            [36] => _billing_city
+                            [37] => _billing_state
+                            [38] => _billing_postcode
+                            [39] => _billing_country
+                            [40] => _billing_email
+                            [41] => _billing_phone
+                            [42] => _shipping_first_name
+                            [43] => _shipping_last_name
+                            [44] => _shipping_company
+                            [45] => _shipping_address_1
+                            [46] => _shipping_address_2
+                            [47] => _shipping_city
+                            [48] => _shipping_state
+                            [49] => _shipping_postcode
+                            [50] => _shipping_country
+                            [51] => _completed_date
+                            [52] => _paid_date
+                            [53] => _edit_lock
+                            [54] => _edit_last
+                            [55] => _cart_discount
+                            [56] => _cart_discount_tax
+                            [57] => _order_shipping
+                            [58] => _order_shipping_tax
+                            [59] => _order_tax
+                            [60] => _order_total
+                            [61] => _payment_method
+                            [62] => _payment_method_title
+                            [63] => _transaction_id
+                            [64] => _customer_ip_address
+                            [65] => _customer_user_agent
+                            [66] => _created_via
+                            [67] => _order_version
+                            [68] => _prices_include_tax
+                            [69] => _date_completed
+                            [70] => _date_paid
+                            [71] => _payment_tokens
+                            [72] => _billing_address_index
+                            [73] => _shipping_address_index
+                            [74] => _recorded_sales
+                            [75] => _recorded_coupon_usage_counts
+                            [76] => _download_permissions_granted
+                            [77] => _order_stock_reduced
+                        )
+
+                    [meta_type:protected] => post
+                    [object_id_field_for_meta:protected] => 
+                )
+
+            [stores:WC_Data_Store:private] => Array
+                (
+                    [coupon] => WC_Coupon_Data_Store_CPT
+                    [customer] => WC_Customer_Data_Store
+                    [customer-download] => WC_Customer_Download_Data_Store
+                    [customer-download-log] => WC_Customer_Download_Log_Data_Store
+                    [customer-session] => WC_Customer_Data_Store_Session
+                    [order] => WC_Order_Data_Store_CPT
+                    [order-refund] => WC_Order_Refund_Data_Store_CPT
+                    [order-item] => WC_Order_Item_Data_Store
+                    [order-item-coupon] => WC_Order_Item_Coupon_Data_Store
+                    [order-item-fee] => WC_Order_Item_Fee_Data_Store
+                    [order-item-product] => WC_Order_Item_Product_Data_Store
+                    [order-item-shipping] => WC_Order_Item_Shipping_Data_Store
+                    [order-item-tax] => WC_Order_Item_Tax_Data_Store
+                    [payment-token] => WC_Payment_Token_Data_Store
+                    [product] => WC_Product_Data_Store_CPT
+                    [product-grouped] => WC_Product_Grouped_Data_Store_CPT
+                    [product-variable] => WC_Product_Variable_Data_Store_CPT
+                    [product-variation] => WC_Product_Variation_Data_Store_CPT
+                    [shipping-zone] => WC_Shipping_Zone_Data_Store
+                    [webhook] => WC_Webhook_Data_Store
+                )
+
+            [current_class_name:WC_Data_Store:private] => WC_Order_Data_Store_CPT
+            [object_type:WC_Data_Store:private] => order
+        )
+
+    [meta_data:protected] => Array
+        (
+        )
+
+)
+

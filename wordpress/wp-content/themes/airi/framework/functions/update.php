@@ -122,17 +122,17 @@ if(!function_exists('airi_hook_update_the_theme')){
  * @desc: custom block after add-to-cart on single product page
  * @since: 1.0.0
  */
-if(!function_exists('airi_custom_block_after_add_cart_form_on_single_product')){
-    function airi_custom_block_after_add_cart_form_on_single_product(){
-        if(is_active_sidebar('s-p-after-add-cart')){
-            echo '<div class="extradiv-after-frm-cart">';
-            dynamic_sidebar('s-p-after-add-cart');
-            echo '</div>';
-            echo '<div class="clearfix"></div>';
-        }
-    }
-    add_action('woocommerce_single_product_summary', 'airi_custom_block_after_add_cart_form_on_single_product', 52);
-}
+// if(!function_exists('airi_custom_block_after_add_cart_form_on_single_product')){
+//     function airi_custom_block_after_add_cart_form_on_single_product(){
+//         if(is_active_sidebar('s-p-after-add-cart')){
+//             echo '<div class="extradiv-after-frm-cart">';
+//             dynamic_sidebar('s-p-after-add-cart');
+//             echo '</div>';
+//             echo '<div class="clearfix"></div>';
+//         }
+//     }
+//     add_action('woocommerce_single_product_summary', 'airi_custom_block_after_add_cart_form_on_single_product', 52);
+// }
 
 if(!function_exists('airi_override_portfolio_content_type_args')){
     function airi_override_portfolio_content_type_args( $args, $post_type_name ) {
