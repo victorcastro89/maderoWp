@@ -101,7 +101,7 @@ services:
     image: nginx:${NGINX_VERSION:-latest}
     container_name: nginx
     restart: always
-   # command: [nginx-debug, '-g', 'daemon off;']
+    command: [nginx-debug, '-g', 'daemon off;']
     volumes:
       - ${NGINX_CONF_DIR}/conf.d:/etc/nginx/conf.d
       - ${NGINX_CONF_DIR}/nginx.conf:/etc/nginx/nginx.conf
@@ -181,7 +181,7 @@ services:
       MYSQL_MAX_CONNECTIONS: 500
     volumes:
       - ./backup_db:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
-      - ~/mariadb_data:/var/lib/mysql # I want to manage volumes manually.
+      - ~/mariadb_data1:/var/lib/mysql # I want to manage volumes manually.
 
     labels:
       - "traefik.enable=false"

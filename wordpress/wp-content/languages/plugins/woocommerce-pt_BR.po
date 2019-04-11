@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-04-04 04:20:47+0000\n"
+"PO-Revision-Date: 2019-04-10 17:51:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -228,7 +228,7 @@ msgstr "Seu pedido em %s foi marcado como concluído."
 #: templates/emails/plain/customer-new-account.php:25
 #: templates/emails/customer-new-account.php:27
 msgid "Hi %s,"
-msgstr "Olá, %s,"
+msgstr "Olá, %s."
 
 #. translators: %s: Customer billing full name
 #: templates/emails/admin-new-order.php:28
@@ -6205,11 +6205,11 @@ msgstr "Editar categoria"
 
 #: includes/class-wc-post-types.php:95
 msgid "Parent category:"
-msgstr "Categoria mãe:"
+msgstr "Categoria ascendente:"
 
 #: includes/class-wc-post-types.php:94
 msgid "Parent category"
-msgstr "Categoria mãe"
+msgstr "Categoria ascendente"
 
 #: includes/class-wc-post-types.php:93
 msgid "All categories"

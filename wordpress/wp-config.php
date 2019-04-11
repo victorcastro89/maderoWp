@@ -44,6 +44,7 @@ define( 'DB_COLLATE', '');
 
 define('DISABLE_WP_CRON', false);
 define('FS_METHOD','direct');
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
